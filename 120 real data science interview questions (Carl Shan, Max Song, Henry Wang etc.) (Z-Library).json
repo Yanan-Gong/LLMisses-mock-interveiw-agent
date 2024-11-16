@@ -1,0 +1,881 @@
+[
+    {
+        "text": "1 data science interview questions 120 compiled and created by: carl shan, max song, henry wang, and william chen"
+    },
+    {
+        "text": "2 introduction this guide is meant to bridge the gap between the knowledge of a recent graduate and the skillset required to become a data scientist."
+    },
+    {
+        "text": "by reading this guide and learning how to answer these ques\u00ad tions, recent graduates will equip themselves with the expected knowledge and skills of a data scien\u00ad tist."
+    },
+    {
+        "text": "to help readers with these goals, we\u2019ve gathered 120 interview questions in product metrics, pro\u00ad gramming and databases, probability, experimentation and inference, data analysis, and predictive modeling."
+    },
+    {
+        "text": "these questions are all either real data science interview questions or inspired by real data science interview questions, and should help readers develop the skills needed to succeed in a data science role."
+    },
+    {
+        "text": "the role of a data scientist is highly malleable and company dependent."
+    },
+    {
+        "text": "however, the general skillset needed is similar."
+    },
+    {
+        "text": "candidates need: \u2022 technical skills - data analysis and programming \u2022 business/product intuition - metrics and identifying opportunities for impact \u2022 communication ability - clarity in explaining findings and insights to prepare for your interview, you may want to brush up by reviewing some probability, data anal\u00ad ysis, sql, coding, and experimental design."
+    },
+    {
+        "text": "the questions in this guide should help you do so."
+    },
+    {
+        "text": "the background of data science applicants varies wildly, so interviews may generally be more holistic and test your intuition, analytic, and communication abilities rather than focusing on specific technical concepts."
+    },
+    {
+        "text": "prepare to discuss your past work involving analyzing large and complicated datasets, defending your approaches and communicating what you learned during your project."
+    },
+    {
+        "text": "expect questions in\u00ad volving how to measure \u201cgoodness\u201d of a feature on the company\u2019s product, and be sure to approach these problems in a scientific and principled way."
+    },
+    {
+        "text": "you have a good chance of getting a product metrics or experimentation question based on some actual questions the company is tackling at this time."
+    },
+    {
+        "text": "check up on your company\u2019s engineering / data blog and see if anything\u2019s relevant."
+    },
+    {
+        "text": "be familiar with a/b testing and common metrics that companies similar to the one you are interviewing for may use."
+    },
+    {
+        "text": "brush up on your python (especially ipython notebook) and/or r abilities to prepare for a po\u00ad tential live data analysis problem."
+    },
+    {
+        "text": "and finally, of course, follow the general interview advice."
+    },
+    {
+        "text": "prepare to elaborate on related proj\u00ad ects from your resume."
+    },
+    {
+        "text": "be enthusiastic."
+    },
+    {
+        "text": "share your thoughts with your interviewer as you\u2019re going through a problem or doing a piece of analysis."
+    },
+    {
+        "text": "and be sure to answer the question!"
+    },
+    {
+        "text": "you have our best wishes!"
+    },
+    {
+        "text": "carl, max, henry, and william please feel free to reach out to us with questions, comments and suggestions at www.datasciencehandbook.me"
+    },
+    {
+        "text": "3 contents predictive modeling 4 programming 6 probability 8 statistical inference 11 data analysis 13 product metrics 16 communication 18 data science interview questions"
+    },
+    {
+        "text": "4 data science interview questions 1 (given a dataset) analyze this dataset and give me a mod\u00ad el that can predict this response variable."
+    },
+    {
+        "text": "2 what could be some issues if the distribution of the test data is significantly different than the distribution of the training data?"
+    },
+    {
+        "text": "3 what are some ways i can make my model more robust to outliers?"
+    },
+    {
+        "text": "4 what are some differences you would expect in a model that minimizes squared error, versus a model that min\u00ad imizes absolute error?"
+    },
+    {
+        "text": "in which cases would each error metric be appropriate?"
+    },
+    {
+        "text": "5 what error metric would you use to evaluate how good a binary classifier is?"
+    },
+    {
+        "text": "what if the classes are imbalanced?"
+    },
+    {
+        "text": "what if there are more than 2 groups?"
+    },
+    {
+        "text": "6 what are various ways to predict a binary response vari\u00ad able?"
+    },
+    {
+        "text": "can you compare two of them and tell me when one would be more appropriate?"
+    },
+    {
+        "text": "what\u2019s the difference between these?"
+    },
+    {
+        "text": "(svm, logistic regression, naive bayes, decision tree, etc.)"
+    },
+    {
+        "text": "7 what is regularization and where might it be helpful?"
+    },
+    {
+        "text": "what is an example of using regularization in a model?"
+    },
+    {
+        "text": "8 why might it be preferable to include fewer predictors over many?"
+    },
+    {
+        "text": "9 given training data on tweets and their retweets, how would you predict the number of retweets of a given tweet after 7 days after only observing 2 days worth of data?"
+    },
+    {
+        "text": "10 how could you collect and analyze data to use social me\u00ad dia to predict the weather?"
+    },
+    {
+        "text": "predictive modeling if asked to predict a response variable during your interview, you should favor simpler models that run quickly and which you can easily explain."
+    },
+    {
+        "text": "if the task is specifically a predictive model\u00ad ing task, you should try to do, or at least mention, cross-vali\u00ad dation as it really is the golden standard to evaluate the qual\u00ad ity of one\u2019s model."
+    },
+    {
+        "text": "talk about and justify your approach while you\u2019re doing it, and leave some time to plot and visualize the data."
+    },
+    {
+        "text": "pro tip"
+    },
+    {
+        "text": "5 data science interview questions 11 how would you construct a feed to show relevant content for a site that involves user interactions with items?"
+    },
+    {
+        "text": "12 how would you design the people you may know feature on linkedin or facebook?"
+    },
+    {
+        "text": "13 how would you predict who someone may want to send a snapchat or gmail to?"
+    },
+    {
+        "text": "14 how would you suggest to a franchise where to open a new store?"
+    },
+    {
+        "text": "15 in a search engine, given partial data on what the user has typed, how would you predict the user\u2019s eventual search query?"
+    },
+    {
+        "text": "16 given a database of all previous alumni donations to your university, how would you predict which recent alumni are most likely to donate?"
+    },
+    {
+        "text": "17 you\u2019re uber and you want to design a heatmap to recom\u00ad mend to drivers where to wait for a passenger."
+    },
+    {
+        "text": "how would you approach this?"
+    },
+    {
+        "text": "18 how would you build a model to predict a march mad\u00ad ness bracket?"
+    },
+    {
+        "text": "19 you want to run a regression to predict the probability of a flight delay, but there are flights with delays of up to 12 hours that are really messing up your model."
+    },
+    {
+        "text": "how can you address this?"
+    },
+    {
+        "text": "variations on ordinary linear re\u00ad gression can help address some problems that come up work\u00ad ing with read data."
+    },
+    {
+        "text": "lasso helps when you have too many pre\u00ad dictors by favoring weights of zero."
+    },
+    {
+        "text": "ridge regression can help with reducing the variance of your weights and predictions by shrinking the weights to 0. least absolute deviations or ro\u00ad bust linear regression can help when you have outliers."
+    },
+    {
+        "text": "logis\u00ad tic regression is used for binary outcomes, and poisson regres\u00ad sion can be used to model count data."
+    },
+    {
+        "text": "pro tip predictive modeling"
+    },
+    {
+        "text": "6 data science interview questions 1 write a function to calculate all possible assignment vec\u00ad tors of 2n users, where n users are assigned to group 0 (control), and n users are assigned to group 1 (treatment)."
+    },
+    {
+        "text": "2 given a list of tweets, determine the top 10 most used hashtags."
+    },
+    {
+        "text": "3 program an algorithm to find the best approximate solu\u00ad tion to the knapsack problem1 in a given time."
+    },
+    {
+        "text": "4 program an algorithm to find the best approximate solu\u00ad tion to the travelling salesman problem2 in a given time."
+    },
+    {
+        "text": "5 you have a stream of data coming in of size n, but you don\u2019t know what n is ahead of time."
+    },
+    {
+        "text": "write an algorithm that will take a random sample of k elements."
+    },
+    {
+        "text": "can you write one that takes o(k) space?"
+    },
+    {
+        "text": "6 write an algorithm that can calculate the square root of a number."
+    },
+    {
+        "text": "7 given a list of numbers, can you return the outliers?"
+    },
+    {
+        "text": "8 when can parallelism make your algorithms run faster?"
+    },
+    {
+        "text": "when could it make your algorithms run slower?"
+    },
+    {
+        "text": "9 what are the different types of joins?"
+    },
+    {
+        "text": "what are the differ\u00ad ences between them?"
+    },
+    {
+        "text": "10 why might a join on a subquery be slow?"
+    },
+    {
+        "text": "how might you speed it up?"
+    },
+    {
+        "text": "11 describe the difference between primary keys and foreign keys in a sql database."
+    },
+    {
+        "text": "1 see http://en.wikipedia.org/wiki/knapsack_problem 2 see http://en.wikipedia.org/wiki/travelling_salesman_problem programming traditional software engineer\u00ad ing questions may show up in data science interviews."
+    },
+    {
+        "text": "expect those questions to be easier, less about systems, and more about your ability to manipulate data, read databases, and do simple programming tasks."
+    },
+    {
+        "text": "review your sql and prepare to do common operations such as join, group by, and count."
+    },
+    {
+        "text": "review ways to manipulate data and strings (we suggest doing this in python), so you can answer questions that involve sifting through numeri\u00ad cal or string data."
+    },
+    {
+        "text": "pro tip"
+    },
+    {
+        "text": "7 data science interview questions 12 given a courses table with columns course_id and course_name, a faculty table with columns facul\u00ad ty_id and faculty_name, and a course_faculty table with columns faculty_id and course_id, how would you return a list of faculty who teach a course given the name of a course?"
+    },
+    {
+        "text": "13 given a impressions table with ad_id, click (an in\u00ad dicator that the ad was clicked), and date, write a sql query that will tell me the click-through-rate of each ad by month."
+    },
+    {
+        "text": "14 write a query that returns the name of each department and a count of the number of employees in each: employees containing: emp_id (primary key) and emp_name employee_dept containing: emp_id (foreign key) and dept_ id (foreign key) depts containing: dept_id (primary key) and dept_name programming"
+    },
+    {
+        "text": "8 data science interview questions 1 bobo the amoeba has a 25%, 25%, and 50% chance of producing 0, 1, or 2 offspring, respectively."
+    },
+    {
+        "text": "each of bobo\u2019s descendants also have the same probabilities."
+    },
+    {
+        "text": "what is the probability that bobo\u2019s lineage dies out?"
+    },
+    {
+        "text": "2 in any 15-minute interval, there is a 20% probability that you will see at least one shooting star."
+    },
+    {
+        "text": "what is the proba\u00ad bility that you see at least one shooting star in the period of an hour?"
+    },
+    {
+        "text": "3 how can you generate a random number between 1 - 7 with only a die?"
+    },
+    {
+        "text": "4 how can you get a fair coin toss if someone hands you a coin that is weighted to come up heads more often than tails?"
+    },
+    {
+        "text": "5 you have an 50-50 mixture of two normal distributions with the same standard deviation."
+    },
+    {
+        "text": "how far apart do the means need to be in order for this distribution to be bi\u00ad modal?"
+    },
+    {
+        "text": "6 given draws from a normal distribution with known pa\u00ad rameters, how can you simulate draws from a uniform distribution?"
+    },
+    {
+        "text": "7 a certain couple tells you that they have two children, at least one of which is a girl."
+    },
+    {
+        "text": "what is the probability that they have two girls?"
+    },
+    {
+        "text": "8 you have a group of couples that decide to have children until they have their first girl, after which they stop having children."
+    },
+    {
+        "text": "what is the expected gender ratio of the children that are born?"
+    },
+    {
+        "text": "what is the expected number of children each couple will have?"
+    },
+    {
+        "text": "9 how many ways can you split 12 people into 3 teams of 4?"
+    },
+    {
+        "text": "probability important concepts to review from an introductory probabili\u00ad ty class include the law of total probability, bayes\u2019 rule, and ex\u00ad pectation."
+    },
+    {
+        "text": "you can learn many of these topics (and important top\u00ad ics regarding hypothesis testing and inference) with intro-level courses in probability and infer\u00ad ence."
+    },
+    {
+        "text": "pro tip"
+    },
+    {
+        "text": "9 data science interview questions 10 your hash function assigns each object to a number be\u00ad tween 1:10, each with equal probability."
+    },
+    {
+        "text": "with 10 objects, what is the probability of a hash collision?"
+    },
+    {
+        "text": "what is the expected number of hash collisions?"
+    },
+    {
+        "text": "what is the expected number of hashes that are unused."
+    },
+    {
+        "text": "11 you call 2 uberx\u2019s and 3 lyfts."
+    },
+    {
+        "text": "if the time that each takes to reach you is iid, what is the probability that all the ly\u00ad fts arrive first?"
+    },
+    {
+        "text": "what is the probability that all the uberx\u2019s arrive first?"
+    },
+    {
+        "text": "12 i write a program should print out all the numbers from 1 to 300, but prints out fizz instead if the number is divisi\u00ad ble by 3, buzz instead if the number is divisible by 5, and fizzbuzz if the number is divisible by 3 and 5. what is the total number of numbers that is either fizzed, buzzed, or fizzbuzzed?"
+    },
+    {
+        "text": "13 on a dating site, users can select 5 out of 24 adjectives to describe themselves."
+    },
+    {
+        "text": "a match is declared between two users if they match on at least 4 adjectives."
+    },
+    {
+        "text": "if alice and bob randomly pick adjectives, what is the probability that they form a match?"
+    },
+    {
+        "text": "14 a lazy high school senior types up application and en\u00ad velopes to n different colleges, but puts the applications randomly into the envelopes."
+    },
+    {
+        "text": "what is the expected num\u00ad ber of applications that went to the right college 15 let\u2019s say you have a very tall father."
+    },
+    {
+        "text": "on average, what would you expect the height of his son to be?"
+    },
+    {
+        "text": "taller, equal, or shorter?"
+    },
+    {
+        "text": "what if you had a very short father?"
+    },
+    {
+        "text": "16 what\u2019s the expected number of coin flips until you get two heads in a row?"
+    },
+    {
+        "text": "what\u2019s the expected number of coin flips until you get two tails in a row?"
+    },
+    {
+        "text": "probability many bayes\u2019 rule questions can be solved quickly with the odds form of bayes rule, which says that prior odds times likelihood ratio is the posterior odds."
+    },
+    {
+        "text": "for problem 18, the prior odds is 999:1 and the likelihood ratio is 1/1024:1 (10 heads has a 1/1024 probability with a fair coin and a 1 probability with a biased coin), which means the posterior odds is about 1:1. for problem 19, the prior odds is 1:1 and the likeli\u00ad hood ratio is 1/4:9/16, so the posterior odds is 4:9. pro tip"
+    },
+    {
+        "text": "10 probability 17 let\u2019s say we play a game where i keep flipping a coin until i get heads."
+    },
+    {
+        "text": "if the first time i get heads is on the nth coin, then i pay you 2n-1 dollars."
+    },
+    {
+        "text": "how much would you pay me to play this game?"
+    },
+    {
+        "text": "18 you have two coins, one of which is fair and comes up heads with a probability 1/2, and the other which is biased and comes up heads with probability 3/4."
+    },
+    {
+        "text": "you randomly pick coin and flip it twice, and get heads both times."
+    },
+    {
+        "text": "what is the probability that you picked the fair coin?"
+    },
+    {
+        "text": "19 you have a 0.1% chance of picking up a coin with both heads, and a 99.9% chance that you pick up a fair coin."
+    },
+    {
+        "text": "you flip your coin and it comes up heads 10 times."
+    },
+    {
+        "text": "what\u2019s the chance that you picked up the fair coin, given the information that you observed?"
+    },
+    {
+        "text": "data science interview questions"
+    },
+    {
+        "text": "11 data science interview questions 1 in an a/b test, how can you check if assignment to the various buckets was truly random?"
+    },
+    {
+        "text": "2 what might be the benefits of running an a/a test, where you have two buckets who are exposed to the exact same product?"
+    },
+    {
+        "text": "3 what would be the hazards of letting users sneak a peek at the other bucket in an a/b test?"
+    },
+    {
+        "text": "4 what would be some issues if blogs decide to cover one of your experimental groups?"
+    },
+    {
+        "text": "5 how would you conduct an a/b test on an opt-in feature?"
+    },
+    {
+        "text": "6 how would you run an a/b test for many variants, say 20 or more?"
+    },
+    {
+        "text": "7 how would you run an a/b test if the observations are extremely right-skewed?"
+    },
+    {
+        "text": "8 i have two different experiments that both change the sign-up button to my website."
+    },
+    {
+        "text": "i want to test them at the same time."
+    },
+    {
+        "text": "what kinds of things should i keep in mind?"
+    },
+    {
+        "text": "9 what is a p-value?"
+    },
+    {
+        "text": "what is the difference between type-1 and type-2 error?"
+    },
+    {
+        "text": "10 you are airbnb and you want to test the hypothesis that a greater number of photographs increases the chances that a buyer selects the listing."
+    },
+    {
+        "text": "how would you test this hypothesis?"
+    },
+    {
+        "text": "11 how would you design an experiment to determine the impact of latency on user engagement?"
+    },
+    {
+        "text": "12 what is maximum likelihood estimation?"
+    },
+    {
+        "text": "could there be any case where it doesn\u2019t exist?"
+    },
+    {
+        "text": "statistical inference proper a/b testing practices are often a common discussion, especially because it easily be\u00ad comes more complicated than anticipated in practice."
+    },
+    {
+        "text": "multiple variants and metrics, simultane\u00ad ous conflicting experiments, and improper randomization will complicate experiments."
+    },
+    {
+        "text": "most people do not have a formal ac\u00ad ademic background on experi\u00ad mental design."
+    },
+    {
+        "text": "pro tip"
+    },
+    {
+        "text": "12 data science interview questions 13 what\u2019s the difference between a map, mom, mle estima\u00ad tor?"
+    },
+    {
+        "text": "in which cases would you want to use each?"
+    },
+    {
+        "text": "14 what is a confidence interval and how do you interpret it?"
+    },
+    {
+        "text": "15 what is unbiasedness as a property of an estimator?"
+    },
+    {
+        "text": "is this always a desirable property when performing inference?"
+    },
+    {
+        "text": "what about in data analysis or predictive modeling?"
+    },
+    {
+        "text": "important concepts to know in\u00ad clude randomization, simpson\u2019s paradox, and multiple compar\u00ad isons."
+    },
+    {
+        "text": "advanced concepts to know that may impress inter\u00ad viewers includes alternatives to a/b testing (such as multi-armed bandit strategies), or alterna\u00ad tives to t-tests and z-tests (e.g."
+    },
+    {
+        "text": "non-parametric methods, boot\u00ad strapping) pro tip statistical inference"
+    },
+    {
+        "text": "13 data science interview questions 1 (given a dataset) analyze this dataset and tell me what you can learn from it."
+    },
+    {
+        "text": "2 what is r2?"
+    },
+    {
+        "text": "what are some other metrics that could be better than r2 and why?"
+    },
+    {
+        "text": "3 what is the curse of dimensionality?"
+    },
+    {
+        "text": "4 is more data always better?"
+    },
+    {
+        "text": "5 what are advantages of plotting your data before per\u00ad forming analysis?"
+    },
+    {
+        "text": "6 how can you make sure that you don\u2019t analyze something that ends up meaningless?"
+    },
+    {
+        "text": "7 what is the role of trial and error in data analysis?"
+    },
+    {
+        "text": "what is the the role of making a hypothesis before diving in?"
+    },
+    {
+        "text": "8 how can you determine which features are the most im\u00ad portant in your model?"
+    },
+    {
+        "text": "9 how do you deal with some of your predictors being missing?"
+    },
+    {
+        "text": "10 you have several variables that are positively correlated with your response, and you think combining all of the variables could give you a good prediction of your re\u00ad sponse."
+    },
+    {
+        "text": "however, you see that in the multiple linear re\u00ad gression, one of the weights on the predictors is negative."
+    },
+    {
+        "text": "what could be the issue?"
+    },
+    {
+        "text": "11 let\u2019s say you\u2019re given an unfeasible amount of predictors in a predictive modeling task."
+    },
+    {
+        "text": "what are some ways to make the prediction more feasible?"
+    },
+    {
+        "text": "12 now you have a feasible amount of predictors, but you\u2019re fairly sure that you don\u2019t need all of them."
+    },
+    {
+        "text": "how would you perform feature selection on the dataset?"
+    },
+    {
+        "text": "data analysis some concepts that are import\u00ad ant in data analysis and com\u00ad mon in the field, include over\u00ad fitting, regression towards the mean, curse of dimensionality, importance of visualization, and inductive bias."
+    },
+    {
+        "text": "these questions test your knowledge and expe\u00ad rience with some of the hazards of blind data analysis and your ability to distinguish a significant result from a spurious one."
+    },
+    {
+        "text": "pro tip"
+    },
+    {
+        "text": "14 data science interview questions 13 your linear regression didn\u2019t run and communicates that there are an infinite number of best estimates for the re\u00ad gression coefficients."
+    },
+    {
+        "text": "what could be wrong?"
+    },
+    {
+        "text": "14 you run your regression on different subsets of your data, and find that in each subset, the beta value for a certain variable varies wildly."
+    },
+    {
+        "text": "what could be the issue here?"
+    },
+    {
+        "text": "15 what is the main idea behind ensemble learning?"
+    },
+    {
+        "text": "if i had many different models that predicted the same response variable, what might i want to do to incorporate all of the models?"
+    },
+    {
+        "text": "would you expect this to perform better than an individual model or worse?"
+    },
+    {
+        "text": "16 given that you have wifi data in your office, how would you determine which rooms and areas are underutilized and overutilized?"
+    },
+    {
+        "text": "17 how could you use gps data from a car to determine the quality of a driver?"
+    },
+    {
+        "text": "18 given accelerometer, altitude, and fuel usage data from a car, how would you determine the optimum acceleration pattern to drive over hills?"
+    },
+    {
+        "text": "19 given position data of nba players in a season\u2019s games, how would you evaluate a basketball player\u2019s defensive ability?"
+    },
+    {
+        "text": "20 how would you quantify the influence of a twitter user?"
+    },
+    {
+        "text": "21 given location data of golf balls in games, how would construct a model that can advise golfers where to aim?"
+    },
+    {
+        "text": "22 you have 100 mathletes and 100 math problems."
+    },
+    {
+        "text": "each mathlete gets to choose 10 problems to solve."
+    },
+    {
+        "text": "given data on who got what problem correct, how would you rank the problems in terms of difficulty?"
+    },
+    {
+        "text": "if asked to analyze a dataset during the interview, the inter\u00ad viewer is looking to learn about your comfort with your statisti\u00ad cal software and your ability to generate interesting insights in a short period of time."
+    },
+    {
+        "text": "we rec\u00ad ommend making visualizations first, to show that you know good practices, prevent future missteps, and identify possible transformations needed."
+    },
+    {
+        "text": "be sure to talk about your procedure and anticipate questions about your approach."
+    },
+    {
+        "text": "pro tip data analysis"
+    },
+    {
+        "text": "15 data analysis 23 you have 5000 people that rank 10 sushis in terms of salt\u00ad iness."
+    },
+    {
+        "text": "how would you aggregate this data to estimate the true saltiness rank in each sushi?"
+    },
+    {
+        "text": "24 given data on congressional bills and which congressio\u00ad nal representatives co-sponsored the bills, how would you determine which other representatives are most similar to yours in voting behavior?"
+    },
+    {
+        "text": "how would you evaluate who is the most liberal?"
+    },
+    {
+        "text": "most republican?"
+    },
+    {
+        "text": "most bipartisan?"
+    },
+    {
+        "text": "25 how would you come up with an algorithm to detect pla\u00ad giarism in online content?"
+    },
+    {
+        "text": "26 you have data on all purchases of customers at a grocery store."
+    },
+    {
+        "text": "describe to me how you would program an algo\u00ad rithm that would cluster the customers into groups."
+    },
+    {
+        "text": "how would you determine the appropriate number of clusters to include?"
+    },
+    {
+        "text": "27 let\u2019s say you\u2019re building the recommended music engine at spotify to recommend people music based on past lis\u00ad tening history."
+    },
+    {
+        "text": "how would you approach this problem?"
+    },
+    {
+        "text": "data science interview questions consider asking your interviewer how data scientists extract and wrangle data at the company, what tools the team uses to do its exploratory analysis, and how the company shares its findings internally."
+    },
+    {
+        "text": "most of the work is not the analysis."
+    },
+    {
+        "text": "in fact, data sci\u00ad entists spend most of their time just getting, cleaning, and pro\u00ad cessing the data."
+    },
+    {
+        "text": "pro tip"
+    },
+    {
+        "text": "16 data science interview questions 1 what would be good metrics of success for an adver\u00ad tising-driven consumer product?"
+    },
+    {
+        "text": "(buzzfeed, youtube, google search, etc.)"
+    },
+    {
+        "text": "a service-driven consumer product?"
+    },
+    {
+        "text": "(uber, flickr, venmo, etc.)"
+    },
+    {
+        "text": "2 what would be good metrics of success for a productiv\u00ad ity tool?"
+    },
+    {
+        "text": "(evernote, asana, google docs, etc.)"
+    },
+    {
+        "text": "a mooc?"
+    },
+    {
+        "text": "(edx, coursera, udacity, etc.)"
+    },
+    {
+        "text": "3 what would be good metrics of success for an e-com\u00ad merce product?"
+    },
+    {
+        "text": "(etsy, groupon, birchbox, etc.)"
+    },
+    {
+        "text": "a subscrip\u00ad tion product?"
+    },
+    {
+        "text": "(netflix, birchbox, hulu, etc.)"
+    },
+    {
+        "text": "premium sub\u00ad scriptions?"
+    },
+    {
+        "text": "(okcupid, linkedin, spotify, etc.)"
+    },
+    {
+        "text": "4 what would be good metrics of success for a consumer product that relies heavily on engagement and interac\u00ad tion?"
+    },
+    {
+        "text": "(snapchat, pinterest, facebook, etc.)"
+    },
+    {
+        "text": "a messaging product?"
+    },
+    {
+        "text": "(groupme, hangouts, snapchat, etc.)"
+    },
+    {
+        "text": "5 what would be good metrics of success for a product that offered in-app purchases?"
+    },
+    {
+        "text": "(zynga, angry birds, other gaming apps) 6 a certain metric is violating your expectations by going down or up more than you expect."
+    },
+    {
+        "text": "how would you try to identify the cause of the change?"
+    },
+    {
+        "text": "7 growth for total number of tweets sent has been slow this month."
+    },
+    {
+        "text": "what data would you look at to determine the cause of the problem?"
+    },
+    {
+        "text": "8 you\u2019re a restaurant and are approached by groupon to run a deal."
+    },
+    {
+        "text": "what data would you ask from them in order to determine whether or not to do the deal?"
+    },
+    {
+        "text": "9 you are tasked with improving the efficiency of a subway system."
+    },
+    {
+        "text": "where would you start?"
+    },
+    {
+        "text": "10 say you are working on facebook news feed."
+    },
+    {
+        "text": "what would be some metrics that you think are important?"
+    },
+    {
+        "text": "how would you make the news each person gets more relevant?"
+    },
+    {
+        "text": "product metrics the best choices of engagement metrics are those that benefit both the company and the us\u00ad ers while correlating highly with revenue."
+    },
+    {
+        "text": "pageviews and daily actives would be appropriate for an advertising-driven prod\u00ad uct, and metrics such as number of purchases or conversion rate would be appropriate for any product that sells services and other products."
+    },
+    {
+        "text": "pro tip"
+    },
+    {
+        "text": "17 data science interview questions 11 how would you measure the impact that sponsored sto\u00ad ries on facebook news feed have on user engagement?"
+    },
+    {
+        "text": "how would you determine the optimum balance between sponsored stories and organic content on a user\u2019s news feed?"
+    },
+    {
+        "text": "12 you are on the data science team at uber and you are asked to start thinking about surge pricing."
+    },
+    {
+        "text": "what would be the objectives of such a product and how would you start looking into this?"
+    },
+    {
+        "text": "13 say that you are netflix."
+    },
+    {
+        "text": "how would you determine what original series you should invest in and create?"
+    },
+    {
+        "text": "14 what kind of services would find churn (metric that tracks how many customers leave the service) helpful?"
+    },
+    {
+        "text": "how would you calculate churn?"
+    },
+    {
+        "text": "15 let\u2019s say that you\u2019re are scheduling content for a content provider on television."
+    },
+    {
+        "text": "how would you determine the best times to schedule content?"
+    },
+    {
+        "text": "interviewers are looking for can\u00ad didates who have strong intu\u00ad ition about metrics for success."
+    },
+    {
+        "text": "you should give many possible metrics, each a bit more specif\u00ad ic than the previous."
+    },
+    {
+        "text": "the inter\u00ad viewer may stop and ask you to elaborate or describe how you would collect or visualize the data."
+    },
+    {
+        "text": "prepare to justify why the metric is important, relevant, and measurable."
+    },
+    {
+        "text": "pro tip product metrics"
+    },
+    {
+        "text": "18 data science interview questions 1 explain to me a technical concept related to the role that you\u2019re interviewing for."
+    },
+    {
+        "text": "2 introduce me to something you\u2019re passionate about."
+    },
+    {
+        "text": "3 how would you explain an a/b test to an engineer with no statistics background?"
+    },
+    {
+        "text": "a linear regression?"
+    },
+    {
+        "text": "4 how would you explain a confidence interval to an engi\u00ad neer with no statistics background?"
+    },
+    {
+        "text": "what does 95% con\u00ad fidence mean?"
+    },
+    {
+        "text": "5 how would you explain to a group of senior executives why data is important?"
+    },
+    {
+        "text": "6 tell me about a data project that you\u2019ve done with a team."
+    },
+    {
+        "text": "what did you add to the group?"
+    },
+    {
+        "text": "7 tell me about a dataset that you\u2019ve analyzed."
+    },
+    {
+        "text": "what tech\u00ad niques did you find helpful and which ones didn\u2019t work?"
+    },
+    {
+        "text": "8 what\u2019s your favorite algorithm?"
+    },
+    {
+        "text": "can you explain it to me?"
+    },
+    {
+        "text": "9 how could you help the generate public understanding towards the importance of using data to generate in\u00ad sights?"
+    },
+    {
+        "text": "10 how would you convince a government agency to release their data in a publicly accessible api?"
+    },
+    {
+        "text": "11 i\u2019m a local business owner operating a small restaurant."
+    },
+    {
+        "text": "convince me to switch my advertising budget from print to internet."
+    },
+    {
+        "text": "communication interviews are about convincing the interviewer that you know what you\u2019re talking about."
+    },
+    {
+        "text": "natu\u00ad rally, you will gain more ability to do so with a better background in in the topics covered here."
+    },
+    {
+        "text": "practice teaching a concept, ex\u00ad plaining one of your past proj\u00ad ects, and discussing your tech\u00ad niques."
+    },
+    {
+        "text": "pro tip"
+    },
+    {
+        "text": "data science interview questions layout design by: brittany cheng knowing and being able to answer these questions will help you succeed in the data science interview."
+    },
+    {
+        "text": "but after landing that job, if you want to learn how to advance in your career as a data scientist, you should check out the data science handbook \u2014 a curated collection of interviews containing advice and wisdom from some of top data scientists in the world."
+    },
+    {
+        "text": "you can get it at www.datasciencehandbook.me data science handbook"
+    }
+]
