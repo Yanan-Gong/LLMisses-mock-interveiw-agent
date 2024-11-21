@@ -1,0 +1,4235 @@
+[
+    {
+        "text": "data science and machine learning interview questions using python a complete question bank to crack your interview by vishwanathan narayanan second revised and updated edition 2020 first edition 2019 copyright \u00a9 bpb publications, india isbn: 978-93-89845-785 all rights reserved."
+    },
+    {
+        "text": "no part of this publication may be reproduced or distributed in any form or by any means or stored in a database or retrieval system, without the prior written permission of the publisher with the exception to the program listings which may be entered, stored and executed in a computer system, but they can not be reproduced by the means of publication."
+    },
+    {
+        "text": "limits of liability and disclaimer of warranty the information contained in this book is true to correct and the best of author\u2019s & publisher\u2019s knowledge."
+    },
+    {
+        "text": "the author has made every effort to ensure the accuracy of these publications, but cannot be held responsible for any loss or damage arising from any information in this book."
+    },
+    {
+        "text": "all trademarks referred to in the book are acknowledged as properties of their respective owners."
+    },
+    {
+        "text": "distributors: bpb publications 20, ansari road, darya ganj new delhi-110002 ph: 23254990/23254991 micro media shop no."
+    },
+    {
+        "text": "5, mahendra chambers, 150 dn rd."
+    },
+    {
+        "text": "next to capital cinema, v.t."
+    },
+    {
+        "text": "(c.s.t.)"
+    },
+    {
+        "text": "station, mumbai-400 001 ph: 22078296/22078297 deccan agencies"
+    },
+    {
+        "text": "4-3-329, bank street, hyderabad-500195 ph: 24756967/24756400 bpb book centre 376 old lajpat rai market, delhi-110006 ph: 23861747 published by manish jain for bpb publications, 20 ansari road, darya ganj, new delhi-110002 and printed by him at repro india ltd, mumbai dedicated to dedicated to pratyangira, bala, durga, mom, dad, chitti my aunt, my sister ishwarya, sridhar my brother in law and to all my mentors especially shiv without whom this book would still be a dream."
+    },
+    {
+        "text": "also the support extended by shyam sir, khadak and bpb publications is very much appreciated."
+    },
+    {
+        "text": "durga has been a great inspiration for this book."
+    },
+    {
+        "text": "she has always been and will me my encouragement to write more books."
+    },
+    {
+        "text": "also remember sudarshan as a friend in need."
+    },
+    {
+        "text": "also dedicated to my students from whom i equally learned as i taught them."
+    },
+    {
+        "text": "along with all the blessing of almighty is also remembered here without which even a blade of grass does not move about the author mr vishwanathan has twenty years of hard code experience in the software industry spanning across many multinational companies and domains."
+    },
+    {
+        "text": "playing with data to derive meaningful insights has been his domain and that is what took him towards data science and machine learning."
+    },
+    {
+        "text": "preface data science is one of the hottest topics mainly because of the application areas it is involved and things which were once upon of time, impossible with earlier software has been made easy."
+    },
+    {
+        "text": "this book tries to comprehend the ocean of data science into small book which is mainly intended to be used as last minute revision."
+    },
+    {
+        "text": "before interview, all the important concepts have been given in simple and understand format."
+    },
+    {
+        "text": "this book tries to include various terminologies and logic used both as a part of data science and machine learning for last minute revision."
+    },
+    {
+        "text": "as such you can say that this book acts as a companion whenever you want to go for interview."
+    },
+    {
+        "text": "simple to use words have been used in the given answers for the questions to help ease of remembering and representation of same."
+    },
+    {
+        "text": "examples where ever deemed necessary have been provided so that same can be used while giving answers in interview."
+    },
+    {
+        "text": "author tried to consolidate whatever he came across, on multiple interviews that he attended and put the same in words so that it becomes easy for the reader of the book to give direction on how the interview would be."
+    },
+    {
+        "text": "with the number of data science jobs increasing, author is sure that everyone who wants to pursue this field would like to keep this book as a constant companion."
+    },
+    {
+        "text": "soon, author will be coming shortly with a new book on r too, so that it makes a complete data science stack."
+    },
+    {
+        "text": "happy reading to all the readers, your feedback is highly appreciated."
+    },
+    {
+        "text": "foreword it is not wrong to say that today\u2019s dynamic world is driven totally by statistics."
+    },
+    {
+        "text": "with decision making becoming important in being successful the use of software this task has become common, thanks to the advancement made with respect to technology."
+    },
+    {
+        "text": "while software application always existed for doing the above task, the volume and ability of software programmes to represent complex equation related to statistics and probability was limited."
+    },
+    {
+        "text": "thanks to pandas, numpy, scipy and sklearn modules of python, the above problem faced has been removed to a great extent and the problem is no more a challenge."
+    },
+    {
+        "text": "with complex mathematical concepts easily convertible to algorithms the life of data scientist and analyst has become quite"
+    },
+    {
+        "text": "easy."
+    },
+    {
+        "text": "this book is mainly intended to help people represent their answer in a sensible way to the interviewer."
+    },
+    {
+        "text": "the answers have been carefully rendered in a way to make things quite simple and yet represent the seriousness and complexity of matter."
+    },
+    {
+        "text": "since data science is incomplete without mathematics we have also included a part of the book dedicated to statistics."
+    },
+    {
+        "text": "python has already taught us that small code does not mean lesser powerful the same concept has been adopted to keep the book a powerful weapon for any one attending interview."
+    },
+    {
+        "text": "1. data science basic questions and terms q1: explain the steps involved in data science?"
+    },
+    {
+        "text": "q2: explain variable and different types of variables?"
+    },
+    {
+        "text": "q3: explain categorical measurement?"
+    },
+    {
+        "text": "q4: explain binary variables?"
+    },
+    {
+        "text": "q5: explain nominal measurement?"
+    },
+    {
+        "text": "q6: explain ordinal variable?"
+    },
+    {
+        "text": "q7: explain continuous variables?"
+    },
+    {
+        "text": "q8: explain discrete variables?"
+    },
+    {
+        "text": "q9: is it possible to convert continuous values to discrete and vice versa?"
+    },
+    {
+        "text": "q10: what are interval variables?"
+    },
+    {
+        "text": "q11: what are ratio variables?"
+    },
+    {
+        "text": "q12: what are univariate and bivariate variables?"
+    },
+    {
+        "text": "q13: what is measurement error?"
+    },
+    {
+        "text": "q14: explain validity?"
+    },
+    {
+        "text": "q15: explain reliability?"
+    },
+    {
+        "text": "q16: what are the different ways to test hypotheses?"
+    },
+    {
+        "text": "q17: explain the different types of variation?"
+    },
+    {
+        "text": "q18: explain repeated-measures design?"
+    },
+    {
+        "text": "q19: what is independent design?"
+    },
+    {
+        "text": "q20: explain the role of randomization w.r.t variation?"
+    },
+    {
+        "text": "q21: explain various summary measures."
+    },
+    {
+        "text": "q22: explain alternate hypotheses and null hypotheses."
+    },
+    {
+        "text": "q23: what is p value?"
+    },
+    {
+        "text": "q24: what happens when null hypotheses is rejected?"
+    },
+    {
+        "text": "q25: explain directional and non-directional hypotheses."
+    },
+    {
+        "text": "q26: explain fit of model?"
+    },
+    {
+        "text": "q27: what is relation between sample and population?"
+    },
+    {
+        "text": "q28: what is estimation?"
+    },
+    {
+        "text": "q29: explain deviation score?"
+    },
+    {
+        "text": "q30: explain variance?"
+    },
+    {
+        "text": "q31: explain standard deviation."
+    },
+    {
+        "text": "q32: explain standard error."
+    },
+    {
+        "text": "q33: what is precision?"
+    },
+    {
+        "text": "q34: explain confidence intervals."
+    },
+    {
+        "text": "q35: explain confidence level."
+    },
+    {
+        "text": "q36: explain alpha."
+    },
+    {
+        "text": "q37: explain beta."
+    },
+    {
+        "text": "q38: explain accuracy."
+    },
+    {
+        "text": "q39: explain bias."
+    },
+    {
+        "text": "q40: what is central limit theorem?"
+    },
+    {
+        "text": "q41: explain absolute value?"
+    },
+    {
+        "text": "q42: what is degree of freedom?"
+    },
+    {
+        "text": "q43: explain cluster sampling."
+    },
+    {
+        "text": "q44: explain correlation coefficients?"
+    },
+    {
+        "text": "q45: explain sample space."
+    },
+    {
+        "text": "q46: what is non parametric algorithm?"
+    },
+    {
+        "text": "q47: how can learning be classified?"
+    },
+    {
+        "text": "q48: what is classification?"
+    },
+    {
+        "text": "q49: explain the steps involved in classification."
+    },
+    {
+        "text": "q50: what is regression?"
+    },
+    {
+        "text": "q51: explain the similarities and differences between classification and regression."
+    },
+    {
+        "text": "q52: explain various terms encountered during classification algorithm."
+    },
+    {
+        "text": "q53: explain multi class classification?"
+    },
+    {
+        "text": "q54: explain multi label classification?"
+    },
+    {
+        "text": "q55: explain how multi label problem can be solved?"
+    },
+    {
+        "text": "q56: explain some important metrics with respect to testing a model?"
+    },
+    {
+        "text": "q57: what is logistic regression?"
+    },
+    {
+        "text": "q58: explain nai\u0308ve bayes."
+    },
+    {
+        "text": "q59: what is stochastic gradient descent?"
+    },
+    {
+        "text": "q60: explain decision tree algorithm."
+    },
+    {
+        "text": "q61: what is gini index?"
+    },
+    {
+        "text": "q62: is gini index the only means which can be used in decision tree?"
+    },
+    {
+        "text": "q63: what is pruning w.r.t."
+    },
+    {
+        "text": "decision tree?"
+    },
+    {
+        "text": "q64: what is random forest?"
+    },
+    {
+        "text": "q65: explain the difference between random forest and decision tree."
+    },
+    {
+        "text": "q66: what is overfitting and underfitting?"
+    },
+    {
+        "text": "q67: what are the reasons for under fitting occurrences?"
+    },
+    {
+        "text": "q68: does over fitting get affected by noise?"
+    },
+    {
+        "text": "q69: explain knn (k nearest neighbour) steps involved, advantage and disadvantage."
+    },
+    {
+        "text": "q70: explain selection bias."
+    },
+    {
+        "text": "q71: what does selection bias indicate w.r.t."
+    },
+    {
+        "text": "algorithm?"
+    },
+    {
+        "text": "q72: what is bootstrap sample?"
+    },
+    {
+        "text": "q73: what is resampling?"
+    },
+    {
+        "text": "q74: explain tail."
+    },
+    {
+        "text": "q75: explain the difference between one way test and two way test."
+    },
+    {
+        "text": "q76: explain degree of freedom."
+    },
+    {
+        "text": "q77: what is predictive modeling?"
+    },
+    {
+        "text": "q78: what is time series analysis?"
+    },
+    {
+        "text": "q79: what is deep learning?"
+    },
+    {
+        "text": "q80: what is convolutional neural network?"
+    },
+    {
+        "text": "q81: what are different ways to determine optimal value of clusters?."
+    },
+    {
+        "text": "q82: what are various distance related functions for similarity measures?"
+    },
+    {
+        "text": "1. python programming questions q1: is python object oriented?"
+    },
+    {
+        "text": "q2: is python case sensitive?"
+    },
+    {
+        "text": "q3: what kind of language is python?"
+    },
+    {
+        "text": "q4: what are different versions of python?"
+    },
+    {
+        "text": "q5: explain different implementations of python?"
+    },
+    {
+        "text": "q6: is python loosely typed?"
+    },
+    {
+        "text": "q7: how to start a new block in python?"
+    },
+    {
+        "text": "q8: how to get data type of a particular variable?"
+    },
+    {
+        "text": "q9: how many ways can python program be run?"
+    },
+    {
+        "text": "q10: explain the importance of pylint and pychecker."
+    },
+    {
+        "text": "q11: explain zen of python."
+    },
+    {
+        "text": "q12: how to print zen in python?"
+    },
+    {
+        "text": "q13: explain python data types."
+    },
+    {
+        "text": "q14: how can we switch variables in python?"
+    },
+    {
+        "text": "q15: what is the use of pass statement in python?"
+    },
+    {
+        "text": "q16: is python pass by value or pass by reference?"
+    },
+    {
+        "text": "q17: does python supports chained operations?"
+    },
+    {
+        "text": "q18: explain all and any."
+    },
+    {
+        "text": "q19: explain the difference between is and ==."
+    },
+    {
+        "text": "q20: explain supported collection of data type w.r.t."
+    },
+    {
+        "text": "python?"
+    },
+    {
+        "text": "q21: create a simple number list?"
+    },
+    {
+        "text": "q22: can you create nested list?"
+    },
+    {
+        "text": "q23: explain crud (create, update, and delete) operations from list."
+    },
+    {
+        "text": "q24: explain operations in dictionary."
+    },
+    {
+        "text": "q25: explain operation with tuples."
+    },
+    {
+        "text": "q26: explain del?"
+    },
+    {
+        "text": "q27: if del can remove variable can it remove tuple variable?"
+    },
+    {
+        "text": "q28: delete last element in a list."
+    },
+    {
+        "text": "q29: predict the output of following code."
+    },
+    {
+        "text": "q30: what do you mean by list comprehension?"
+    },
+    {
+        "text": "q31: explain the preferred way for looping through list?"
+    },
+    {
+        "text": "q32: find the reverse of the dictionary?"
+    },
+    {
+        "text": "q33: how to sort dictionary by value?"
+    },
+    {
+        "text": "q34: what is the use of shuffle function?"
+    },
+    {
+        "text": "q35: what is the preferred way to get a value based on key in python?"
+    },
+    {
+        "text": "q36: explain alternate way of merging 2 or more dictionaries without using update method?"
+    },
+    {
+        "text": "q37: what is the preferred way of fetching last element/second last and so on from a list?"
+    },
+    {
+        "text": "q38: what is the preferred way for reversing a list?"
+    },
+    {
+        "text": "q39: explain various string utility functions in python."
+    },
+    {
+        "text": "q40: how to check whether two strings are equal."
+    },
+    {
+        "text": "q41: can string use single quote or double quote?"
+    },
+    {
+        "text": "q42: explain type conversions on collection types."
+    },
+    {
+        "text": "q43: explain set theory operations supported by set data type."
+    },
+    {
+        "text": "q44: explain frozenset?"
+    },
+    {
+        "text": "q45: explain functions in python?"
+    },
+    {
+        "text": "q46: what is a boolean function?"
+    },
+    {
+        "text": "q47: can we specify data type for arguments as well as return types in python?"
+    },
+    {
+        "text": "q48: explain variable arguments?"
+    },
+    {
+        "text": "q49: write a program to find occurrences or count of characters in given word."
+    },
+    {
+        "text": "q50: what is **kwargs?"
+    },
+    {
+        "text": "q51: write a simple lambda expression?"
+    },
+    {
+        "text": "q52: lambda forms in python contain statements?"
+    },
+    {
+        "text": "true or false?"
+    },
+    {
+        "text": "q53: explain filter function?"
+    },
+    {
+        "text": "q54: explain steps involved in reading and writing a file?"
+    },
+    {
+        "text": "q55: explain the term \u201cwithstatement\u201d?"
+    },
+    {
+        "text": "q56: explain the preferred way of reading a big file?"
+    },
+    {
+        "text": "q57: explain modules in python."
+    },
+    {
+        "text": "q58: explain different ways of importing modules."
+    },
+    {
+        "text": "q59: can we create our own module?"
+    },
+    {
+        "text": "q60: explain in brief about os module and its corresponding functions."
+    },
+    {
+        "text": "q61: using os module print the directory structure."
+    },
+    {
+        "text": "q62: explain dir function."
+    },
+    {
+        "text": "q63: explain exception handling in python."
+    },
+    {
+        "text": "q64: how to create user defined exception?"
+    },
+    {
+        "text": "q65: what is the use of raise statement?"
+    },
+    {
+        "text": "q66: how to create own class in python?"
+    },
+    {
+        "text": "explain constructors."
+    },
+    {
+        "text": "q67: is it necessary to have the first argument of class function as self?"
+    },
+    {
+        "text": "can\u2019t we rename it to any other variable?"
+    },
+    {
+        "text": "q68: explain inheritance in python."
+    },
+    {
+        "text": "q69: how to determine whether a particular class is sub class?"
+    },
+    {
+        "text": "q70: does python support multiple inheritance?"
+    },
+    {
+        "text": "q71: how is diamond problem resolved in case of python?"
+    },
+    {
+        "text": "q72: does python support private method and variables?"
+    },
+    {
+        "text": "q73: can __ be used for other purpose than creating private variables or functions?"
+    },
+    {
+        "text": "q74: does python support abstract classes?"
+    },
+    {
+        "text": "q75: differentiate between static methods and class methods in python."
+    },
+    {
+        "text": "q76: what are named tuple?"
+    },
+    {
+        "text": "q77: how to sort using lamdas?"
+    },
+    {
+        "text": "q78: explain generators?"
+    },
+    {
+        "text": "q79: what is generator expression?"
+    },
+    {
+        "text": "q80: when python program exits, all the memory is released?"
+    },
+    {
+        "text": "say true or false?"
+    },
+    {
+        "text": "q81: can a function be passed as parameter to another function?"
+    },
+    {
+        "text": "q82: can a function be retuned as result from another function?"
+    },
+    {
+        "text": "q83: explain decorator function."
+    },
+    {
+        "text": "q84: how can we represent big text in python?"
+    },
+    {
+        "text": "q85: what is pep 8?"
+    },
+    {
+        "text": "q86: what is anaconda?"
+    },
+    {
+        "text": "q87: how to install external modules?"
+    },
+    {
+        "text": "q88: what is jupyter notebook?"
+    },
+    {
+        "text": "q89: what is pickling and unpickling?"
+    },
+    {
+        "text": "q90: explain the importance of setup.py?"
+    },
+    {
+        "text": "q91: is it possible to make connections to database using python?"
+    },
+    {
+        "text": "q92: explain meta programming?"
+    },
+    {
+        "text": "q93: explain python memory model."
+    },
+    {
+        "text": "1. numpy interview questions q1: what is numpy?"
+    },
+    {
+        "text": "q2: how to install numpy?"
+    },
+    {
+        "text": "q3: how to create single dimension numpy array?"
+    },
+    {
+        "text": "q4: explain different attributes provided by numpy?"
+    },
+    {
+        "text": "q5: explain some utility methods provided by numpy for creating different elements?"
+    },
+    {
+        "text": "q6: how can we change shape of an object?"
+    },
+    {
+        "text": "q7: which all data types are supported in python?"
+    },
+    {
+        "text": "q8: explain various simple mathematical operations which can be done on numpy?"
+    },
+    {
+        "text": "q9: explain slicing operation in numpy?"
+    },
+    {
+        "text": "q10: explain boolean indexing?"
+    },
+    {
+        "text": "q11: perform matrix multiplication using numpy?"
+    },
+    {
+        "text": "q12: explain various functions available with numpy?"
+    },
+    {
+        "text": "q13: what is broadcast?"
+    },
+    {
+        "text": "q14: explain rules of broadcasting."
+    },
+    {
+        "text": "q15: explain some statistical measures supported by numpy."
+    },
+    {
+        "text": "q16: explain functions available in numpy.linalg."
+    },
+    {
+        "text": "q17: how to save numpy data from memory to flat file?"
+    },
+    {
+        "text": "q18: what is the use of where and extract?"
+    },
+    {
+        "text": "q19: what is the use of ndenumerate?"
+    },
+    {
+        "text": "q20: explain how can we draw a histogram using numpy?"
+    },
+    {
+        "text": "1. pandas interview questions q1: what is pandas?"
+    },
+    {
+        "text": "q2: how does pandas represent data?"
+    },
+    {
+        "text": "q3: how to create series?"
+    },
+    {
+        "text": "q4: how to create data frame?"
+    },
+    {
+        "text": "q5: how are missing values represented in data frame?"
+    },
+    {
+        "text": "q6: explain the process of creating indexes w.r.t."
+    },
+    {
+        "text": "pandas?"
+    },
+    {
+        "text": "q7: explain various attributes associated with series."
+    },
+    {
+        "text": "q8: explain various statistical measures supported by pandas."
+    },
+    {
+        "text": "q9: explain reindexing."
+    },
+    {
+        "text": "q10: explain bfill and ffill."
+    },
+    {
+        "text": "q11: what all type of iterations are provided in pandas data frame?"
+    },
+    {
+        "text": "q12: explain how sorting is supported in pandas?"
+    },
+    {
+        "text": "q13: how to override default reload option in pandas?"
+    },
+    {
+        "text": "q14: explain various slicing options available with pandas?"
+    },
+    {
+        "text": "q15: explain advanced statistics with pandas."
+    },
+    {
+        "text": "q16: explain rolling function."
+    },
+    {
+        "text": "q17: how can we handle na in pandas?"
+    },
+    {
+        "text": "q18: explain group by function."
+    },
+    {
+        "text": "q19: explain merge functions w.r.t data frame."
+    },
+    {
+        "text": "q20: explain concat method."
+    },
+    {
+        "text": "q21: explain how time related range can be generated in pandas."
+    },
+    {
+        "text": "q22: explain which all data sources can pandas retrieve values."
+    },
+    {
+        "text": "q23: can you compare some of the functions of r and python?"
+    },
+    {
+        "text": "q24: how to print a histogram using pandas?"
+    },
+    {
+        "text": "1. scipy and its applications q1: explain scipy library."
+    },
+    {
+        "text": "q2: explain how can we perform normality tests."
+    },
+    {
+        "text": "q3: explain how can we perform correlation test?"
+    },
+    {
+        "text": "q4: explain tests pertaining to parametric statistical hypothesis tests."
+    },
+    {
+        "text": "q5: explain how to test nonparametric statistical hypothesis tests."
+    },
+    {
+        "text": "q6: implement logistic regression in python?"
+    },
+    {
+        "text": "q7: explain how to implement decision tree in python."
+    },
+    {
+        "text": "q8: how to implement random forest in python?"
+    },
+    {
+        "text": "q9: how to implement support vector machine in python?"
+    },
+    {
+        "text": "q10: which all kernels are supported by svm in python?"
+    },
+    {
+        "text": "q11: implement knn algorithm using python."
+    },
+    {
+        "text": "q12: how to select k in knn algorithm?"
+    },
+    {
+        "text": "q13: how to implement k means in python?"
+    },
+    {
+        "text": "q14: how can accuracy of any model be calculated?"
+    },
+    {
+        "text": "q15: explain regression metrics."
+    },
+    {
+        "text": "q16: explain how we can print a decision tree or see the rules of the decision tree?"
+    },
+    {
+        "text": "q17: what is the use of boosting techniques?"
+    },
+    {
+        "text": "q18: explain some of the advantages and disadvantages of boosting techniques?"
+    },
+    {
+        "text": "q19: what is adaboost?"
+    },
+    {
+        "text": "q20: explain gradient boosting?"
+    },
+    {
+        "text": "q21: explain xgboost?"
+    },
+    {
+        "text": "q22: explain the differences/similarities between bagging and boosting?"
+    },
+    {
+        "text": "q23: write a small snippet to perform operation with neural networks using tensorflow and keras?"
+    },
+    {
+        "text": "1. matplotlib samples to remember q1: explain how to draw bar plot."
+    },
+    {
+        "text": "q2: how to draw histogram?"
+    },
+    {
+        "text": "q3: how to draw line chart?"
+    },
+    {
+        "text": "q4: draw pie chart."
+    },
+    {
+        "text": "q5: how to get the equation of the line printed line plot?"
+    },
+    {
+        "text": "q6: draw scatter plot."
+    },
+    {
+        "text": "1. statistics with excel sheet q1: does excel has any support for statistics?"
+    },
+    {
+        "text": "q2: find correlation using excel."
+    },
+    {
+        "text": "q3: how to get histogram in excel?"
+    },
+    {
+        "text": "q4: explain how to get descriptive statistics using excel."
+    },
+    {
+        "text": "q5: explain how to perform anova in excel?"
+    },
+    {
+        "text": "q6: explain how to perform rank and percentile in excel."
+    },
+    {
+        "text": "data science basic questions and terms note: [q: question number and ans: answer] q1: explain the steps involved in data science?"
+    },
+    {
+        "text": "ans: following are the steps involved: get data from various data sources available."
+    },
+    {
+        "text": "generate research question from data."
+    },
+    {
+        "text": "identify variables present in data."
+    },
+    {
+        "text": "also, identify important variables or variables to be analyzed as such."
+    },
+    {
+        "text": "generate hypothesis."
+    },
+    {
+        "text": "analyze data using graph data like histogram for example."
+    },
+    {
+        "text": "fit a model from analyzed data."
+    },
+    {
+        "text": "accept or reject the hypothesis."
+    },
+    {
+        "text": "research question answer found."
+    },
+    {
+        "text": "example of above steps: get data related to temperature for india reference https://data.gov.in/catalog/annual-and-seasonal-maximum-temperature-india a template of data set: \u201cyear\u201d,\u201dannual\u201d,\u201djan-feb\u201d,\u201dmar-may\u201d,\u201djun-sep\u201d,\u201doct-dec\u201d \u201c1901\u201d,\u201d28.96\u201d,\u201d23.27\u201d,\u201d31.46\u201d,\u201d31.27\u201d,\u201d27.25\u201d \u201c1902\u201d,\u201d29.22\u201d,\u201d25.75\u201d,\u201d31.76\u201d,\u201d31.09\u201d,\u201d26.49\u201d \u201c1903\u201d,\u201d28.47\u201d,\u201d24.24\u201d,\u201d30.71\u201d,\u201d30.92\u201d,\u201d26.26\u201d \u201c1904\u201d,\u201d28.49\u201d,\u201d23.62\u201d,\u201d30.95\u201d,\u201d30.67\u201d,\u201d26.40\u201d \u201c1905\u201d,\u201d28.30\u201d,\u201d22.25\u201d,\u201d30.00\u201d,\u201d31.33\u201d,\u201d26.57\u201d \u201c1906\u201d,\u201d28.73\u201d,\u201d23.03\u201d,\u201d31.11\u201d,\u201d30.86\u201d,\u201d27.29\u201d \u201c1907\u201d,\u201d28.65\u201d,\u201d24.23\u201d,\u201d29.92\u201d,\u201d30.80\u201d,\u201d27.36\u201d \u201c1908\u201d,\u201d28.83\u201d,\u201d24.42\u201d,\u201d31.43\u201d,\u201d30.72\u201d,\u201d26.64\u201d \u201c1909\u201d,\u201d28.39\u201d,\u201d23.52\u201d,\u201d31.02\u201d,\u201d30.33\u201d,\u201d26.88\u201d \u201c1910\u201d,\u201d28.53\u201d,\u201d24.20\u201d,\u201d31.14\u201d,\u201d30.48\u201d,\u201d26.20\u201d \u201c1911\u201d,\u201d28.62\u201d,\u201d23.90\u201d,\u201d30.70\u201d,\u201d31.14\u201d,\u201d26.31\u201d \u201c1912\u201d,\u201d28.95\u201d,\u201d24.88\u201d,\u201d31.10\u201d,\u201d31.15\u201d,\u201d26.57\u201d \u201c1913\u201d,\u201d28.67\u201d,\u201d24.25\u201d,\u201d30.89\u201d,\u201d30.92\u201d,\u201d26.42\u201d \u201c1914\u201d,\u201d28.66\u201d,\u201d24.59\u201d,\u201d30.73\u201d,\u201d30.84\u201d,\u201d26.40\u201d \u201c1915\u201d,\u201d28.94\u201d,\u201d23.22\u201d,\u201d31.06\u201d,\u201d31.51\u201d,\u201d27.18\u201d \u201c1916\u201d,\u201d28.82\u201d,\u201d24.57\u201d,\u201d31.88\u201d,\u201d30.52\u201d,\u201d26.32\u201d \u201c1917\u201d,\u201d28.11\u201d,\u201d24.52\u201d,\u201d30.06\u201d,\u201d30.24\u201d,\u201d25.74\u201d \u201c1918\u201d,\u201d28.66\u201d,\u201d23.57\u201d,\u201d30.68\u201d,\u201d31.11\u201d,\u201d26.77\u201d research question, is the annual temperature in india rising?"
+    },
+    {
+        "text": "variable of interest from the above data set annual."
+    },
+    {
+        "text": "hypothesis: temperature is rising."
+    },
+    {
+        "text": "analyze data from the above data set."
+    },
+    {
+        "text": "fit the model."
+    },
+    {
+        "text": "hypothesis accepted or rejected."
+    },
+    {
+        "text": "q2: explain variable and different types of variables?"
+    },
+    {
+        "text": "ans: anything which keeps on changing is called variable."
+    },
+    {
+        "text": "variables are of different type and below are the following: dependant/outcome: a variable being affected, for example annual temperature in above example."
+    },
+    {
+        "text": "independent/predictor: a variable affecting the outcome for e.g."
+    },
+    {
+        "text": "deforestation, pollution, and so on in above example."
+    },
+    {
+        "text": "q3: explain categorical measurement?"
+    },
+    {
+        "text": "ans: categorical measurement contains categories i.e."
+    },
+    {
+        "text": "distinct entities."
+    },
+    {
+        "text": "example of categories of life on earth is plants, animals, and so on."
+    },
+    {
+        "text": "q4: explain binary variables?"
+    },
+    {
+        "text": "ans: binary variables are those in which only two classes exist, like live or dead male or female on or off."
+    },
+    {
+        "text": "q5: explain nominal measurement?"
+    },
+    {
+        "text": "ans: nominal measurements are there more than two classes."
+    },
+    {
+        "text": "such categories can be numbers too."
+    },
+    {
+        "text": "q6: explain ordinal variable?"
+    },
+    {
+        "text": "ans: these are nominal variables which have logical order."
+    },
+    {
+        "text": "examples include team ranks in cricket or football, merit list of students appearing for grade students."
+    },
+    {
+        "text": "q7: explain continuous variables?"
+    },
+    {
+        "text": "ans: these are variables which can take can any value on the measurement scale example includes pitch of voice which can take any possible value within the range."
+    },
+    {
+        "text": "q8: explain discrete variables?"
+    },
+    {
+        "text": "ans: these are variables which can take fixed values in range."
+    },
+    {
+        "text": "for example, number of customers in a bank."
+    },
+    {
+        "text": "q9: is it possible to convert continuous values to discrete and vice versa?"
+    },
+    {
+        "text": "ans: yes, based upon the motive of study, it is possible to convert discrete values to continuous and vice versa for example, level of water in tank can take any value in the range and as such a continuous variable."
+    },
+    {
+        "text": "but we can approximate the same to three different levels like empty, full, or half empty and this now becomes discrete in nature."
+    },
+    {
+        "text": "q10: what are interval variables?"
+    },
+    {
+        "text": "ans: these are variables which are grouped on interval."
+    },
+    {
+        "text": "example is age can be divided in range like 10-20, 20-30 and so on and, person with particular age would be placed in one of the above groups."
+    },
+    {
+        "text": "when intervals are equal, they represent difference in equal property being measured."
+    },
+    {
+        "text": "q11: what are ratio variables?"
+    },
+    {
+        "text": "ans: this is sub type of interval variables where ratio of scales is used for measurement."
+    },
+    {
+        "text": "for example water representation in chemistry is h 2 o which represent two molecules of hydrogen and one molecule of oxygen."
+    },
+    {
+        "text": "thus, the ratio of elements is 2: 1. q12: what are univariate and bivariate variables?"
+    },
+    {
+        "text": "ans: univariate variable: when the variable under consideration is only one then it is called univariate variable study."
+    },
+    {
+        "text": "bivariate variable: involves study of relationship between two variables."
+    },
+    {
+        "text": "q13: what is measurement error?"
+    },
+    {
+        "text": "ans: the discrepancy between the measured value and actual value in terms of number is called measurement error."
+    },
+    {
+        "text": "for example while buying fruits from a vendor in kilograms, if we wanted 1 kilogram of fruits and the vendor\u2019s weighing machine showed 1 kilogram when we brought the same."
+    },
+    {
+        "text": "after checking the same in another machine, if the measured value shows 0.1 kilogram less than expected then this difference is what we call as measurement error."
+    },
+    {
+        "text": "q14: explain validity?"
+    },
+    {
+        "text": "ans: validity implies whether an instrument measures what it is supposed to measure."
+    },
+    {
+        "text": "q15: explain reliability?"
+    },
+    {
+        "text": "ans: reliability implies whether the instrument gives consistent result across different conditions."
+    },
+    {
+        "text": "for example, if we test the same value twice on the same entity then the results from the instrument should remain same if it has to be reliable."
+    },
+    {
+        "text": "such tests are known as test-retest."
+    },
+    {
+        "text": "q16: what are the different ways to test hypotheses?"
+    },
+    {
+        "text": "ans: there are two ways in which hypotheses can be tested: correlational research this is also known as cross-sectional research this involves observing the natural pattern or occurrence to test original occurrences are not manipulated experimental research we select the variables of interest then we manipulate some aspect of the environment observe the effect on selected variable q17: explain the different types of variation?"
+    },
+    {
+        "text": "ans: there are two types in variation explained as follows: systematic variation: introduced by experimenter the participants are tested under different conditions and the difference in condition is introduced by experimenter for example to test use of woolen clothes w.r.t."
+    },
+    {
+        "text": "temperature, we can test a group of 20 people, in both hot and cold climate."
+    },
+    {
+        "text": "thus, the difference introduced here is in terms of temperature only."
+    },
+    {
+        "text": "unsystematic variation: introduced by random factors that exist between the experimental conditions."
+    },
+    {
+        "text": "for example to test use of woolen clothes w.r.t."
+    },
+    {
+        "text": "temperature, we can test a group of 20 people."
+    },
+    {
+        "text": "of the selected set some might behave differently than expected due to factors like illness and so on."
+    },
+    {
+        "text": "q18: explain repeated-measures design?"
+    },
+    {
+        "text": "ans: same measure is measured under different conditions on same set participants."
+    },
+    {
+        "text": "the difference in two conditions can be caused by the following: the manipulation/changes that was carried out on the participants factors that might affect the way in which a participant performs from one time to the next q19: what is independent design?"
+    },
+    {
+        "text": "ans: same measure is measured under different conditions on different set of participants."
+    },
+    {
+        "text": "the differences between the two conditions can be caused by the following: the manipulation/changes that were carried out on the participants difference in nature or characteristics of participants in each case q20: explain the role of randomization w.r.t variation?"
+    },
+    {
+        "text": "ans: by using randomization we can ensure that any variation introduced, is due to changes in the conditions/variables introduced rather than any other unexpected changes during the process."
+    },
+    {
+        "text": "thus, it helps in removing other sources of systematic variation."
+    },
+    {
+        "text": "q21: explain various summary measures."
+    },
+    {
+        "text": "ans: mode: represents the value/score which occurs most frequently in data set."
+    },
+    {
+        "text": "for example: in the values of occurrences of goal in football by players having t-shirt numbers is as follows: 1, 2, 2, 3, 4, 1, 1, 1, 1, 1, 1 if we arrange it in form of table: thus the mode in above example is 1 which happens to have maximum frequency of 7. this can be easily determined from histogram as shown in the following screenshot: median: this is the middle value which is obtained by ordering the values/scores in ascending order."
+    },
+    {
+        "text": "if the middle value happens to have two numbers then the average is taken as such: for example: median of 2, 3, 4, 5, 6 happens to be 4. median of 2, 3, 4, 5 happens to be average of 3 and 4 which is 3.5."
+    },
+    {
+        "text": "median is least affected by outliers."
+    },
+    {
+        "text": "mean: represents mathematical average which is sum of all the elements divided by number of elements."
+    },
+    {
+        "text": "for example, average strike rate of the batsmen in the game of cricket is the average of strike rates in individual matches."
+    },
+    {
+        "text": "range of scores: subtraction between the maximum value and minimum value in range is called range of scores."
+    },
+    {
+        "text": "this indicates dispersion."
+    },
+    {
+        "text": "trimmed mean: represents the mean after removing extreme cases from both the end i.e."
+    },
+    {
+        "text": "from minimum and maximum end."
+    },
+    {
+        "text": "both the minimum and maximum values may represent values which are not normal and hence represent outlier."
+    },
+    {
+        "text": "so, while fining trimmed mean, we specify the percentage of values to be ignored from both the ends."
+    },
+    {
+        "text": "hence, trimmed mean gives better representation of data excluding outlier."
+    },
+    {
+        "text": "interquartile range (iqr) it is a measure of variability, based on dividing a data set into quartiles."
+    },
+    {
+        "text": "quartiles are the three values that split the sorted data into four equal parts: q1 is the middle value in the first half of the rank-ordered data set q2 is the median value in the set q3 is the middle value in the second half of the rank-ordered data set the interquartile range is equal to q3 minus q1."
+    },
+    {
+        "text": "the lower quartile is the median of the lower half of the data."
+    },
+    {
+        "text": "the upper quartile is the median of the upper half of the data."
+    },
+    {
+        "text": "mean absolute deviation: represents the mean of the absolute value of the deviations from the mean."
+    },
+    {
+        "text": "mean absolute deviations from median: represented by absolute value of the deviations from the median."
+    },
+    {
+        "text": "outliers: represents the value which are not normal or within the range and hence data which is corrupted at the time of capture or due to some other reasons."
+    },
+    {
+        "text": "since it affects all while finding the mean and other summary values they need to represent this data properly."
+    },
+    {
+        "text": "q22: explain alternate hypotheses and null hypotheses."
+    },
+    {
+        "text": "ans: alternative hypotheses: also called experimental hypotheses denoted by h 1 it assumes that effect as per prediction would exist in the conclusion null hypotheses: denoted by h 0 it assumes that effect as per prediction would not exist in the conclusion thus, this represents opposite of alternative hypotheses q23: what is p value?"
+    },
+    {
+        "text": "ans: it measures the strength of evidence in support of null hypotheses."
+    },
+    {
+        "text": "if this value is less than significance level then null hypotheses is accepted, else rejected."
+    },
+    {
+        "text": "the range of values that leads the researcher to accept the null hypothesis is called the region of acceptance."
+    },
+    {
+        "text": "the region other than acceptance is called region of rejection."
+    },
+    {
+        "text": "q24: what happens when null hypotheses is rejected?"
+    },
+    {
+        "text": "ans: when a null hypothesis is rejected, it becomes type 1 error."
+    },
+    {
+        "text": "the probability of type 1 error occurring is called significance level."
+    },
+    {
+        "text": "q25: explain directional and non-directional hypotheses."
+    },
+    {
+        "text": "ans: directional hypotheses: gives an indication whether the effect which is being studied would grow positively or negatively one tailed test is generally used for such cases non directional hypotheses: does not give indication of whether the effect which is being studied would grow positively or negatively two tailed test is generally used for such cases q26: explain fit of model?"
+    },
+    {
+        "text": "ans: it represents the degree till which the determined statistical model represents the data."
+    },
+    {
+        "text": "fit of model can represent either under fit, over fit, or perfect fit as such."
+    },
+    {
+        "text": "a model which is good fit would have low variance between the calculated value and measured value."
+    },
+    {
+        "text": "q27: what is relation between sample and population?"
+    },
+    {
+        "text": "ans: samples are subset or part of original data or population."
+    },
+    {
+        "text": "if population is very big hence performing analysis on the whole population as such is not easy."
+    },
+    {
+        "text": "hence, a subset of population data is taken which is known as sample data."
+    },
+    {
+        "text": "whether the sample data is true representation of original data set considered is determined with the help of estimation, confidence interval, and so on."
+    },
+    {
+        "text": "q28: what is estimation?"
+    },
+    {
+        "text": "ans: by using information available from sample, we can make inferences w.r.t."
+    },
+    {
+        "text": "population, which is what is known as estimation."
+    },
+    {
+        "text": "parameters used are mean, standard deviation, and so on."
+    },
+    {
+        "text": "q29: explain deviation score?"
+    },
+    {
+        "text": "ans: this is defined as the difference between actual score/value and mean."
+    },
+    {
+        "text": "q30: explain variance?"
+    },
+    {
+        "text": "ans: variance is the average error between the mean and the measured values."
+    },
+    {
+        "text": "it indicates the difference between the average value calculated and the observed value as such."
+    },
+    {
+        "text": "it is an indication of how different individuals in group differ or vary from each other."
+    },
+    {
+        "text": "the population variance is given: pv = \u03c3 (xi - x)2 / n pv is the population variance"
+    },
+    {
+        "text": "x is the population mean xi is the i th element from the population n is the number of elements in the population the sample variance is given by: sv = \u03c3 (xi \u2013 x)2 / (n \u2013 1) sv is the sample variance x is the sample mean xi is the i th element from the sample n is the number of elements in the sample q31: explain standard deviation."
+    },
+    {
+        "text": "ans: square root of the variance is also called standard deviation."
+    },
+    {
+        "text": "this is done to keep the measurement same as original one."
+    },
+    {
+        "text": "they indicate the nearness of the points measured w.r.t."
+    },
+    {
+        "text": "mean."
+    },
+    {
+        "text": "smaller the standard deviation will be more nearer to mean and vice versa."
+    },
+    {
+        "text": "q32: explain standard error."
+    },
+    {
+        "text": "ans: standard error indicates how well a sample represents the original population."
+    },
+    {
+        "text": "when we break the original population into various small samples, we would like to know the difference between the sample considered and original population."
+    },
+    {
+        "text": "this is represented by standard error."
+    },
+    {
+        "text": "the smaller the standard error, the closer or true representation of original population."
+    },
+    {
+        "text": "se = \u03c3 (sample mean \u2013 overall population mean)2 / (number of samples) q33: what is precision?"
+    },
+    {
+        "text": "ans: it refers to the closeness between estimates from different samples."
+    },
+    {
+        "text": "thus indicating the opposite of standard error and are inversely related to standard error."
+    },
+    {
+        "text": "q34: explain confidence intervals."
+    },
+    {
+        "text": "ans: this indicates the boundaries in which the mean value will fall."
+    },
+    {
+        "text": "it is a range of scores constructed, such that the population mean will fall within."
+    },
+    {
+        "text": "they are limits constructed such that for a certain percentage of the time the true value of the population mean will fall within these range."
+    },
+    {
+        "text": "q35: explain confidence level."
+    },
+    {
+        "text": "ans: refers to the percentage of all possible samples that can be expected to include the true population parameter."
+    },
+    {
+        "text": "q36: explain alpha."
+    },
+    {
+        "text": "ans: alpha is defined as 1-confidence interval."
+    },
+    {
+        "text": "this implies probability that the true value remains outside the confidence interval."
+    },
+    {
+        "text": "if confidence interval is 99% then alpha is 1-99% which is 0.01. q37: explain beta."
+    },
+    {
+        "text": "ans: the probability of committing type 2 error is called beta."
+    },
+    {
+        "text": "type 2 error is one in which a rejected null hypotheses is accepted."
+    },
+    {
+        "text": "the probability of avoiding type 2 error is called power of test."
+    },
+    {
+        "text": "q38: explain accuracy."
+    },
+    {
+        "text": "ans: it indicates how much does sample value or parameters matches with the population statistic."
+    },
+    {
+        "text": "if the value of mean of both sample and"
+    },
+    {
+        "text": "population are exactly equal then we can say that the sample is fully accurate."
+    },
+    {
+        "text": "if not fully equal then we say that sample is accurate by n limit where n is the difference between sample and population."
+    },
+    {
+        "text": "q39: explain bias."
+    },
+    {
+        "text": "ans: bias indicates whether the estimation of sample is over fit or under fit w.r.t."
+    },
+    {
+        "text": "population data."
+    },
+    {
+        "text": "for e.g."
+    },
+    {
+        "text": "if the population mean is 4 and sample mean calculated is 3 then this is under estimate bias."
+    },
+    {
+        "text": "such estimate in which both sample and population parameter is not equal are called bias estimate."
+    },
+    {
+        "text": "q40: what is central limit theorem?"
+    },
+    {
+        "text": "ans: it states that the distribution of the mean of any independent, random variable can be approximated to normal if the sample size is large enough."
+    },
+    {
+        "text": "generally, the sample size of above 30 or sometimes 40 is taken as reference."
+    },
+    {
+        "text": "this all ows us to approximate bigger samples to normal distribution without having to take hundreds or thousands of distribution."
+    },
+    {
+        "text": "standard normal distribution is preferred as such because mean is equal to zero and variance is one."
+    },
+    {
+        "text": "q41: explain absolute value?"
+    },
+    {
+        "text": "ans: absolute value is positive value or magnitude irrespective of its initial sign."
+    },
+    {
+        "text": "q42: what is degree of freedom?"
+    },
+    {
+        "text": "ans: it is equal to the number of independent observations in a sample minus number of population parameters to be estimated."
+    },
+    {
+        "text": "q43: explain cluster sampling."
+    },
+    {
+        "text": "ans: in this method the number of clusters or groups to be formed as pre decided (generally denoted by n) from population data."
+    },
+    {
+        "text": "the number of elements in each cluster is known and each element from population data is assigned to one cluster."
+    },
+    {
+        "text": "for e.g."
+    },
+    {
+        "text": "clustering can be done on attributes like customer state."
+    },
+    {
+        "text": "sampling can be further classified as: one-stage sampling: all of the elements within selected clusters are included in the sample."
+    },
+    {
+        "text": "two-stage sampling: a subset of elements within selected clusters is randomly selected."
+    },
+    {
+        "text": "q44: explain correlation coefficients?"
+    },
+    {
+        "text": "ans: correlation indicates the relationship between two variables."
+    },
+    {
+        "text": "as such variables can be positively correlated in which positive change in one variable effect the other variable positively."
+    },
+    {
+        "text": "if variables are negatively correlated the positive change in one variable affects the other variable negatively."
+    },
+    {
+        "text": "the formula for above is given by: correlation co-efficient = \u03c3( xy )/ sqrt [(\u03c3 x 2 ) * (\u03c3 y 2 )], where x and y are variables under consideration."
+    },
+    {
+        "text": "the value of correlation co-efficient ranges from -1 to +1."
+    },
+    {
+        "text": "q45: explain sample space."
+    },
+    {
+        "text": "ans: the outcomes of any statistical experiment are denoted by sample space."
+    },
+    {
+        "text": "any outcome from such space is called sample point."
+    },
+    {
+        "text": "one or more sample point is called event."
+    },
+    {
+        "text": "when events do not have any sample point in common they are known as mutually exclusive event."
+    },
+    {
+        "text": "q46: what is non parametric algorithm?"
+    },
+    {
+        "text": "ans: non parametric algorithm does not make any assumptions on data distribution."
+    },
+    {
+        "text": "q47: how can learning be classified?"
+    },
+    {
+        "text": "ans: following are the classifications: supervised: data is clearly labeled and the algorithms learn to predict the output from the input data offline analysis of data possible the number of classes are predefined accuracy is high examples include classification and regression unsupervised: much amount of data is unlabeled and the algorithms learn to inherent structure from the input data analysis is on real time data number of classes may be unknown accuracy ranges from moderate to high examples include clustering and association semi-supervised: a mixture of data having label and no labels forms this one can be considered as intermediate to above two q48: what is classification?"
+    },
+    {
+        "text": "ans: classification predictive modeling is the task of approximating a mapping function (f) from input variables (x) to discrete output variables (y)."
+    },
+    {
+        "text": "the output variables are often called labels or categories."
+    },
+    {
+        "text": "the mapping function predicts the class or category for a given observation."
+    },
+    {
+        "text": "q49: explain the steps involved in classification."
+    },
+    {
+        "text": "ans: q50: what is regression?"
+    },
+    {
+        "text": "ans: regression predictive modeling is the task of approximating a mapping function (f) from input variables (x) to a continuous output variable (y)."
+    },
+    {
+        "text": "a continuous output variable can be a real-value, such as an integer or floating point value and be any measures such as size amount, and so on."
+    },
+    {
+        "text": "error indicates the difference between actual value and predicted value in case of regression mostly root mean square error is used w.r.t."
+    },
+    {
+        "text": "regression."
+    },
+    {
+        "text": "q51: explain the similarities and differences between classification and regression."
+    },
+    {
+        "text": "ans: differences between classification and regression: the similarities are that both try to make prediction based on input values."
+    },
+    {
+        "text": "q52: explain various terms encountered during classification algorithm."
+    },
+    {
+        "text": "ans: classifier is an algorithm that maps the input data to a specific category."
+    },
+    {
+        "text": "classification model: after analyzing input data, a classification model is made."
+    },
+    {
+        "text": "the model can take new data as input and predict the class labels/categories."
+    },
+    {
+        "text": "feature: a feature is an individual measurable property of a phenomenon being observed."
+    },
+    {
+        "text": "binary classification: classification task with two possible outcomes."
+    },
+    {
+        "text": "multi class classification: classification with more than two classes is involved."
+    },
+    {
+        "text": "in multi class classification each sample is assigned to one and only one target label."
+    },
+    {
+        "text": "e.g."
+    },
+    {
+        "text": "an item can be classified as fruit or vegetable not both."
+    },
+    {
+        "text": "multi label classification: classification task where each sample is mapped to a set of target labels having more than one class."
+    },
+    {
+        "text": "example: a fruit can be classified as sweet and sour both."
+    },
+    {
+        "text": "q53: explain multi class classification?"
+    },
+    {
+        "text": "ans: whenever we have more than two, that is, three or more classes to classify it is called multi class classification."
+    },
+    {
+        "text": "this is also known as a multi nominal classification."
+    },
+    {
+        "text": "by default, all the algorithms of scipy are multi class."
+    },
+    {
+        "text": "some of the strategies involved are: one vs. rest (one vs. all) trains a single classifier per class."
+    },
+    {
+        "text": "the samples that match with the class are positive, and that which does not match is negative."
+    },
+    {
+        "text": "one vs. one: we pick a pair of classes from a set of n classes develop a binary classifier for each selected pair for n classes, all possible combinations of pairs of classes from n are selected then, for each pair, we develop a binary support vector machine (svm) q54: explain multi label classification?"
+    },
+    {
+        "text": "ans: whenever we have more than one target variables associated with a problem, we call that as multi label classification."
+    },
+    {
+        "text": "for example: while classifying fruit, we can classify it as fruit, sweet, red-colored, and so on."
+    },
+    {
+        "text": "as we can clearly see, we have assigned multi labels to the same object."
+    },
+    {
+        "text": "q55: explain how multi label problem can be solved?"
+    },
+    {
+        "text": "ans: following are different ways in which it can be achieved: binary relevance: in this technique, we treat each label as a separate single class classification problem."
+    },
+    {
+        "text": "achieved with the help of skmultilearn.problem_transform.binaryrelevance sample: fromskmultilearn.problem_transform import binaryrelevance classifier = binaryrelevance(any model) classifier chains: a chain of a classifier is formed in which input passed to the first classifier is trained and passed on to the next classifier and so on."
+    },
+    {
+        "text": "skmultilearn.problem_transform.classifierchain is used for this purpose: fromskmultilearn.problem_transform import classifierchain classifier = classifierchain(model) label power set: in this we try to form a single model which would try to solve the multi class model problem."
+    },
+    {
+        "text": "skmultilearn.problem_transform.labelpowerset is used: fromskmultilearn.problem_transform import labelpowerset classifier = labelpowerset(model) q56: explain some important metrics with respect to testing a model?"
+    },
+    {
+        "text": "ans: true positive indicates that the model was able to predict the positive outcome correctly."
+    },
+    {
+        "text": "it indicates that the model is able to identify the condition when the condition is present."
+    },
+    {
+        "text": "true negative indicates the model is able to properly predict the negative class."
+    },
+    {
+        "text": "it indicates that the model does not find the condition when the condition is not present."
+    },
+    {
+        "text": "false positive indicates the model wrongly predicts the positive class."
+    },
+    {
+        "text": "it indicates that the model finds or reports a condition when the condition is not present."
+    },
+    {
+        "text": "false negative indicates the model wrongly predicts the negative class."
+    },
+    {
+        "text": "it indicates that the model does not report a condition when it is actually present."
+    },
+    {
+        "text": "all the four conditions are easily indicated by confusion metrics:"
+    },
+    {
+        "text": "figure 1 recall /sensitivity / true positive rate (also known as tpr) ability to determine the condition when the condition is present."
+    },
+    {
+        "text": "it can be found by: true positive/ (true positive + false negative) specificity/ true negative rate (also known as tnr): it indicates the ability to not detect the condition when the condition is not actually present."
+    },
+    {
+        "text": "it can be found by true negative/ (true negative + false positive) precision/ predictive value positive: this indicates the number of items correctly identified as positive from total items true positive/ (true positive + false positive) false positive rate or type i error: number of items which are wrongly identified as positive from total true negatives false positive/ (false positive + true negative) false negative rate or type ii error: this indicates the number of items wrongly identified as negative out of total true positives false negative/ (false negative + true positive) q57: what is logistic regression?"
+    },
+    {
+        "text": "ans: logistic regression also known as logit model is most useful for understanding the influence of several independent variables on a single outcome variable."
+    },
+    {
+        "text": "function representation: p = 1/1 + e \u2013(\u03b20 + \u03b21x1 + \u03b22x2... \u03b2 n x n ) it is a kind of predictive analysis."
+    },
+    {
+        "text": "in this algorithm, the probabilities describing the possible outcomes of a single trial are modeled using a logistic function."
+    },
+    {
+        "text": "disadvantages: assumes all predictors are independent of each other which may not always be true."
+    },
+    {
+        "text": "works only when the predicted or output variable is binary."
+    },
+    {
+        "text": "q58: explain nai\u0308ve bayes."
+    },
+    {
+        "text": "ans: naive bayes algorithm based on bayes\u2019 theorem with the assumption of independence between every pair of features."
+    },
+    {
+        "text": "this implies the predictors are independent of each other."
+    },
+    {
+        "text": "let p(c|x) is the posterior probability of class (c, target) given predictor ( x , attributes)."
+    },
+    {
+        "text": "p(c) is the prior probability of class."
+    },
+    {
+        "text": "p(x|c) is the likelihood which is the probability of predictor given class."
+    },
+    {
+        "text": "p(x) is the prior probability of predictor."
+    },
+    {
+        "text": "advantages: are extremely fast training set required is less performs well for categorical values disadvantages: zero frequency problems will occur if some of the categories is missed and as a result the effect of same would be neglected assumes independence of predictors which is not always true in real world q59: what is stochastic gradient descent?"
+    },
+    {
+        "text": "ans: gradient is an effective method to calculate parameters or co-efficient which would cause the cost to minimum."
+    },
+    {
+        "text": "the process involves assuming some value as co-efficient and keeping on calculating the slope and adjusting the co-efficient till a minimum cost is found."
+    },
+    {
+        "text": "but when the logic is applied on very large data set, it becomes slow."
+    },
+    {
+        "text": "stochastic gradient descent is used for this purpose."
+    },
+    {
+        "text": "in this, calculation is done based on batch instances rather than at the end."
+    },
+    {
+        "text": "advantages: the algorithm is extremely effective easy to use disadvantages: requires large number of parameters q60: explain decision tree algorithm."
+    },
+    {
+        "text": "ans: decision tree generates the set of rules which depends on attributes or features and based upon classes."
+    },
+    {
+        "text": "a decision tree is an inverse tree."
+    },
+    {
+        "text": "the node at the top is called root node and the one without any child is called leaves."
+    },
+    {
+        "text": "each part of decision tree represents something which is indicated: each attribute/feature is represented by node rule or decision is represented by link leaf node or node without children represents an the output class it uses a recursive approach."
+    },
+    {
+        "text": "the aim is to divide the given data to various groups or classes based upon cost function."
+    },
+    {
+        "text": "classification and regression trees are also known as cart ."
+    },
+    {
+        "text": "advantages: requires small data preparation simple to understand and visualize can handle dataset which can contain numbers can handle dataset which can contain data in the form of categories disadvantages: outliers can have severe effect on output."
+    },
+    {
+        "text": "changes in input data does have an important effect on output."
+    },
+    {
+        "text": "q61: what is gini index?"
+    },
+    {
+        "text": "ans: the gini index is the cost function used to evaluate splits in the dataset."
+    },
+    {
+        "text": "it gives the measure of impurity."
+    },
+    {
+        "text": "how effective is the split of data based upon features can be easily determined by gini index."
+    },
+    {
+        "text": "a gini score of 0 is ideal expected result while one having half-half probability is not preferred."
+    },
+    {
+        "text": "q62: is gini index the only means which can be used in decision tree?"
+    },
+    {
+        "text": "ans: entrophy is another measure which can be used with decision tree."
+    },
+    {
+        "text": "q63: what is pruning w.r.t."
+    },
+    {
+        "text": "decision tree?"
+    },
+    {
+        "text": "ans: pruning refers to the removal of branches having low importance in terms of classification or regression."
+    },
+    {
+        "text": "the advantages are reduced complexity and reducing over fitting."
+    },
+    {
+        "text": "the algorithm basically calculates whether removing a particular node causes an impact on prediction precision of the tree."
+    },
+    {
+        "text": "q64: what is random forest?"
+    },
+    {
+        "text": "ans: random forest is a meta-estimator that fits a number of decision trees."
+    },
+    {
+        "text": "it makes use of average to improve the ability to predict the model."
+    },
+    {
+        "text": "the output from each decision tree is used to finally predict the final model and for doing this, it makes use of majority voting."
+    },
+    {
+        "text": "the data is classified on the class which has majority voting."
+    },
+    {
+        "text": "to generate this forest, sub samples are used and using sub samples from original data set sub trees are created."
+    },
+    {
+        "text": "advantages: over fitting is reduced."
+    },
+    {
+        "text": "disadvantages: it\u2019s slow as real time updates take time."
+    },
+    {
+        "text": "q65: explain the difference between random forest and decision tree."
+    },
+    {
+        "text": "ans: q66: what is overfitting and underfitting?"
+    },
+    {
+        "text": "ans: following is the explanation for overfitting and underfitting: overfitting: refers to a model which performs very well w.r.t."
+    },
+    {
+        "text": "training set."
+    },
+    {
+        "text": "such model is able to predict the noise and randomness w.r.t."
+    },
+    {
+        "text": "training set very well but would not perform well when it comes to newly arrived data."
+    },
+    {
+        "text": "occurs with nonparametric and nonlinear models."
+    },
+    {
+        "text": "underfitting: refers to a model that does not perform well both with training set and newly arrived data."
+    },
+    {
+        "text": "an underfitted model would be directly rejected due to its performance via benchmark and accuracy."
+    },
+    {
+        "text": "q67: what are the reasons for under fitting occurrences?"
+    },
+    {
+        "text": "ans: under fitting is said to happen when a model is unable to capture or understand the nature of data."
+    },
+    {
+        "text": "this has a direct impact on the accuracy of the model."
+    },
+    {
+        "text": "the reason for this could be: less data available to analyze wrong data wrong features considered it could be also be due to wrong formed model the solution to under fitting is to make use of more data and possibly even clean data by removing unwanted features or columns."
+    },
+    {
+        "text": "shown below is how under fitting looks when plotted"
+    },
+    {
+        "text": "figure 2 q68: does over fitting get affected by noise?"
+    },
+    {
+        "text": "ans: over fitting is said to happen when a model gets easily affected by noise or outliers."
+    },
+    {
+        "text": "the details available in such a case are more, and as a result of this, model gets affected."
+    },
+    {
+        "text": "following is the over fitting diagram when plotted: figure 3 over fitting can be overcome by: pruning: pruning as the name suggests, is cutting."
+    },
+    {
+        "text": "we prune wanted data in addition to nodes that gets easily affected by wrong data."
+    },
+    {
+        "text": "cross-validation: sample prediction error is one way that helps on the problem of over fitting."
+    },
+    {
+        "text": "this is generally accomplished with the help of k fold validation."
+    },
+    {
+        "text": "in k fold validation, the original sample data is categorized into k subsets."
+    },
+    {
+        "text": "one of the samples is used for testing, and remaining subsets are used to form the model."
+    },
+    {
+        "text": "the output results which would be collected and then averaged out get the final estimation."
+    },
+    {
+        "text": "regularization: the aim of this is to find out features that align with the objective of the problem and thus removing features that do not contribute to the final output."
+    },
+    {
+        "text": "q69: explain knn (k nearest neighbour) steps involved, advantage and disadvantage."
+    },
+    {
+        "text": "ans: knn abbreviation is k nearest neighbor and is explained down below: not an eager learner i.e."
+    },
+    {
+        "text": "learns lazily it stores instances of training set."
+    },
+    {
+        "text": "the output is determined by majority vote which is given by k nearest neighbors of each point."
+    },
+    {
+        "text": "steps involved are as follows: calculate the distance."
+    },
+    {
+        "text": "find the closest neighbors."
+    },
+    {
+        "text": "vote for labels."
+    },
+    {
+        "text": "advantages: much faster."
+    },
+    {
+        "text": "no need to train a model for generalization."
+    },
+    {
+        "text": "can be used for nonlinear data and regression problems."
+    },
+    {
+        "text": "disadvantages: large memory foot print."
+    },
+    {
+        "text": "performance decreases with increase in number of dimensions."
+    },
+    {
+        "text": "q70: explain selection bias."
+    },
+    {
+        "text": "ans: selection bias is the bias introduced by the selection of individuals, groups or data for analysis in such a way that proper randomization is not achieved, thereby ensuring that the sample obtained is not representative of the population intended to be analyzed."
+    },
+    {
+        "text": "they are systematic in nature and produced by the measurement or sampling process."
+    },
+    {
+        "text": "q71: what does selection bias indicate w.r.t."
+    },
+    {
+        "text": "algorithm?"
+    },
+    {
+        "text": "ans: it indicates that some important variable has been left off or not considered during the algorithm."
+    },
+    {
+        "text": "q72: what is bootstrap sample?"
+    },
+    {
+        "text": "ans: bootstrap sample is used to estimate the distribution."
+    },
+    {
+        "text": "a sample taken with replacement from an observed data set is called bootstrap sample."
+    },
+    {
+        "text": "q73: what is resampling?"
+    },
+    {
+        "text": "ans: resampling combines shuffling and bootstrapping."
+    },
+    {
+        "text": "q74: explain tail."
+    },
+    {
+        "text": "ans: tail is the portion of frequency distribution where extreme values are observed at a very low frequency."
+    },
+    {
+        "text": "q75: explain the difference between one way test and two way test."
+    },
+    {
+        "text": "ans: one-way test it is the hypothesis test where results occur only in one direction."
+    },
+    {
+        "text": "two-way test it is the hypothesis test where results occur in two directions."
+    },
+    {
+        "text": "q76: explain degree of freedom."
+    },
+    {
+        "text": "ans: it indicates how much value from given samples are supposed to vary to give the required result."
+    },
+    {
+        "text": "in a sample of 5 we can say 4 values can vary if the mean is known and 4 values are known."
+    },
+    {
+        "text": "q77: what is predictive modeling?"
+    },
+    {
+        "text": "ans: prediction modeling involves building a model which will allow predicting a result/events/behavior whether value of input variables are given."
+    },
+    {
+        "text": "to find out the relationship of input variables and how they affect the output forms the part of regression study."
+    },
+    {
+        "text": "q78: what is time series analysis?"
+    },
+    {
+        "text": "ans: analysis which makes use of data in a particular time interval or periods is called time series analysis."
+    },
+    {
+        "text": "temporal aspects continue in this type of analysis."
+    },
+    {
+        "text": "it may involve observation of a variable at different time instances (time series data) or collecting different data at same point of time (cross sectional data) or a combination of both (pooled data)."
+    },
+    {
+        "text": "q79: what is deep learning?"
+    },
+    {
+        "text": "ans: deep learning makes it possible to learn by existing examples."
+    },
+    {
+        "text": "the models are generated by computer by using existing examples."
+    },
+    {
+        "text": "the underlying relationship of data can be determined with the help of neural network neural network consists of various nodes or computers interconnected to perform complex/vast computation."
+    },
+    {
+        "text": "to achieve deep learning we require large amount of labeled data set as well as large computing capability."
+    },
+    {
+        "text": "again, deep learning is a part of machine learning where the scale of operation is much higher."
+    },
+    {
+        "text": "q80: what is convolutional neural network?"
+    },
+    {
+        "text": "ans: cnn or convnet stands for convolutional neural network, is a type of learning in which model learns to perform classification of models."
+    },
+    {
+        "text": "it eliminates the need to perform manual feature extraction."
+    },
+    {
+        "text": "it allows this with the help of many layers many of which can be hidden."
+    },
+    {
+        "text": "q81: what are different ways to determine optimal value of clusters?"
+    },
+    {
+        "text": "ans: elbow method: makes use of sum of squares of each cluster is calculated."
+    },
+    {
+        "text": "the calculated values is then plotted in the form of graph."
+    },
+    {
+        "text": "the best solution is selected based on graph by looking at the slope gap method: this makes use of gap value which is determined by looking at the variation between clusters for various values of k under null reference silhouette method: makes use of silhouette average to compute the best performing cluster."
+    },
+    {
+        "text": "the above average is determined by looking at consistency within cluster q82: what are various distance related functions for similarity measures?"
+    },
+    {
+        "text": "ans: some of the common ones are euclidean distance, cosine similarity, pearson\u2019s coefficient and jaccard similarity."
+    },
+    {
+        "text": "python programming questions note: [q: question number and ans: answer] q1: is python object oriented?"
+    },
+    {
+        "text": "ans: yes, python is an object oriented programming language since we can deal with classes and objects."
+    },
+    {
+        "text": "q2: is python case sensitive?"
+    },
+    {
+        "text": "ans: yes q3: what kind of language is python?"
+    },
+    {
+        "text": "ans: python is interpreted programming language."
+    },
+    {
+        "text": "q4: what are different versions of python?"
+    },
+    {
+        "text": "ans: python comes with two major versions 2.x and 3.x."
+    },
+    {
+        "text": "there are lots of differences between both of them."
+    },
+    {
+        "text": "following are some of them: q5: explain different implementations of python?"
+    },
+    {
+        "text": "ans: following are different implementations: cpython: reference implementation written in c and native python."
+    },
+    {
+        "text": "stackless python: is an addition or improvement over cpython to support micro threads."
+    },
+    {
+        "text": "pypy: is just in time compiler where program is executed on fly rather than compile time."
+    },
+    {
+        "text": "micropython and circuitpython supports microcontrollers."
+    },
+    {
+        "text": "jython compiles into java byte code, which can then be executed by every java virtual machine implementation."
+    },
+    {
+        "text": "ironpython allows running python programs on the .net common language runtime."
+    },
+    {
+        "text": "the rpython language can be compiled to c, java bytecode, or common intermediate language, and is used to build the pypy interpreter of python."
+    },
+    {
+        "text": "pyjs compiles python to javascript."
+    },
+    {
+        "text": "cython compiles python to c and c++."
+    },
+    {
+        "text": "pythran compiles python to c++."
+    },
+    {
+        "text": "q6: is python loosely typed?"
+    },
+    {
+        "text": "ans: python is loosely typed programming language since the same variable can hold different data at different points of time."
+    },
+    {
+        "text": "for example: a = 20 (holds int) a = \u201drahul\u201d (holds string now)"
+    },
+    {
+        "text": "same variable can be used to store different value or data belonging to different data types."
+    },
+    {
+        "text": "q7: how to start a new block in python?"
+    },
+    {
+        "text": "ans: a new block begins when the line is intended by 4 spaces."
+    },
+    {
+        "text": "q8: how to get data type of a particular variable?"
+    },
+    {
+        "text": "ans: type function is used in the data type of enclosed variable."
+    },
+    {
+        "text": "for example: a = 10 type(a) q9: how many ways can python program be run?"
+    },
+    {
+        "text": "ans: python programs can be run using idle which is the integrated ide or it can also be run from outside using python.exe in windows or python.sh in unix/linux based environment."
+    },
+    {
+        "text": "q10: explain the importance of pylint and pychecker."
+    },
+    {
+        "text": "ans: pylint is used to check coding standards w.r.t."
+    },
+    {
+        "text": "modules."
+    },
+    {
+        "text": "pychecker is a static analysis tool that helps find out bugs in the source code."
+    },
+    {
+        "text": "q11: explain zen of python."
+    },
+    {
+        "text": "ans: long time pythoneer tim peters succinctly channels the bdfl\u2019s guiding principles for python\u2019s design into 20 aphorisms, only 19 of which have been written down."
+    },
+    {
+        "text": "the zen of python beautiful is better than ugly."
+    },
+    {
+        "text": "explicit is better than implicit."
+    },
+    {
+        "text": "simple is better than complex."
+    },
+    {
+        "text": "complex is better than complicated."
+    },
+    {
+        "text": "flat is better than nested."
+    },
+    {
+        "text": "sparse is better than dense."
+    },
+    {
+        "text": "readability counts."
+    },
+    {
+        "text": "special cases aren\u2019t special enough to break the rules."
+    },
+    {
+        "text": "although practicality beats purity."
+    },
+    {
+        "text": "errors should never pass silently."
+    },
+    {
+        "text": "unless explicitly silenced."
+    },
+    {
+        "text": "in the face of ambiguity, refuse the temptation to guess."
+    },
+    {
+        "text": "there should be one-- and preferably only one --obvious way to do it."
+    },
+    {
+        "text": "although that way may not be obvious at first unless you\u2019re dutch."
+    },
+    {
+        "text": "now is better than never."
+    },
+    {
+        "text": "although never is often better than right now."
+    },
+    {
+        "text": "if the implementation is hard to explain, it\u2019s a bad idea."
+    },
+    {
+        "text": "if the implementation is easy to explain, it may be a good idea."
+    },
+    {
+        "text": "namespaces are one honking great idea \u2013 let\u2019s do more of those!"
+    },
+    {
+        "text": "q12: how to print zen in python?"
+    },
+    {
+        "text": "ans: we can print zen of python by using: import this print(this) q13: explain python data types."
+    },
+    {
+        "text": "ans: integers: represent numbers without decimals floating point: represent number with decimals complex numbers represents numbers having real and imaginary part string collection of characters boolean represents the value as true or false for example: a = 5 print(a, \u201cbelongs to this type\u201d, type(a)) a = 2.0 print(a, \u201cbelongs to this type\u201d, type(a)) a = 1+2j print(a, \u201c has type\u201d,type(a)) a = \u2018hello world\u2019 print(a,\u201d has type\u201d,type(a)) a = true print(a, \u201c has type\u201d,type(a)) a = 1+2j print(\u201cis complex number?\u201d, isinstance(a,complex)) output: 5 belongs to this type 2.0 belongs to this type (1+2j) has type hello world has type true has type is complex number?"
+    },
+    {
+        "text": "true q14: how can we switch variables in python?"
+    },
+    {
+        "text": "ans: q15: what is the use of pass statement in python?"
+    },
+    {
+        "text": "ans: pass statement indicates no operation statement."
+    },
+    {
+        "text": "it is generally used to complete the body of classes or functions for alter use."
+    },
+    {
+        "text": "q16: is python pass by value or pass by reference?"
+    },
+    {
+        "text": "ans: neither of them is used."
+    },
+    {
+        "text": "python passes arguments by value where all values are references to actual objects."
+    },
+    {
+        "text": "q17: does python supports chained operations?"
+    },
+    {
+        "text": "ans: yes, chained operations are supported by python."
+    },
+    {
+        "text": "no = 8 if 16 > no > 2: print(\u201cchained comparison \u201c) in the above example, 16 is compared with 8 which is further compared with 2. q18: explain all and any."
+    },
+    {
+        "text": "ans: all returns true, only when all the conditions are true."
+    },
+    {
+        "text": "any return true even when one condition is true."
+    },
+    {
+        "text": "lst= range(20) print(all(value > 18 for value in lst)) # returns false since range starts with 0 lst = range(21,100) print(all(value > 18 for value in lst)) # returns true because range starts with 21 print(any(value > 18 for value in lst)) # returns true since 22 is greater than 18 and is true print(any(value < 18 for value in lst)) # return false since not a single value exists which satisfies given condition q19: explain the difference between is and ==."
+    },
+    {
+        "text": "ans: is: true only if 2 variables point to same object."
+    },
+    {
+        "text": "==: true if objects which are referred by objects are equal."
+    },
+    {
+        "text": "q20: explain supported collection of data type w.r.t."
+    },
+    {
+        "text": "python?"
+    },
+    {
+        "text": "ans: python supports four collections of data types: list: stores data in a fashion similar to array in other programming language."
+    },
+    {
+        "text": "it is mutable and item can be added subtracted or deleted."
+    },
+    {
+        "text": "index starts with zero."
+    },
+    {
+        "text": "[] is used to indicate that collection is list."
+    },
+    {
+        "text": "it can be homogenous and heterogeneous i.e."
+    },
+    {
+        "text": "store data of same or different data type."
+    },
+    {
+        "text": "it can contain duplicates."
+    },
+    {
+        "text": "tuples: immutable collection i.e."
+    },
+    {
+        "text": "changes to elements are not possible."
+    },
+    {
+        "text": "indicated by ()."
+    },
+    {
+        "text": "again can be homogenous and heterogeneous i.e."
+    },
+    {
+        "text": "store data of same or different data type."
+    },
+    {
+        "text": "duplicates can be present."
+    },
+    {
+        "text": "set: duplicates are absent in set."
+    },
+    {
+        "text": "it makes use of {} symbol."
+    },
+    {
+        "text": "dictionary: stores data in form of key value pair."
+    },
+    {
+        "text": "indicated by {} with each item having : between key has to be immutable object."
+    },
+    {
+        "text": "q21: create a simple number list?"
+    },
+    {
+        "text": "ans: a = [1,22,33] above creates a simple list having three values."
+    },
+    {
+        "text": "q22: can you create nested list?"
+    },
+    {
+        "text": "ans: following is a nested list of three elements having list again at index 1 and nested list at location 2: nestedlst = [\u201chello\u201d, [100,101], [\u2018aaa\u2019,[\u2018paa\u2019,\u2019raa\u2019]]] print(\u2018 nested list\u2019,nestedlst) print(nestedlst[0])#prints hello print(nestedlst[2][1][1])) #prints raa q23: explain crud (create, update, and delete) operations from list."
+    },
+    {
+        "text": "ans: creation: lst = [11,22,33, 44] above statement creates a list with the name lst."
+    },
+    {
+        "text": "empty list creation: lst =[] the above statement creates an empty list."
+    },
+    {
+        "text": "adding single element in list: lst.append(55) adding elements of another list: lst.extend([44,44,33]) concatenate list: concatenate is to join two list."
+    },
+    {
+        "text": "following code adds two list and creates a new list c containing elements from both list."
+    },
+    {
+        "text": "a =[1,2,3,4] b=[5,65] c = a + b print(c) #outputs 1,2,3,4,5,65 remove element using value: a =[1,2,3,4] a.remove(3) print(a) #[1,2,4] in above code, element with value 3 is removed."
+    },
+    {
+        "text": "delete elements by using index: a =[1,2,3,4] del a[2] #removes element at index 2"
+    },
+    {
+        "text": "print(a) #[1,2,4] clear or empty a list: a=[1,2,3,4] a.clear() print(a) # prints [] length of list: to print size of list len, function is used."
+    },
+    {
+        "text": "a=[1,2,3,4] print( len(a)) #prints 4 q24: explain operations in dictionary."
+    },
+    {
+        "text": "ans: creation: sdict ={1:\u2019one\u2019,2:\u2019two\u2019} the above statement creates a dictionary of two items having keys 1 and 2 and corresponding values as one and two respectively."
+    },
+    {
+        "text": "creation of empty sdict={} add key value pair sdict={} sdict[3] =\u2019three\u2019 the above statement adds an item in the dictionary with the key as 3 and value as three."
+    },
+    {
+        "text": "add or update elements from another dictionary addition of new elements from another dictionary."
+    },
+    {
+        "text": "dict1 ={1:\u2019one\u2019,2:\u2019two\u2019} dict2 ={5:\u2019five\u2019} dict1.update(dict2) print(dict1) //prints 1:one,2:two,5:five updating of existing element from another dictionary."
+    },
+    {
+        "text": "dict1 ={1:\u2019one\u2019,2:\u2019two\u2019,5:\u2019five\u2019} dict2 ={5:\u2019five\u2019} dict1.update(dict2) print(dict1) # 1:one 2: two 5: five in the above example the value of key 5 is replaced from five to five."
+    },
+    {
+        "text": "thus, update is taken from dict2."
+    },
+    {
+        "text": "clear or empty dictionary dict1 ={1:\u2019one\u2019,2:\u2019two\u2019,5:\u2019five\u2019}"
+    },
+    {
+        "text": "dict1.clear() print(dict1) #prints {} length of dictionary len(dict) get length of dictionary q25: explain operation with tuples."
+    },
+    {
+        "text": "ans: creation tup = (3, 4) creation of empty tuple: tup = () creation of tuple with single element this is a bit of challenge because since (1) is taken as number as compared to tuple."
+    },
+    {
+        "text": "so, to create tuple with one element we make use of the following: tup = (1,) adding new elements or removing elements from tuples are not possible since tuples are immutable."
+    },
+    {
+        "text": "length of tuples: len(a) q26: explain del?"
+    },
+    {
+        "text": "ans: the del is used to remove variables from memory."
+    },
+    {
+        "text": "a= (1,2,3) print(a) #prints 1 2 3 del a print(a) # gives a not defined error q27: if del can remove variable can it remove tuple variable?"
+    },
+    {
+        "text": "ans: yes, del can remove tuple variable."
+    },
+    {
+        "text": "a tuple has to be immutable till it lives in memory."
+    },
+    {
+        "text": "while del removes the object or variable from memory itself hence del can remove tuple."
+    },
+    {
+        "text": "a =(1,2) del a but if we try to remove an element from tuple using del, it won\u2019t work."
+    },
+    {
+        "text": "a =(1,2) del a[2] #typeerror: \u2018tuple\u2019 object doesn\u2019t support item deletion q28: delete last element in a list."
+    },
+    {
+        "text": "ans:"
+    },
+    {
+        "text": "q29: predict the output of following code."
+    },
+    {
+        "text": "a =(1,2,3,4) b=(5,65) c = a + b print(c) ans: this question is tricky, mainly because it involves tuples which are immutable."
+    },
+    {
+        "text": "so, the general answer given by many is, it would raise an error which is incorrect."
+    },
+    {
+        "text": "the above code adds two tuples to generate new tuple."
+    },
+    {
+        "text": "existing tuples are untouched which satisfies immutability property."
+    },
+    {
+        "text": "hence, output is (1, 2, 3, 4, 5, 65)."
+    },
+    {
+        "text": "so, while reading such questions see if the immutability is affected or not."
+    },
+    {
+        "text": "if not then operation would be successful."
+    },
+    {
+        "text": "q30: what do you mean by list comprehension?"
+    },
+    {
+        "text": "ans: the process of creating a list while performing some operation on the data so that it can be accessed using an iterator is referred to as list comprehension."
+    },
+    {
+        "text": "q31: explain the preferred way for looping through list?"
+    },
+    {
+        "text": "ans: the preferred way of looping through list is with the help of enumerate function."
+    },
+    {
+        "text": "enumerate function returns index and corresponding value: output 0 a 1 b 2 c q32: find the reverse of the dictionary?"
+    },
+    {
+        "text": "ans: reverse of dictionary means key becomes value and value becomes the key."
+    },
+    {
+        "text": "it is easily achievable in python."
+    },
+    {
+        "text": "q33: how to sort dictionary by value?"
+    },
+    {
+        "text": "ans: import operator as o countrydict ={\u2018cn\u2019: 4, \u2018fr\u2019: 5,\u2019uk\u2019: 1, \u2018usa\u2019: 2, \u2018in\u2019: 3, \u2018gm\u2019: 6} print(sorted(countrydict.items(), key=o.itemgetter(1))) q34: what is the use of shuffle function?"
+    },
+    {
+        "text": "ans: it is used to arrange the values within the list randomly."
+    },
+    {
+        "text": "q35: what is the preferred way to get a value based on key in python?"
+    },
+    {
+        "text": "ans: the preferred way to get a value based on key is to use get method with default value."
+    },
+    {
+        "text": "the default value will be used whenever key is absent in the dictionary."
+    },
+    {
+        "text": "q36: explain alternate way of merging 2 or more dictionaries without using update method?"
+    },
+    {
+        "text": "ans: q37: what is the preferred way of fetching last element/second last and so on from a list?"
+    },
+    {
+        "text": "ans: python supports negative indexes on list."
+    },
+    {
+        "text": "-1 refers to last element -2 refers to second last element l = [1, 2, 3, 4, 5] print(l[-1]) #prints 5 print(l[-2]) #prints 4"
+    },
+    {
+        "text": "q38: what is the preferred way for reversing a list?"
+    },
+    {
+        "text": "ans: the preferred way for returning a list is with help of reversed function."
+    },
+    {
+        "text": "the above code will print the following: 5,4,3,2,1 q39: explain various string utility functions in python."
+    },
+    {
+        "text": "ans: capitalize(): capitalizes the first letter of string."
+    },
+    {
+        "text": "isalnum(): returns true if string has at least 1 character and all characters are alphanumeric and false otherwise."
+    },
+    {
+        "text": "isdigit(): returns true if string contains only digits and false otherwise."
+    },
+    {
+        "text": "islower(): returns true if string has at least 1 cased character and all cased characters are in lowercase and false otherwise."
+    },
+    {
+        "text": "isnumeric(): returns true if a unicode string contains only numeric characters and false otherwise."
+    },
+    {
+        "text": "isspace(): returns true if string contains only whitespace characters and false otherwise."
+    },
+    {
+        "text": "isupper(): returns true if string has at least one cased character and all cased characters are in uppercase and false otherwise."
+    },
+    {
+        "text": "lower(): converts all uppercase letters in string to lowercase."
+    },
+    {
+        "text": "lstrip(): removes all leading whitespace in string."
+    },
+    {
+        "text": "max(str): returns the max alphabetical character from the string str."
+    },
+    {
+        "text": "replace(old, new [, max]): replaces all occurrences of old in string with new or at most max occurrences if max given."
+    },
+    {
+        "text": "strip([chars]): performs both lstrip() and rstrip() on string."
+    },
+    {
+        "text": "swapcase(): inverts case for all letters in string."
+    },
+    {
+        "text": "q40: how to check whether two strings are equal."
+    },
+    {
+        "text": "ans: == operator can be used to check whether strings are equal or not."
+    },
+    {
+        "text": "q41: can string use single quote or double quote?"
+    },
+    {
+        "text": "ans: both single quote or double quote is allowed but combination of both is not."
+    },
+    {
+        "text": "q42: explain type conversions on collection types."
+    },
+    {
+        "text": "ans: q43: explain set theory operations supported by set data type."
+    },
+    {
+        "text": "ans: sample code for above operations: seta = {11,22,33,44,5} setb = {44,22,1} setc = {55} setd = {44,22,1,447} print(\u2018isdisjoint\u2019,seta.isdisjoint(setc)) print(\u2018is setb subset of setd \u2018,setb.issubset(setd)) print(\u2018is setd superset of setd \u2018,setd.issuperset(setb)) print(\u2018common elements are \u2018,seta & setb) print(\u2018common elements are \u2018,seta."
+    },
+    {
+        "text": "intersection(setb)) print(\u2018elements in a but not in b \u2018, seta-setb) print(\u2018elements in b but not in a \u2018, setb-seta) print(\u2018elements in a but not in b \u2018, seta.difference(setb)) print(\u2018elements in b but not in a \u2018, setb.difference(seta)) output: isdisjoint true is setb subset of setd true is setd superset of setd true common elements are {44, 22} common elements are {44, 22} elements in a but not in b {33, 11, 5} elements in b but not in a {1} elements in a but not in b {33, 11, 5} elements in b but not in a {1} q44: explain frozenset?"
+    },
+    {
+        "text": "ans: frozenset gives immutability to set i.e."
+    },
+    {
+        "text": "nothing in it can be modified."
+    },
+    {
+        "text": "q45: explain functions in python?"
+    },
+    {
+        "text": "ans: a function is a group of statements intended to do particular task."
+    },
+    {
+        "text": "in python we can define functions with the help of def ."
+    },
+    {
+        "text": "def fun(): print(\u2018hello\u2019) above creates a function fun which prints hello message."
+    },
+    {
+        "text": "def fun1(ip): print(\u2018hello\u2019,ip) above creates a function with the name fun1 which takes parameter ip and prints corresponding hello message with parameters."
+    },
+    {
+        "text": "def area(r): return 3.14* r * r above creates a function which returns result with the help of return type."
+    },
+    {
+        "text": "q46: what is a boolean function?"
+    },
+    {
+        "text": "ans: boolean function is one which either returns true or false."
+    },
+    {
+        "text": "def isdivisble(num,den): if num%den==0: return true else: return false print(isdivisble(10,2)) the above functions returns true or false based upon whether the numerator is divisible by denominator."
+    },
+    {
+        "text": "q47: can we specify data type for arguments as well as return types in python?"
+    },
+    {
+        "text": "ans: recent version of python has support for type annotations which allows doing the same."
+    },
+    {
+        "text": "q48: explain variable arguments?"
+    },
+    {
+        "text": "ans: variable arguments in python can be achieved with the help of *args."
+    },
+    {
+        "text": "q49: write a program to find occurrences or count of characters in given word."
+    },
+    {
+        "text": "ans: q50: what is **kwargs?"
+    },
+    {
+        "text": "ans: **kwargs is also variable arguments but in the form of dictionary input also known as keyworded, variable-length argument."
+    },
+    {
+        "text": "q51: write a simple lambda expression?"
+    },
+    {
+        "text": "ans: sumlambda = lambda x, y : x + y print(sumlambda(2, 3)) in the above example, we have defined lambda expression which takes two parameters and performs the addition."
+    },
+    {
+        "text": "the return result is x+ y but no need to return explicitly since it contains single statement only."
+    },
+    {
+        "text": "q52: lambda forms in python contain statements?"
+    },
+    {
+        "text": "true or false?"
+    },
+    {
+        "text": "ans: statement is true as lambdas in python have to be single line expressions."
+    },
+    {
+        "text": "q53: explain filter function?"
+    },
+    {
+        "text": "ans: the filter function is a utility function which can skip values based on some condition."
+    },
+    {
+        "text": "q54: explain steps involved in reading and writing a file?"
+    },
+    {
+        "text": "ans: in both the case, three steps are involved."
+    },
+    {
+        "text": "opening the file."
+    },
+    {
+        "text": "reading or writing the file using corresponding functions (read or write)."
+    },
+    {
+        "text": "closing the file."
+    },
+    {
+        "text": "write example: a =open(\u2018hello.txt\u2019,\u2019a\u2019) # opens a file in write mode a.write(\u2018welcome to files with python\u2019) # writes this line in file a.close() # closes the file the above code writes the welcome message to hello.txt file."
+    },
+    {
+        "text": "read example: a =open(\u2018hello.txt\u2019,\u2019r\u2019) # opens a file in read mode text = a.read() # reads the entire contents of file in memory print(text) #prints the read text a.close()# closes the file q55: explain the term \u201cwithstatement\u201d?"
+    },
+    {
+        "text": "ans: the with statement would be useful whenever there are related operations block on each other."
+    },
+    {
+        "text": "with expression [as variable]: with-block in the above statement, we see that with block would be used within the context of variable opened with the help of with statement."
+    },
+    {
+        "text": "with open(\u2018output.txt\u2019, \u2018w\u2019) as f: f.write(\u2018|python!\u2019) in the above example, the file would be closed as soon as the scope of with block gets over the advantage of being not to close the file explicitly using close block."
+    },
+    {
+        "text": "q56: explain the preferred way of reading a big file?"
+    },
+    {
+        "text": "ans: with open(\u201csampleread.txt\u201d, \u201cr+\u201d) as ip: for singleline in ip: print(singleline) the above code opens the file in read mode with the help of with statement."
+    },
+    {
+        "text": "so, as soon as file operations get over, the file would be automatically"
+    },
+    {
+        "text": "closed."
+    },
+    {
+        "text": "further the above code loads only a single line in memory at a time thus saving memory or making it possible to run, this program even with computer having lower memory footprint."
+    },
+    {
+        "text": "q57: explain modules in python."
+    },
+    {
+        "text": "ans: modules both inbuilt and user defined are ways of writing reusable set of code or reusing common set of code."
+    },
+    {
+        "text": "python provides set of many inbuilt modules like mathos, sys etc."
+    },
+    {
+        "text": "to use a module, we will have to import the same with the help of import statement or \u201cfrom ..import\u201d statement."
+    },
+    {
+        "text": "q58: explain different ways of importing modules."
+    },
+    {
+        "text": "ans: modules can be imported using import statement or from ..import statement."
+    },
+    {
+        "text": "the difference lies in fact whether we want the entire module or particular part of it."
+    },
+    {
+        "text": "the from..import statement is preferred when we want to import particular module."
+    },
+    {
+        "text": "from math import pi print(pi) the import statement is preferred when the entire module is to be imported."
+    },
+    {
+        "text": "import math print(math.pi) as you can see in import statement we have to use the module name wherever we want to get variables or methods from modules."
+    },
+    {
+        "text": "q59: can we create our own module?"
+    },
+    {
+        "text": "ans: yes, we can create our own module."
+    },
+    {
+        "text": "any python file itself is a module."
+    },
+    {
+        "text": "consider for example following mathop.py file containing following code: def sum(a,b): return a+b def sub(a,b): return (a-b) in another file named usage.py we can write the following code: import mathop print(mathop.sum(99,100)) print(mathop.sub(99,100)) print(dir(mathop)) the above code reads from the modules and performs the required operations."
+    },
+    {
+        "text": "if the files were in different directory, for example, com folder then we could have imported by giving: com.modulename q60: explain in brief about os module and its corresponding functions."
+    },
+    {
+        "text": "ans: os module provides various functions to perform operating system related functions especially w.r.t."
+    },
+    {
+        "text": "file operations."
+    },
+    {
+        "text": "following are some of the important functions:"
+    },
+    {
+        "text": "os.chdir(\u201cd:/pythoneg/intro/pyfolder\u201d): it is used to change the current working directory."
+    },
+    {
+        "text": "os.mkdir(\u2018pyfolder\u2019): it is used to create new directory."
+    },
+    {
+        "text": "os.remove(): it removes a particular file."
+    },
+    {
+        "text": "os.getcwd(): it gets the current working directory."
+    },
+    {
+        "text": "os.environ: it prints environment related details."
+    },
+    {
+        "text": "os.system(\u2018 dir>>1.txt\u2019): it execute a command line related command."
+    },
+    {
+        "text": "for example, executes dir command which is windows command prompt command, to list directories."
+    },
+    {
+        "text": "os.walk(dir): it lists down sub directory and files within a particular directory."
+    },
+    {
+        "text": "q61: using os module print the directory structure."
+    },
+    {
+        "text": "ans: import os rootdir = \u2018d:/nodejstraining/nodejsexample/nodejsexample\u2019 for dirname, subdirlist, filelist in os.walk(rootdir): print(\u2018found directory: %s\u2019 % dirname) for fname in filelist: print(\u2018\\t%s\u2019 % fname) in the above example we print the directory structure with the help of os.walk function which can list down directory name, sub directory list and file list within a particular directory."
+    },
+    {
+        "text": "q62: explain dir function."
+    },
+    {
+        "text": "ans: the dir function is used to print various functions which are exposed by a module."
+    },
+    {
+        "text": "for e.g dir(math) prints all the functions within math module."
+    },
+    {
+        "text": "import math print(dir(math)) output: [\u2018doc\u2019, \u2018loader\u2019, \u2018name\u2019, \u2018package\u2019, \u2018spec\u2019, \u2018acos\u2019, \u2018acosh\u2019, \u2018asin\u2019, \u2018asinh\u2019, \u2018atan\u2019, \u2018atan2\u2019, \u2018atanh\u2019, \u2018ceil\u2019, \u2018copysign\u2019, \u2018cos\u2019, \u2018cosh\u2019, \u2018degrees\u2019, \u2018e\u2019, \u2018erf\u2019, \u2018erfc\u2019, \u2018exp\u2019, \u2018expm1\u2019, \u2018fabs\u2019, \u2018factorial\u2019, \u2018floor\u2019, \u2018fmod\u2019, \u2018frexp\u2019, \u2018fsum\u2019, \u2018gamma\u2019, \u2018gcd\u2019, \u2018hypot\u2019, \u2018inf\u2019, \u2018isclose\u2019, \u2018isfinite\u2019, \u2018isinf\u2019, \u2018isnan\u2019, \u2018ldexp\u2019, \u2018lgamma\u2019, \u2018log\u2019, \u2018log10\u2019, \u2018log1p\u2019, \u2018log2\u2019, \u2018modf\u2019, \u2018nan\u2019, \u2018pi\u2019, \u2018pow\u2019, \u2018radians\u2019, \u2018sin\u2019, \u2018sinh\u2019, \u2018sqrt\u2019, \u2018tan\u2019, \u2018tanh\u2019, \u2018tau\u2019, \u2018trunc\u2019] q63: explain exception handling in python."
+    },
+    {
+        "text": "ans: exception handling is supported with the help of try..except block."
+    },
+    {
+        "text": "any statements which can logically cause problems would be placed in try block."
+    },
+    {
+        "text": "in case of exception occurring, corresponding handling is done in except block."
+    },
+    {
+        "text": "a single try can contain multiple except block."
+    },
+    {
+        "text": "in the above example, we place the code of accepting input from user and type casting the same to int within the try block."
+    },
+    {
+        "text": "we have two except block one catching except block and another generic exception."
+    },
+    {
+        "text": "based upon the exception raised, the corresponding except block would be called."
+    },
+    {
+        "text": "to print the complete details of exception we make use of alias i.e."
+    },
+    {
+        "text": "except exception as e : makesalias of the exception."
+    },
+    {
+        "text": "in case of no exception, the else block would be executed."
+    },
+    {
+        "text": "q64: how to create user defined exception?"
+    },
+    {
+        "text": "ans: user defined exceptions are supported in python."
+    },
+    {
+        "text": "to create our own exception, we will have to create class with the name of exception we want, which extends from exception and correspondingly use it with the help of raise statement."
+    },
+    {
+        "text": "q65: what is the use of raise statement?"
+    },
+    {
+        "text": "ans: the raise statement is used to generate exception at run time, based upon some condition or constraint imposed."
+    },
+    {
+        "text": "q66: how to create own class in python?"
+    },
+    {
+        "text": "explain constructors."
+    },
+    {
+        "text": "ans: we can create our own class in python."
+    },
+    {
+        "text": "the constructor of the class is specified with the help of init method ."
+    },
+    {
+        "text": "any function created as a part of class which is a non-static and non-class method, should have self as the first argument which represents the object."
+    },
+    {
+        "text": "following is the code to create a class with the name complex which consists of two members real and img and one display function."
+    },
+    {
+        "text": "q67: is it necessary to have the first argument of class function as self?"
+    },
+    {
+        "text": "can\u2019t we rename it to any other variable?"
+    },
+    {
+        "text": "ans: the name of the variable can be anything but it always represents the object."
+    },
+    {
+        "text": "the self is the preferred and a general practice naming convention."
+    },
+    {
+        "text": "q68: explain inheritance in python."
+    },
+    {
+        "text": "ans: python supports inheritance with classes."
+    },
+    {
+        "text": "a class extending another class needs to use ()."
+    },
+    {
+        "text": "also, super method needs to be used to call base class constructor and methods."
+    },
+    {
+        "text": "q69: how to determine whether a particular class is sub class?"
+    },
+    {
+        "text": "ans: issubclass(childclass,parentclass) the above function would return true only if the childclass has inherited from parentclass ."
+    },
+    {
+        "text": "q70: does python support multiple inheritance?"
+    },
+    {
+        "text": "ans: yes, python supports multiple inheritance."
+    },
+    {
+        "text": "a particular class can extend from any number of super classes."
+    },
+    {
+        "text": "class child(parent1,parent2,.....,parentn): q71: how is diamond problem resolved in case of python?"
+    },
+    {
+        "text": "ans: diamond problem occurs whenever child class inherits same method with different body from two different parents."
+    },
+    {
+        "text": "in the case of python this is resolved by order in which parent is inherited."
+    },
+    {
+        "text": "parent which is inherited first is given more importance."
+    },
+    {
+        "text": "in the following example we have two parents both having hello method."
+    },
+    {
+        "text": "q72: does python support private method and variables?"
+    },
+    {
+        "text": "ans: private method and variables are supported in python."
+    },
+    {
+        "text": "any variable or method having __ becomes private in nature and cannot be accessed directly by using object."
+    },
+    {
+        "text": "to get their value we will have to use class name reference from the object."
+    },
+    {
+        "text": "the main aim of these variables and functions is to ensure that the sub classes do not accidentally override them."
+    },
+    {
+        "text": "q73: can __ be used for other purpose than creating private variables or functions?"
+    },
+    {
+        "text": "ans: __ has many use cases."
+    },
+    {
+        "text": "following are some of them: ignoring while assigning values from tuples or list."
+    },
+    {
+        "text": "a, _, b = (11, 220,54) in the above example, a gets value 11 and b gets 54. the __ is used for ignoring the central value 220. used to separate numbers no = 3_200 ."
+    },
+    {
+        "text": "this gives better understanding and readability."
+    },
+    {
+        "text": "the number represented here is 3200. q74: does python support abstract classes?"
+    },
+    {
+        "text": "ans: python supports abstract classes with the help of module named abc ."
+    },
+    {
+        "text": "an abstract class contains abstract functions and cannot be instantiated."
+    },
+    {
+        "text": "the abc module contains abc which stands for abstract base class and abstract method to do necessary things."
+    },
+    {
+        "text": "the classes which extend the above class have to give body to abstract method else even they cannot be instantiated."
+    },
+    {
+        "text": "q75: differentiate between static methods and class methods in python."
+    },
+    {
+        "text": "ans: q76: what are named tuple?"
+    },
+    {
+        "text": "ans: named tuple allows us to create classes at run time with attributes."
+    },
+    {
+        "text": "q77: how to sort using lamdas?"
+    },
+    {
+        "text": "ans:"
+    },
+    {
+        "text": "q78: explain generators?"
+    },
+    {
+        "text": "ans: generators are used to save memory as they store only some values in memory at a time rather than storing entire dataset in memory."
+    },
+    {
+        "text": "generators make use of yield function which stores the previous state to remember."
+    },
+    {
+        "text": "generators are invoked using next function."
+    },
+    {
+        "text": "for example, if we want to process the entire file having million records, generator function would bring only one record at a time in the memory."
+    },
+    {
+        "text": "q79: what is generator expression?"
+    },
+    {
+        "text": "ans: the above generators concept can also be applied to expressions."
+    },
+    {
+        "text": "q80: when python program exits, all the memory is released?"
+    },
+    {
+        "text": "say true or false?"
+    },
+    {
+        "text": "ans: the answer is false because objects that are referenced from global namespaces of python modules are not always de-allocated when python exits."
+    },
+    {
+        "text": "q81: can a function be passed as parameter to another function?"
+    },
+    {
+        "text": "ans: yes, it is possible to do the same in python."
+    },
+    {
+        "text": "q82: can a function be retuned as result from another function?"
+    },
+    {
+        "text": "ans: yes, the result of a function can be another function."
+    },
+    {
+        "text": "q83: explain decorator function."
+    },
+    {
+        "text": "ans: decorator function allows performing wrapper around a function."
+    },
+    {
+        "text": "it acts as an interceptor which allows performing pre-processing and post- processing."
+    },
+    {
+        "text": "q84: how can we represent big text in python?"
+    },
+    {
+        "text": "ans: representation of big text is quite simple w.r.t."
+    },
+    {
+        "text": "python, unlike other programming language."
+    },
+    {
+        "text": "q85: what is pep 8?"
+    },
+    {
+        "text": "ans: pep 8 is a coding convention, a set of recommendation, about how to make your python code more readable."
+    },
+    {
+        "text": "it can be said as globally accepted standards for python programming."
+    },
+    {
+        "text": "q86: what is anaconda?"
+    },
+    {
+        "text": "ans: anaconda is easy to use distribution which comes bundled up with lot of modules used in data science world."
+    },
+    {
+        "text": "it provides a packaged environment to get started easily."
+    },
+    {
+        "text": "it also manages dependencies."
+    },
+    {
+        "text": "q87: how to install external modules?"
+    },
+    {
+        "text": "ans: external modules can be easily installed with the help of pip tool which comes bundled with python."
+    },
+    {
+        "text": "the command to execute is python \u2013m pip install module name ."
+    },
+    {
+        "text": "for e.g."
+    },
+    {
+        "text": "python \u2013m pip install numpy in anaconda environment we can install with conda command."
+    },
+    {
+        "text": "conda install --name environment_name module q88: what is jupyter notebook?"
+    },
+    {
+        "text": "ans: jupyter notebook is a web application that allows you to create and share documents that contain: python code visualizations explanatory text of code it can be installed as an external module with the help of pip ."
+    },
+    {
+        "text": "python \u2013m pip install jupyter once installed, it can be started by executing command jupyter notebook ."
+    },
+    {
+        "text": "the above command will start the web server with notebook opened on web browser."
+    },
+    {
+        "text": "notebooks consist of a linear sequence of cells."
+    },
+    {
+        "text": "there are four basic cell types: code cells: input and output of live code that is run in the kernel markdown cells: narrative text with embedded latex equations heading cells: 6 levels of hierarchical organization and formatting raw cells: unformatted text that is included q89: what is pickling and unpickling?"
+    },
+    {
+        "text": "ans: pickling is the process of converting from python format to intermediate string formats which can be then be stored on file."
+    },
+    {
+        "text": "unpickling is the process of bringing or loading the stored python objects back into memory."
+    },
+    {
+        "text": "q90: explain the importance of setup.py?"
+    },
+    {
+        "text": "ans: the setup.py allows setting up dependencies easily."
+    },
+    {
+        "text": "while generating one project, it is quite natural to use various libraries."
+    },
+    {
+        "text": "when the same code is shipped to another developer or deployment environment we can make use of setup.py which stores the dependencies on various modules which were used in project."
+    },
+    {
+        "text": "q91: is it possible to make connections to database using python?"
+    },
+    {
+        "text": "ans: python supports connection to database with db-api modules."
+    },
+    {
+        "text": "the mechanism to query remains same but difference lies in the classes to be imported to suit various databases."
+    },
+    {
+        "text": "to connect to database (in our case mysq l) we use the following code: to fetch data from database table:"
+    },
+    {
+        "text": "delete example: insert example: insert can be done using execute or executemany ."
+    },
+    {
+        "text": "difference lies in fact that execute just takes one record while executemany takes many records."
+    },
+    {
+        "text": "update example: q92: explain meta programming?"
+    },
+    {
+        "text": "ans: this is a programming technique in which program itself is treated as data."
+    },
+    {
+        "text": "such languages do have knowledge of itself, and can change or manipulate itself during run time."
+    },
+    {
+        "text": "following are some of the examples of meta programming in python: adding attribute and method to class."
+    },
+    {
+        "text": "print(x1.f) # prints 42 the default value."
+    },
+    {
+        "text": "creating inheritance chain using type."
+    },
+    {
+        "text": "the type method can not only be used to get the type of variable but can also be used for meta programming."
+    },
+    {
+        "text": "details of overloaded type, is as follows: for example: b = type(b, (a,), dict(f=100)) the above statement creates class b which inherits from class a and has field f with value 100. creating dynamic constructor or linking constructor."
+    },
+    {
+        "text": "complete meta class example: q93: explain python memory model."
+    },
+    {
+        "text": "ans: numpy interview questions note: [q: question number and ans: answer] q1: what is numpy?"
+    },
+    {
+        "text": "ans: the numpy is a module which is responsible for effectively storing and processing the same at a faster rate as compared to normal array."
+    },
+    {
+        "text": "the advantage of numpy is support of large number of in built mathematical operations as compared to other programming language."
+    },
+    {
+        "text": "also, the support to represent n dimensions is also possible with numpy ."
+    },
+    {
+        "text": "q2: how to install numpy?"
+    },
+    {
+        "text": "ans: since numpy is an external module it can be installed using pip ."
+    },
+    {
+        "text": "python \u2013m pip install numpy q3: how to create single dimension numpy array?"
+    },
+    {
+        "text": "ans: q4: explain different attributes provided by numpy?"
+    },
+    {
+        "text": "ans: numpy provides the following attributes: ndim: as numpy provides n dimensions, we can get how many dimensions currently the array is having with ndim ."
+    },
+    {
+        "text": "shape: indicates number of rows and columns which again can be in different dimensions."
+    },
+    {
+        "text": "dtype: indicates data type of elements stored in numpy ."
+    },
+    {
+        "text": "output: q5: explain some utility methods provided by numpy for creating different elements?"
+    },
+    {
+        "text": "ans: np.zeros(length) creates a numpy array at all zeroes occupying the length specified."
+    },
+    {
+        "text": "can also take rows and columns and create n dimensions filled with zeroes."
+    },
+    {
+        "text": "output: [[0."
+    },
+    {
+        "text": "0."
+    },
+    {
+        "text": "0.]"
+    },
+    {
+        "text": "[0."
+    },
+    {
+        "text": "0."
+    },
+    {
+        "text": "0.]"
+    },
+    {
+        "text": "np.ones: can create either single dimension or n dimension, all filled with ones."
+    },
+    {
+        "text": "ip4 =np.ones((2, 3)) print(ip4) output: [[1."
+    },
+    {
+        "text": "1."
+    },
+    {
+        "text": "1.]"
+    },
+    {
+        "text": "[1."
+    },
+    {
+        "text": "1."
+    },
+    {
+        "text": "1.]]"
+    },
+    {
+        "text": "np.eye: creates a representation in which diagonal elements are zeroes."
+    },
+    {
+        "text": "ip8 =np.eye(3,3) print(ip8) output: [[1."
+    },
+    {
+        "text": "0."
+    },
+    {
+        "text": "0.]"
+    },
+    {
+        "text": "[0."
+    },
+    {
+        "text": "1."
+    },
+    {
+        "text": "0.]"
+    },
+    {
+        "text": "[0."
+    },
+    {
+        "text": "0."
+    },
+    {
+        "text": "1.]]"
+    },
+    {
+        "text": "np.arange: create a single or n dimension array in which numbers are populated starting from 0 to the number specified as parameter."
+    },
+    {
+        "text": "ip6=np.arange((5)) print(ip6) output: [0 1 2 3 4] q6: how can we change shape of an object?"
+    },
+    {
+        "text": "ans: shape of the object can be changed with shape attribute or reshape method."
+    },
+    {
+        "text": "shape attribute:"
+    },
+    {
+        "text": "output: shape (2, 3) before, [[1 2 3] [4 5 6]] after change, [[1 2] [3 4] [5 6]] reshape: allows the dimensions to be specified based on which, the shape can be changed."
+    },
+    {
+        "text": "a = np.array([[1,2,3],[4,5,6]]) b = a.reshape(3,2) print(\u2018reshape\u2019, b) output: [[1 2] [3 4] [5 6]] q7: which all data types are supported in python?"
+    },
+    {
+        "text": "ans: int8, uint8 i1, u1 int16, uint16 i2, u2 int32, uint32 i4, u4 int64, uint64 : signed and unsigned 8-bit (1 byte) 16-bit integer types or 32-bit or 64- bit integer types float16 float32 float64, float128 floating point with 16.32,64 or 128 bits complex64, complex128, complex256 complex numbers represented by two 32, 64, or 128 bool ?"
+    },
+    {
+        "text": ": boolean type storing true and false values object o : python object type string_ s : fixed-length string type (1 byte per character) unicode_u : fixed-length unicode type ( platform specific number of bytes)"
+    },
+    {
+        "text": "q8: explain various simple mathematical operations which can be done on numpy?"
+    },
+    {
+        "text": "ans: q9: explain slicing operation in numpy?"
+    },
+    {
+        "text": "ans: slicing means getting data from numpy array via row or columns or both."
+    },
+    {
+        "text": "general slicing on single dimension [start:end]."
+    },
+    {
+        "text": "start element is inclusive end element is exclusive."
+    },
+    {
+        "text": "output: [5 6 7] for 2 dimensions and more than 2 dimensions, we can specify slicing by row and column indexes."
+    },
+    {
+        "text": "in such case, following is the slicing."
+    },
+    {
+        "text": "[rowstart:rowend,columnstart:columnend] if rowstart is not specified, starts from zero if rowend is not specified, goes all the way till end if columnstart not specified, starts from zero if columnend not specified, goes till end for example:"
+    },
+    {
+        "text": "q10: explain boolean indexing?"
+    },
+    {
+        "text": "ans: boolean indexing return true or false based on some condition."
+    },
+    {
+        "text": "consider the following numpy array with names."
+    },
+    {
+        "text": "output: [false true false false true] boolean indexing can also be masked that is, it can have more than one condition."
+    },
+    {
+        "text": "(names == \u2018rahul\u2019) | (names == \u2018raj\u2019) the above code returns true for both rahul and raj."
+    },
+    {
+        "text": "q11: perform matrix multiplication using numpy?"
+    },
+    {
+        "text": "ans: matrix multiplication can be easily achieved with the help of dot function."
+    },
+    {
+        "text": "q12: explain various functions available with numpy?"
+    },
+    {
+        "text": "ans: numpy supports the following function."
+    },
+    {
+        "text": "the advantage of given functions are that they are applied on all the elements of numpy array."
+    },
+    {
+        "text": "abs, fabs: returns the absolute value element-wise for."
+    },
+    {
+        "text": "fabs can be used for non-complex-valued data with additional speed."
+    },
+    {
+        "text": "sqrt: square root of each element is calculated."
+    },
+    {
+        "text": "squar e: square of each element is calculated."
+    },
+    {
+        "text": "exp: exponent ex of each element is calculated."
+    },
+    {
+        "text": "log: log10, log2, log1p natural logarithm (base e), log base 10, log base 2, and log(1 + x), respectively."
+    },
+    {
+        "text": "sign: sign of each element: 1 (positive), 0 (zero), or -1 (negative) is calculated."
+    },
+    {
+        "text": "ceil: determines the ceiling of each element, floor: determines the floor of each element, rint: round elements to the nearest integer, preserving the dtype."
+    },
+    {
+        "text": "modf: return fractional and integral parts of given input isnan: returns true if the value is nan else false isfinite, isinf: return true indicating whether each element is finite or infinite, respectively."
+    },
+    {
+        "text": "regular and hyperbolic trigonometric functions cos, cosh, sin, sinh, tan, tanh, arccos, arccosh, arcsin, arcsinh, arctan, arctanh maximum, fmax element-wise maximum."
+    },
+    {
+        "text": "fmax ignores nan minimum, fmin element-wise minimum."
+    },
+    {
+        "text": "fmin ignores nan mod element-wise modulus (remainder of division) copysign copy sign of values in second argument to values in first argument q13: what is broadcast?"
+    },
+    {
+        "text": "ans: the ability of numpy to treat arrays with different dimensions or shape in a uniform way is known as broadcasting."
+    },
+    {
+        "text": "we can do broadcasting with the help of broadcast method."
+    },
+    {
+        "text": "output: (4, 1) (5, 1) (6, 1) (4, 2) (5, 2) (6, 2) (4, 3) (5, 3) (6, 3) q14: explain rules of broadcasting."
+    },
+    {
+        "text": "whenever two arrays have different dimensions the shape of the one with fewer dimensions is adjusted by padding with ones on its leading (left) side."
+    },
+    {
+        "text": "if there is a difference in the shape of the two arrays, it does not match in any dimension, then dimension is stretched to match the other shape for that array with shape one."
+    },
+    {
+        "text": "an error is raised in case the dimension and sizes disagree, and neither is equal to 1. q15: explain some statistical measures supported by numpy."
+    },
+    {
+        "text": "ans : amin: find the minimum value row wise or column wise mean: finds the mean value of given dataset std: finds standard deviation of given dataset var: finds variance of given dataset average: finds weighted average in which average is calculated based upon frequency of occurrence of variables percentile: calculates various percentile intervals mostly around 25,50 and 75% ptp: calculates peak to peak values in a given dataset median: calculates median from given dataset"
+    },
+    {
+        "text": "print (np.ptp(a, axis = 0) ) print(\u2018percentile axis 1\u2019) print (np.percentile(a,50, axis = 1) ) print(\u2018percentile axis 0\u2019) print (np.percentile(a,50, axis = 0) ) print(\u2018median\u2019) print (np.median(a, axis = 0) ) print(\u2018mean\u2019) print (np.mean(a, axis = 0) ) a = np.array([1,2,3,4]) wts = np.array([4,3,2,1]) print(\u2018average\u2019) print (np.average(a,weights = wts) ) print(\u2018std\u2019) print (np.std([1,2,3,4])) print(\u2018var\u2019) print (np.var([1,2,3,4])) output:"
+    },
+    {
+        "text": "a [[3 7 5] [8 4 3] [2 4 9]] amin 1 [3 3 2] amin 0 [2 4 3] ptp 7 ptp axis 0 [6 3 6] percentile axis 1 [5."
+    },
+    {
+        "text": "4."
+    },
+    {
+        "text": "4.]"
+    },
+    {
+        "text": "percentile axis 0 [3."
+    },
+    {
+        "text": "4."
+    },
+    {
+        "text": "5.]"
+    },
+    {
+        "text": "median [3."
+    },
+    {
+        "text": "4."
+    },
+    {
+        "text": "5.]"
+    },
+    {
+        "text": "mean [4.33333333 5."
+    },
+    {
+        "text": "5.66666667] average 2.0 std 1.118033988749895 var 1.25 q16: explain functions available in numpy.linalg."
+    },
+    {
+        "text": "ans: dot(a, b[, out]): dot product of two arrays."
+    },
+    {
+        "text": "linalg.multi_dot(arrays): compute the dot product of two or more arrays in a single function call, while automatically selecting the fastest evaluation order."
+    },
+    {
+        "text": "vdot(a, b): return the dot product of two vectors."
+    },
+    {
+        "text": "inner(a, b): inner product of two arrays."
+    },
+    {
+        "text": "outer(a, b[, out]): compute the outer product of two vectors."
+    },
+    {
+        "text": "matmul(a, b[, out]): matrix product of two arrays."
+    },
+    {
+        "text": "tensordot(a, b[, axes]): compute tensor dot product along specified axes for arrays >= 1-d."
+    },
+    {
+        "text": "einsum(subscripts, *operands[, out, dtype, \u2022]): evaluates the einstein summation convention on the operands."
+    },
+    {
+        "text": "linalg.matrix_power(m, n): raise a square matrix to the (integer) power n . kron(a, b): kronecker product of two arrays."
+    },
+    {
+        "text": "linalg.cholesky(a): cholesky decomposition."
+    },
+    {
+        "text": "linalg.qr(a[, mode]): compute the qr factorization of a matrix."
+    },
+    {
+        "text": "linalg.svd(a[, fullmatrices, computeuv]): singular value decomposition."
+    },
+    {
+        "text": "matrix eigenvalues linalg.eig(a): compute the eigenvalues and right eigenvectors of a square array."
+    },
+    {
+        "text": "linalg.eigh(a[, uplo]): return the eigenvalues and eigenvectors of a hermitian or symmetric matrix."
+    },
+    {
+        "text": "linalg.eigvals(a): compute the eigenvalues of a general matrix."
+    },
+    {
+        "text": "linalg.eigvalsh(a[, uplo]): compute the eigenvalues of a hermitian or real symmetric matrix."
+    },
+    {
+        "text": "linalg.norm(x[, ord, axis, keepdims]): matrix or vector norm."
+    },
+    {
+        "text": "linalg.cond(x[, p]): compute the condition number of a matrix."
+    },
+    {
+        "text": "linalg.det(a): compute the determinant of an array."
+    },
+    {
+        "text": "linalg.matrix_rank(m[, tol]): return matrix rank of array using svd method."
+    },
+    {
+        "text": "linalg.slogdet(a): compute the sign and (natural) logarithm of the determinant of an array."
+    },
+    {
+        "text": "trace(a[, offset, axis1, axis2, dtype, out]): return the sum along diagonals of the array."
+    },
+    {
+        "text": "linalg.solve(a, b): solve a linear matrix equation, or system of linear scalar equations."
+    },
+    {
+        "text": "linalg.tensorsolve(a, b[, axes]): solve the tensor equation a x = b for x. linalg.lstsq(a, b[, rcond]): return the least-squares solution to a linear matrix equation."
+    },
+    {
+        "text": "linalg.inv(a): compute the (multiplicative) inverse of a matrix."
+    },
+    {
+        "text": "linalg.pinv(a[, rcond]): compute the (moore-penrose) pseudo-inverse of a matrix."
+    },
+    {
+        "text": "linalg.tensorinv(a[, ind]): compute the \u2018inverse\u2019 of an n-dimensional array."
+    },
+    {
+        "text": "q17: how to save numpy data from memory to flat file?"
+    },
+    {
+        "text": "ans: numpy data can be stored in npy format files which are custom serialized or they can be stored in text file."
+    },
+    {
+        "text": "q18: what is the use of where and extract?"
+    },
+    {
+        "text": "ans: both where and extract are used to match data based on the conditions."
+    },
+    {
+        "text": "where sample: extract: specifies data and corresponding condition."
+    },
+    {
+        "text": "q19: what is the use of ndenumerate?"
+    },
+    {
+        "text": "ans: ndenumerate return the co-ordinates and corresponding values in the co-ordinates."
+    },
+    {
+        "text": "a = np.array([[11, 22], [33, 43]]) for index, x in np.ndenumerate(a): print(index, x) output: (0, 0) 11 (0, 1) 22 (1, 0) 33 (1, 1) 43 q20: explain how can we draw a histogram using numpy?"
+    },
+    {
+        "text": "ans: consider the following code: the output given will be as follows: the print(be) method in the above prints bin while the hist prints the corresponding count."
+    },
+    {
+        "text": "pandas interview questions note: [q: question number and ans: answer] q1: what is pandas?"
+    },
+    {
+        "text": "ans: pandas is a third party module which helps in easier representation of data in memory to perform analysis."
+    },
+    {
+        "text": "pandas help in faster representation and processing of data."
+    },
+    {
+        "text": "q2: how does pandas represent data?"
+    },
+    {
+        "text": "ans: pandas data representation is in similar line to an excel sheet which consists of row and columns."
+    },
+    {
+        "text": "columns in pandas are known as series."
+    },
+    {
+        "text": "collection of series is called data frame."
+    },
+    {
+        "text": "thus, data frame is the unit of representation of data which is collection of various series."
+    },
+    {
+        "text": "shown is the representation of data frame: q3: how to create series?"
+    },
+    {
+        "text": "ans: q4: how to create data frame?"
+    },
+    {
+        "text": "ans: data frame can be created directly from dictionary or it can also be created by combining various series."
+    },
+    {
+        "text": "output: q5: how are missing values represented in data frame?"
+    },
+    {
+        "text": "ans: consider the following example: q6: explain the process of creating indexes w.r.t."
+    },
+    {
+        "text": "pandas?"
+    },
+    {
+        "text": "ans: indexes can be created using pd.index function."
+    },
+    {
+        "text": "indexes support intersection and union."
+    },
+    {
+        "text": "q7: explain various attributes associated with series."
+    },
+    {
+        "text": "ans: axes: stands for row."
+    },
+    {
+        "text": "dtype: the data type of the object is given by this attribute."
+    },
+    {
+        "text": "empty: checks if series is empty."
+    },
+    {
+        "text": "ndim: the dimensions of data are given back."
+    },
+    {
+        "text": "size: size or number of elements from data are given."
+    },
+    {
+        "text": "values: gets the values in the form of ndarray."
+    },
+    {
+        "text": "head(): the first n rows are returned."
+    },
+    {
+        "text": "tail(): the last n rows are returned."
+    },
+    {
+        "text": "import pandas as pd import numpy as np s = pd.series(np.random.randn(4)) print(\u2018series\u2019,s) print(\u2018axes\u2019,s.axes) print(\u2018empty\u2019,s.empty) print(\u201cdimensions:\u201d) print(s.ndim) print (\u201csize of the object:\u201d) print (s.size) print (\u201cunderlying data is:\u201d) print (s.values) print (\u201ctop 2 rows:\u201d) print (s.head(2)) print (\u201clast 2 rows:\u201d) print (s.tail(2)) output: eries 0 -0.200094 1 0.923716 2 -0.565540"
+    },
+    {
+        "text": "3 -0.895206 dtype: float64 axes [rangeindex(start=0, stop=4, step=1)] empty false dimensions: 1 size of the object: 4 underlying data is: [-0.20009423 0.92371595 -0.56554023 -0.89520616] top 2 rows: 0 -0.200094 1 0.923716 dtype: float64 last 2 rows: 2 -0.565540 3 -0.895206 dtype: float64 q8: explain various statistical measures supported by pandas."
+    },
+    {
+        "text": "ans: axes: print row index as well as column index."
+    },
+    {
+        "text": "sum: calculates the sum of all series."
+    },
+    {
+        "text": "mean: calculates mean of all series."
+    },
+    {
+        "text": "median: calculates the median of all series."
+    },
+    {
+        "text": "std: calculates standard deviation."
+    },
+    {
+        "text": "count: calculates sum of various series."
+    },
+    {
+        "text": "cumsum: calculates cumulative sum."
+    },
+    {
+        "text": "import pandas as pd importnumpy as np d = {\u2018name\u2019:pd.series([\u2018raja\u2019, \u2018raju\u2019, \u2018ricky\u2019, \u2018shiv\u2019, \u2018vishnu\u2019, \u2018ramesh\u2019, \u2018mahender\u2019, \u2018lious\u2019, \u2019salman\u2019, \u2019srk\u2019, \u2019vv\u2019, \u2019mm\u2019]), \u2018age\u2019:pd.series([25, 26, 25, 23, 30, 29, 23, 34, 40, 30,51, 46]), \u2018rating\u2019:pd.series ([4.23, 3.24, 3.98, 2.56, 3.20, 4.6, 3.8, 3.78, 2.98, 4.80, 4.10, 3.65])}"
+    },
+    {
+        "text": "output: axes [rangeindex(start=0, stop=12, step=1), index([\u2018age\u2019, \u2018name\u2019, \u2018rating\u2019], dtype=\u2019object\u2019)] sum sum age 382 name rajarajurickyshivvishnurameshmahenderlioussalm\u2022 rating 44.92 dtype: object sum of axis 1 0 29.23 1 29.24 2 28.98 3 25.56 4 33.20"
+    },
+    {
+        "text": "5 33.60 6 26.80 7 37.78 8 42.98 9 34.80 10 55.10 11 49.65 dtype: float64 mean age 31.833333 rating 3.743333 dtype: float64 std age 9.232682 rating 0.661628 dtype: float64 count age 12 name 12 rating 12 dtype: int64 median age 29.50 rating 3.79 dtype: float64 cumsum age name rating 0 25 raja 4.23 1 51 rajaraju 7.47 2 76 rajarajuricky 11.45 3 99 rajarajurickyshiv 14.01 4 129 rajarajurickyshivvishnu 17.21 5 158 rajarajurickyshivvishnuramesh 21.81 6 181 rajarajurickyshivvishnurameshmahender 25.61 7 215 rajarajurickyshivvishnurameshmahenderlious 29.39 8 255 rajarajurickyshivvishnurameshmahenderlioussalman 32.37 9 285 rajarajurickyshivvishnurameshmahenderlioussalm... 37.17 10 336 rajarajurickyshivvishnurameshmahenderlioussalm... 41.27 11 382 rajarajurickyshivvishnurameshmahenderlioussalm... 44.92"
+    },
+    {
+        "text": "most of the measures can be easily made available with the help of describe function."
+    },
+    {
+        "text": "import pandas as pd import numpy as np d = {\u2018name\u2019:pd.series ([\u2018raja\u2019, \u2019raju\u2019, \u2019ricky\u2019, \u2019shiv\u2019, \u2019vishnu\u2019, \u2019ramesh\u2019, \u2019mahender\u2019, \u2018lious\u2019, \u2019salman\u2019, \u2019srk\u2019, \u2019vv\u2019, \u2019mm\u2019]), \u2018age\u2019:pd.series([25.00, 26, 25, 23, 30, 29, 23, 34, 40, 30, 51, 46.00]), \u2018rating\u2019:pd.series ([4.2320, 3.274, 3.98, 2.5628, 3.20,4.600, 3.800, 3.780, 2.980, 4.8000, 4.1000,3.65])} df = pd.dataframe(d) print (df.describe()) output: q9: explain reindexing."
+    },
+    {
+        "text": "ans: reindexing allows us to modify the index of one data frame by keeping the other data frame as reference."
+    },
+    {
+        "text": "it can also be achieved by passing index and corresponding columns."
+    },
+    {
+        "text": "output:"
+    },
+    {
+        "text": "q10: explain bfill and ffill."
+    },
+    {
+        "text": "ans: while reindexing nan can be introduced .bfill and ffill are used to handle nan."
+    },
+    {
+        "text": "output: bfill: fills the value from ahead value into the previous nan value."
+    },
+    {
+        "text": "ffill: fills the value from behind value into the missing nan value."
+    },
+    {
+        "text": "print(df2.reindex_like(df1,method=\u2019ffill\u2019)) q11: what all type of iterations are provided in pandas data frame?"
+    },
+    {
+        "text": "ans: iteritems(): to iterate over the (key,value) pairs."
+    },
+    {
+        "text": "iterrows(): iterate over the rows as (index,series) pairs."
+    },
+    {
+        "text": "itertuples(): iterate over the rows as namedtuples."
+    },
+    {
+        "text": "consider the following data frame sample:"
+    },
+    {
+        "text": "forkey,value in df.iteritems(): print(key,value) output: name: age, dtype: int64 name 0 raja 1 raju 2 ricky 3 shiv 4 vishnu 5 ramesh 6 mahender 7 lious 8 salman 9 srk 10 vv 11 mm name: name, dtype: object rating 0 4.23 1 3.24 2 3.98"
+    },
+    {
+        "text": "3 2.56 4 3.20 5 4.60 6 3.80 7 3.78 8 2.98 9 4.80 10 4.10 forrow_index,row in df.iterrows(): print (row_index,row) 0 age 25 name raja rating 4.23 name: 0, dtype: object 1 age 26 name raju rating 3.24 name: 1, dtype: object 2 age 25 name ricky rating 3.98 name: 2, dtype: object 3 age 23 name shiv rating 2.56 name: 3, dtype: object 4 age 30 name vishnu rating 3.2 name: 4, dtype: object 5 age 29 name ramesh rating 4.6 name: 5, dtype: object"
+    },
+    {
+        "text": "6 age 23 name mahender rating 3.8 name: 6, dtype: object 7 age 34 name lious rating 3.78 name: 7, dtype: object 8 age 40 name salman rating 2.98 name: 8, dtype: object 9 age 30 name srk rating 4.8 name: 9, dtype: object 10 age 51 name vv rating 4.1 name: 10, dtype: object 11 age 46 name mm rating 3.65 name: 11, dtype: object for row in df.itertuples(): print (row) output: pandas(index=0, age=25, name=\u2019raja\u2019, rating=4.23) pandas(index=1, age=26, name=\u2019raju\u2019, rating=3.24) pandas(index=2, age=25, name=\u2019ricky\u2019, rating=3.98) pandas(index=3, age=23, name=\u2019shiv\u2019, rating=2.56) pandas(index=4, age=30, name=\u2019vishnu\u2019, rating=3.2) pandas(index=5, age=29, name=\u2019ramesh\u2019, rating=4.6) pandas(index=6, age=23, name=\u2019mahender\u2019, rating=3.8) pandas(index=7, age=34, name=\u2019lious\u2019, rating=3.78)"
+    },
+    {
+        "text": "pandas(index=8, age=40, name=\u2019salman\u2019, rating=2.98) pandas(index=9, age=30, name=\u2019srk\u2019, rating=4.8) pandas(index=10, age=51, name=\u2019vv\u2019, rating=4.1) pandas(index=11, age=46, name=\u2019mm\u2019, rating=3.65) q12: explain how sorting is supported in pandas?"
+    },
+    {
+        "text": "ans: sort_index: allows sorting on index(row) or column wise."
+    },
+    {
+        "text": "sort_values: allows sorting on values."
+    },
+    {
+        "text": "consider the following data frame: sorteddf = unsorteddf.sort_values(by=\u2019col1\u2019) print (sorted_df) sorteddf=unsorteddf.sort_index(axis=1) print (sorted_df)"
+    },
+    {
+        "text": "sorteddf=unsorteddf.sort_index() print (sorted_df) sorteddf=unsorteddf.sort_index(ascending=false) print (sorted_df) q13: how to override default reload option in pandas?"
+    },
+    {
+        "text": "ans: q14: explain various slicing options available with pandas?"
+    },
+    {
+        "text": "ans: pandas supports the following slicing: .loc() label based .iloc() integer based .ix() both label and integer based consider the following data frame:"
+    },
+    {
+        "text": "output: q15: explain advanced statistics with pandas."
+    },
+    {
+        "text": "ans: pandas support peak to peak, percentage change, covariance, and correlation on different series in data frame."
+    },
+    {
+        "text": "output data frame pct change covariance: correlation: q16: explain rolling function."
+    },
+    {
+        "text": "ans: rolling function allows us to define window size and perform various operations w.r.t."
+    },
+    {
+        "text": "the window."
+    },
+    {
+        "text": "expanding function is an alternative to rolling statistics is to use an expanding window, which yields the value of the statistic with all the data available up to that point in time."
+    },
+    {
+        "text": "consider the following data frame:"
+    },
+    {
+        "text": "print (df.expanding(min_periods=3).mean()) q17: how can we handle na in pandas?"
+    },
+    {
+        "text": "ans: we can handle na in three ways: dropna: removes the data where na is present."
+    },
+    {
+        "text": "pad backfill consider the following dataframe: dropna output print (df.dropna())"
+    },
+    {
+        "text": "pad output backfill: q18: explain group by function."
+    },
+    {
+        "text": "ans: group_by allows us to group data based on single or multiple columns."
+    },
+    {
+        "text": "it is equivalent to group by clause supported in structured query language (sql) ."
+    },
+    {
+        "text": "consider the following dataframe:"
+    },
+    {
+        "text": "2015 2016 2017 q19: explain merge functions w.r.t data frame."
+    },
+    {
+        "text": "ans: data frame in pandas support merge operations in which two related data from diverse data frames can be brought in single view."
+    },
+    {
+        "text": "consider the following left and right data frame: left"
+    },
+    {
+        "text": "right left merge: in left merge, all data from left side will come and only those matching from right would come."
+    },
+    {
+        "text": "right merge: in right merge everything from right side comes and only matching in left would come else it would come as nan."
+    },
+    {
+        "text": "print (\u2018right\u2019,pd.merge(left, right, on=\u2019id\u2019, how=\u2019right\u2019)) outer merge:"
+    },
+    {
+        "text": "data from both left and right would come."
+    },
+    {
+        "text": "print (\u2018outer\u2019,pd.merge(left, right, on=\u2019subject_id\u2019, how=\u2019outer\u2019)) q20: explain concat method."
+    },
+    {
+        "text": "ans: concat method allows combining two different data frames either at row level or at column level."
+    },
+    {
+        "text": "consider the following left and right data frame: left right print (pd.concat([left,right])) print (pd.concat([left,right],axis=1))"
+    },
+    {
+        "text": "q21: explain how time related range can be generated in pandas."
+    },
+    {
+        "text": "ans: pandas support generating date range with the help of two functions daterange and bdaterange (business date range)."
+    },
+    {
+        "text": "periods and frequency can be specified as attribute to the ranges."
+    },
+    {
+        "text": "start = pd.datetime(2018, 1, 1) end = pd.datetime(2020, 1, 5) print (pd.bdate_range(start, end)) output: datetimeindex([\u20182018-01-01\u2019, \u20182018-01-02\u2019, \u20182018-01-03\u2019, \u20182018-01-04\u2019, \u20182018-01-05\u2019, \u20182018-01-08\u2019, \u20182018-01-09\u2019, \u20182018-01-10\u2019, \u20182018-01-11\u2019, \u20182018-01-12\u2019, \u2022 \u20182019-12-23\u2019, \u20182019-12-24\u2019, \u20182019- 12-25\u2019, \u20182019-12-26\u2019, \u20182019-12-27\u2019, \u20182019-12-30\u2019, \u20182019-12-31\u2019, \u20182020-01-01\u2019, \u20182020-01-02\u2019, \u20182020-01-03\u2019], dtype=\u2019datetime64[ns]\u2019, length=525, freq=\u2019b\u2019) print (pd.date_range(\u20181/1/2011\u2019, periods=5,freq=\u2019m\u2019)) output: datetimeindex([\u20182011-01-31\u2019, \u20182011-02-28\u2019, \u20182011-03-31\u2019, \u20182011-04-30\u2019, \u20182011-05-31\u2019], dtype=\u2019datetime64[ns]\u2019, freq=\u2019m\u2019) q22: explain which all data sources can pandas retrieve values."
+    },
+    {
+        "text": "ans: pandas are capable of reading and writing from variety of sources."
+    },
+    {
+        "text": "following are the sources and the corresponding read or write methods:"
+    },
+    {
+        "text": "q23: can you compare some of the functions of r and python?"
+    },
+    {
+        "text": "ans: filtering, sampling, and querying"
+    },
+    {
+        "text": "sorting transforming aggregate/grouping functions q24: how to print a histogram using pandas?"
+    },
+    {
+        "text": "ans: using series.value_counts() functions we can easily generate the value and its corresponding count."
+    },
+    {
+        "text": "import pandas as pd importnumpy as np s = pd.series([1,1,100,120,30,40,60,60])"
+    },
+    {
+        "text": "print(s) print(s.value_counts()) output: histogram value count scipy and its applications note: [q: question number and ans: answer] q1: explain scipy library."
+    },
+    {
+        "text": "ans: scipy is used for scientific computation."
+    },
+    {
+        "text": "it is a collection of components and provides eco system for scientific computing."
+    },
+    {
+        "text": "data and computation: pandas, provides ease of use and very high performing data sympy, for symbolic mathematics and computer algebra."
+    },
+    {
+        "text": "scikit-image used for image processing."
+    },
+    {
+        "text": "scikit-learn is used for machine learning."
+    },
+    {
+        "text": "h5py and pytables can both access data stored in the hdf5 format."
+    },
+    {
+        "text": "q2: explain how can we perform normality tests."
+    },
+    {
+        "text": "ans: normality tests are the ones which test for data distribution in the form of gaussian."
+    },
+    {
+        "text": "each of this has following assumptions on input and output: input assumptions: observations in each sample are independent and identically distributed."
+    },
+    {
+        "text": "output assumptions: h0: the sample has a gaussian distribution h1: the sample does not have a gaussian distribution there are three types of test within."
+    },
+    {
+        "text": "all the three types are supported as a part of scipy."
+    },
+    {
+        "text": "import scipy.stats as ss shapiro-wilk test stat, p = ss.shapiro(data) d\u2019agostino\u2019s k^2 test stat, p = ss.normaltest(data) anderson-darling test result =ss.anderson(data) conclusion: if calculate p value < alpha, we can conclude null hypothesis rejected else it cannot be rejected."
+    },
+    {
+        "text": "q3: explain how can we perform correlation test?"
+    },
+    {
+        "text": "ans: pearson\u2019s correlation coefficient tests have a linear relationship that exist between two data set."
+    },
+    {
+        "text": "input assumptions: all these are made w.r.t observations they are independent and identically distributed they are normally distributed they have the same variance output assumptions: h0: the two samples are independent."
+    },
+    {
+        "text": "h1: two samples have dependancy."
+    },
+    {
+        "text": "import scipy.stats corr, p = scipy.stats.pearsonr(data1, data2) based on value of corr and p we can conclude whether their relationship between both columns."
+    },
+    {
+        "text": "spearman\u2019s rank correlation and kendall\u2019s rank correlation."
+    },
+    {
+        "text": "both of them have same input and output assumptions."
+    },
+    {
+        "text": "tests whether monotonic relationship exists between data set."
+    },
+    {
+        "text": "input assumptions: all assumptions are made w.r.t."
+    },
+    {
+        "text": "observations: they are independent and identically distributed they can be ranked output assumptions: h0: the two samples are independent h1: there is a dependency between the samples spearman\u2019s rank correlation import scipy.stats"
+    },
+    {
+        "text": "corr, p = scipy.stats .spearmanr(data1, data2) kendall\u2019s rank correlation import scipy.stats corr, p = scipy.stats .kendalltau(data1, data2) based on value of corr and p we can conclude whether their relationship between both columns."
+    },
+    {
+        "text": "chi-squared test tests independence between two categorical variables: input assumptions: observations are independent."
+    },
+    {
+        "text": "25 or more examples in each cell are required w.r.t."
+    },
+    {
+        "text": "the contingency table."
+    },
+    {
+        "text": "output assumptions: h0: the two samples are independent."
+    },
+    {
+        "text": "h1: there is a dependency between the samples."
+    },
+    {
+        "text": "import scipy.stats stat, p, dof, expected = scipy.stats .chi2_contingency(table) q4: explain tests pertaining to parametric statistical hypothesis tests."
+    },
+    {
+        "text": "ans: comparison of data is done by the following test: student\u2019s t-test it tests whether the means of two independent samples are significantly different."
+    },
+    {
+        "text": "input assumptions: all assumptions are made w.r.t observation."
+    },
+    {
+        "text": "they are independent and identically distributed (iid)."
+    },
+    {
+        "text": "they are normally distributed."
+    },
+    {
+        "text": "they have the same variance."
+    },
+    {
+        "text": "output assumptions: h0: the means of the samples are equal h1: the means of the sam ples are unequal import scipy.stats as ss stat, p = ss.ttest_ind(data1, data2) paired student\u2019s t-test tests whether the significant difference exists between the means of two paired samples."
+    },
+    {
+        "text": "input assumptions: observations in each sample are independent and identically distributed observations in each sample are normally distributed"
+    },
+    {
+        "text": "observations in each sample have the same variance observations across each sample are paired output assumptions: h0: the means of the samples are equal h1: the means of the samples are unequal import scipy.stats stat, p = scipy.stats.ttest_rel(data1, data2) analysis of variance test (anova) it tests whether the means of two or more independent samples are significantly different."
+    },
+    {
+        "text": "input assumptions: all assumptions are made w.r.t observation: they are independent and identically distributed (iid)."
+    },
+    {
+        "text": "they are normally distributed."
+    },
+    {
+        "text": "they have the same variance."
+    },
+    {
+        "text": "output assumptions: h0: the means of the samples are equal."
+    },
+    {
+        "text": "h1: one or more of the means of the samples are unequal."
+    },
+    {
+        "text": "import scipy.stats stat, p = scipy.stats.f_oneway(data1, data2, \u2022) q5: explain how to test nonparametric statistical hypothesis tests."
+    },
+    {
+        "text": "ans: mann-whitney u test: it tests whether the two independent samples are equal or not."
+    },
+    {
+        "text": "input assumptions: all assumptions are made w.r.t observation: they are independent and identically distributed."
+    },
+    {
+        "text": "they can be ranked."
+    },
+    {
+        "text": "output assumptions: h0: the distributions of both samples are equal."
+    },
+    {
+        "text": "h1: the distributions of both samples are not equal."
+    },
+    {
+        "text": "import scipy.stats stat, p = scipy.stats.mannwhitneyu(data1, data2) q6: implement logistic regression in python?"
+    },
+    {
+        "text": "ans: sklearn.linear_model contains logisticregression which can be used to represent logistic regression."
+    },
+    {
+        "text": "q7: explain how to implement decision tree in python."
+    },
+    {
+        "text": "ans: sklearn.tree module contains decisiontreeclassifier which can be used for classification."
+    },
+    {
+        "text": "q8: how to implement random forest in python?"
+    },
+    {
+        "text": "ans: sklearn.ensemble module contains randomforestclassifier which can be used for random forest generation."
+    },
+    {
+        "text": "for regression type we will use randomforestregressor instead of randomforestclassifier ."
+    },
+    {
+        "text": "q9: how to implement support vector machine in python?"
+    },
+    {
+        "text": "ans: sklearn.svm module contains svc which is used for svm."
+    },
+    {
+        "text": "svm for linear model code: svm for non-linear/polynomial mode code"
+    },
+    {
+        "text": "q10: which all kernels are supported by svm in python?"
+    },
+    {
+        "text": "ans: linear, poly, sigmoid (which returns 0 or 1 kernel=\u2019sigmoid\u2019) and gaussian (to support gaussian distribution kernel=rbf) q11: implement knn algorithm using python."
+    },
+    {
+        "text": "ans: sklearn.neighbors module contains kneighborsclassifier which can be used for classification: q12: how to select k in knn algorithm?"
+    },
+    {
+        "text": "ans: finding an optimal value of k is very important in order to ensure success of knn algorithm."
+    },
+    {
+        "text": "the value of k is heavily dependent on the data set."
+    },
+    {
+        "text": "a very small value of k implies noise can have a bigger influence on the result."
+    },
+    {
+        "text": "a large value of k implies more calculations which can be time and memory consuming."
+    },
+    {
+        "text": "mostly odd classes are preferred and k= sqrt(noofelements) is generally taken as an approach to find k . alternatively, elbow method can also be used."
+    },
+    {
+        "text": "in the case of elbow method."
+    },
+    {
+        "text": "in elbow method we calculate the sum of squared errors (sse) for different values of k and plot the same."
+    },
+    {
+        "text": "the one which looks like an elbow is selected as the optimal."
+    },
+    {
+        "text": "q13: how to implement k means in python?"
+    },
+    {
+        "text": "ans: we can implement k means with the help of sklearn.cluster module which contains kmeans."
+    },
+    {
+        "text": "q14: how can accuracy of any model be calculated?"
+    },
+    {
+        "text": "ans: following approaches can be used to determine accuracy:"
+    },
+    {
+        "text": "q15: explain regression metrics."
+    },
+    {
+        "text": "ans: regression metrics gives an indication of how the regression algorithm performed."
+    },
+    {
+        "text": "following are the important ones: q16: explain how we can print a decision tree or see the rules of the decision tree?"
+    },
+    {
+        "text": "ans: export_text can help us in achieving the above objective."
+    },
+    {
+        "text": "by passing the created model to the above function, we can get the rules printed out fromsklearn.tree.export import export_text dcrules = exporttext(model, featurenames=list(train)) print(dcrules) in the below example, dcrules is the extracted rule after passing the created model to export function: |---age<=0.80 ||---salary<=0.65 |||---age<=-0.19 ||||---class:0 |||---age>-0.19 ||||---salary<=-0.06 |||||---class:0 ||||---salary>-0.06 |||||---salary<=0.40 ||||||---salary<=0.03 |||||||---class:1 q17: what is the use of boosting techniques?"
+    },
+    {
+        "text": "ans: boosting techniques fall under the family of ensemble algorithms."
+    },
+    {
+        "text": "in boosting techniques, a collection of many classifiersthatcan be weak in nature can be combined together to form a new classifier thatcan be strong."
+    },
+    {
+        "text": "it can be said that in boosting, a series of various classifiers are made progressively in which each classifier tries to solve the reduced the error of earlier one."
+    },
+    {
+        "text": "the end product after this would be a refined classifier with better performance as compared to earlier"
+    },
+    {
+        "text": "q18: explain some of the advantages and disadvantages of boosting techniques?"
+    },
+    {
+        "text": "ans: advantages since they are ensemble model, the predictions are easy to interpret."
+    },
+    {
+        "text": "predictions are better are compared to normal classifiers."
+    },
+    {
+        "text": "over fitting can be handled to a good extent with the help of this technique."
+    },
+    {
+        "text": "disadvantages: outliers are important to consider."
+    },
+    {
+        "text": "if not handled properly they can affect the entire model."
+    },
+    {
+        "text": "other than xgbboost, most other algorithms are sequential thus limiting the scope of running it in parallel."
+    },
+    {
+        "text": "q19: what is adaboost?"
+    },
+    {
+        "text": "ans: ada, also known asthe adaptive boosting technique, was found by yoav freund and robert schapire."
+    },
+    {
+        "text": "since it is a boosting technique, the aim of this would be to find a new strong classifier from the collection of various weak classifiers."
+    },
+    {
+        "text": "it findsa major application with a decision tree or binary classification."
+    },
+    {
+        "text": "generally, the ada boost makes use of decision stumps, which are decision trees of one level."
+    },
+    {
+        "text": "the instance in the training data set is weighted."
+    },
+    {
+        "text": "this is very important and distinct as compared to majority voting as the importance of each output is taken as per weightage."
+    },
+    {
+        "text": "thus the process is to make use of decision stump to take input variable and predict binary values as classification."
+    },
+    {
+        "text": "by using the above misclassification rate is calculated."
+    },
+    {
+        "text": "using the weighted sum, the stage value is then calculated."
+    },
+    {
+        "text": "using this, training weights are updated, which gives more weightage to wrongly predicted instances and less weightage to properly predicted instances."
+    },
+    {
+        "text": "weak models thatare added in the sequence are then trained using the weighted training data."
+    },
+    {
+        "text": "the above process is repeated until the desired accuracy is achieved, or no more improvements are possible."
+    },
+    {
+        "text": "shown below is the code for ada boosting fromsklearn.ensemble import adaboostclassifier booster = adaboostclassifier() n_estimators = 50 (default value) baseestimator = decisiontreeclassifier (default value) booster.fit(xtrain,ytrain) booster.predict(xtest) q20: explain gradient boosting?"
+    },
+    {
+        "text": "ans: gradient boosting makes use of the trained sequence model."
+    },
+    {
+        "text": "it makes use of gradient descent function, which calculates the local minimum of a given function."
+    },
+    {
+        "text": "thus we try to find the local minimum function for loss."
+    },
+    {
+        "text": "the procedure is to construct new learners whoare also known as the base and which can be correlated with negative gradient descent of the loss function, fromsklearn.ensemble import gradientboostingclassifier #for classification from sklearn.ensemble import gradientboostingregressor #for regression classifier = gradientboostingclassifier(nestimators, learningrate, max_depth) classifier.fit(xtrain, ytrain) n_estimators: indicatesthe number of weak learners learning_rate: determines the contribution of weak learners in the final combination max_depth: maximum depth of the individual regression estimators."
+    },
+    {
+        "text": "this limits the number of nodes in the tree."
+    },
+    {
+        "text": "q21: explain xgboost?"
+    },
+    {
+        "text": "ans: thexgboost, also known as extreme gradient boostingis a set of algorithms /library for developing fast and high-performance gradient boosting tree models."
+    },
+    {
+        "text": "it makes use of gradient boosting framework some of the features are: automatic handling of missing data values."
+    },
+    {
+        "text": "parallelization of tree construction is possible makes use of the second partial derivatives of the loss function."
+    },
+    {
+        "text": "this is the major difference as compared to other gradient algorithms."
+    },
+    {
+        "text": "while other algorithms makes use of loss function which is first order derivative, xgb makes use of second order derivative which also gives the direction of the gradient advanced regularization techniques are used."
+    },
+    {
+        "text": "sample snippet import pandas as pd fromxgboost import xgbclassifier fromsklearn.metrics import accuracy_score model = xgbclassifier() model.fit(x,y) predicttrain = model.predict(testx) accuracytrain = accuracyscore(trainy,predicttrain) q22: explain the differences/similarities between bagging and boosting?"
+    },
+    {
+        "text": "ans: similarities: both belong to the method of algorithms which are known as ensemble i.e."
+    },
+    {
+        "text": "which generates gets 1 learner from n classifiers both work by dividing the original dataset into smaller units average of outputs are taken into consideration both try to increase performance"
+    },
+    {
+        "text": "following table shows the differences: q23: write a small snippet to perform operation with neural networks using tensorflow and keras?"
+    },
+    {
+        "text": "ans: matplotlib samples to remember note: [q: question number and ans: answer] q1: explain how to draw bar plot."
+    },
+    {
+        "text": "ans:"
+    },
+    {
+        "text": "q2: how to draw histogram?"
+    },
+    {
+        "text": "ans:"
+    },
+    {
+        "text": "q3: how to draw line chart?"
+    },
+    {
+        "text": "ans: importnumpy as np frommatplotlib import pyplot as plt frommatplotlib.backends.backend_pdf import pdfpages q4: draw pie chart."
+    },
+    {
+        "text": "ans:"
+    },
+    {
+        "text": "q5: how to get the equation of the line printed line plot?"
+    },
+    {
+        "text": "ans: using following snippet of code same can be achieved plt.title(\u2018$y= slope * x+ intercept)) q6: draw scatter plot."
+    },
+    {
+        "text": "ans:"
+    },
+    {
+        "text": "statistics with excel sheet note: [q: question number and ans: answer] q1: does excel has any support for statistics?"
+    },
+    {
+        "text": "ans: yes, excel sheet do provide a lot of support for statistics with few add-ins like analysis tool pack ."
+    },
+    {
+        "text": "in order to enable this analysis tool pack, select excel options and the go to add-ins option and enable analysistoolpak ."
+    },
+    {
+        "text": "once done, the data analysis option is enabled in data tab of excel, it can be seen under the data tab as shown in the image down below: q2: find correlation using excel."
+    },
+    {
+        "text": "ans: correlation can be easily found with the help of correl function of analysis toolpak."
+    },
+    {
+        "text": "select data analysis \u2192 select correlation as an option."
+    },
+    {
+        "text": "after selecting correlation from data analysis select the corresponding input field and set output values to be displayed on the excel sheet by setting output range available under output options , and after ok is clicked, the result for same of covariance can be found on excel sheet."
+    },
+    {
+        "text": "q3: how to get histogram in excel?"
+    },
+    {
+        "text": "ans: to get histogram in excel we generally require values and corresponding bins."
+    },
+    {
+        "text": "bins represent the range in which frequency is calculated."
+    },
+    {
+        "text": "from data analysis \u2192 select histogram function \u2192 we can select input range and bins range q4: explain how to get descriptive statistics using excel."
+    },
+    {
+        "text": "ans: to get descriptive statistics select data analysis \u21d2 select descriptive analysis \u21d2 then select different statistics you prefer."
+    },
+    {
+        "text": "q5: explain how to perform anova in excel?"
+    },
+    {
+        "text": "ans: to perform anova select data analysis \u21d2 anova: single factor"
+    },
+    {
+        "text": "select corresponding input and output values."
+    },
+    {
+        "text": "based upon the value of f and f critical, we can conclude whether null hypothesis is rejected or accepted."
+    },
+    {
+        "text": "q6: explain how to perform rank and percentile in excel."
+    },
+    {
+        "text": "ans: from data analysis \u2192 select rank and percentile"
+    },
+    {
+        "text": "select the input and output range to get the answer:"
+    }
+]
