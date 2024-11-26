@@ -1,0 +1,19 @@
+**Job Title:** Data Engineer at Microsoft
+
+**Responsibilities:**
+- Design, develop, and maintain robust ETL pipelines.
+- Ensure data integrity and availability for analytics teams.
+- Optimize database performance for scalability.
+- Collaborate with stakeholders to define data requirements.
+
+**Minimum Requirements:**
+- Bachelor’s degree in Computer Science or related field.
+- 3+ years of experience in data engineering.
+- Proficiency in Python, SQL, and data pipeline tools (e.g., Airflow).
+- Knowledge of relational databases (e.g., MySQL, PostgreSQL).
+
+**Preferred Requirements:**
+- Experience with Azure Data Lake or Azure Databricks.
+- Familiarity with distributed computing (e.g., Kafka, Spark).
+- Cloud certifications.
+        

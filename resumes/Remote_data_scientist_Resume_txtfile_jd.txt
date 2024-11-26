@@ -1,0 +1,19 @@
+**Job Title:** Data Scientist at Meta
+
+**Responsibilities:**
+- Build models to improve user engagement on social platforms.
+- Conduct A/B tests to evaluate feature performance.
+- Develop predictive models for ad revenue optimization.
+- Present findings to leadership.
+
+**Minimum Requirements:**
+- Bachelor’s degree in Computer Science or Statistics.
+- 3+ years of experience in data science roles.
+- Proficiency in Python, SQL, and R.
+- Experience with experimentation platforms.
+
+**Preferred Requirements:**
+- Knowledge of social network graph algorithms.
+- Familiarity with distributed data systems.
+- Advanced degree in a relevant field.
+        

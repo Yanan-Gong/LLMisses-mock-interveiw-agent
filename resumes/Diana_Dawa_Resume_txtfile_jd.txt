@@ -1,0 +1,19 @@
+**Job Title:** Data Scientist at Google
+
+**Responsibilities:**
+- Develop machine learning models to improve search and ad recommendations.
+- Perform data analysis on large datasets to derive actionable insights.
+- Collaborate with cross-functional teams to design and implement data-driven solutions.
+- Create dashboards to track key performance metrics.
+
+**Minimum Requirements:**
+- Bachelor’s degree in Computer Science, Statistics, or related field.
+- 3+ years of experience in data analysis and predictive modeling.
+- Proficiency in Python, SQL, and machine learning frameworks (e.g., TensorFlow).
+- Strong communication skills.
+
+**Preferred Requirements:**
+- Experience with cloud platforms like GCP or AWS.
+- Familiarity with big data tools (e.g., Spark, Hadoop).
+- Knowledge of A/B testing frameworks.
+        

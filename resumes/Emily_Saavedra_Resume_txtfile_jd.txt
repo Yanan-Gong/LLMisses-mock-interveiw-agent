@@ -1,0 +1,19 @@
+**Job Title:** Machine Learning Engineer at Tesla
+
+**Responsibilities:**
+- Develop ML models for autonomous driving systems.
+- Perform data preprocessing and feature engineering.
+- Collaborate with hardware engineers to optimize model performance.
+- Document and test ML workflows.
+
+**Minimum Requirements:**
+- Bachelor’s degree in Computer Science or Engineering.
+- 3+ years of experience in ML engineering.
+- Proficiency in Python and TensorFlow.
+- Strong understanding of deep learning algorithms.
+
+**Preferred Requirements:**
+- Experience with autonomous systems.
+- Familiarity with edge computing.
+- Publications in AI conferences.
+        

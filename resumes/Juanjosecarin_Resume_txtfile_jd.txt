@@ -1,0 +1,19 @@
+**Job Title:** Data Engineer at Apple
+
+**Responsibilities:**
+- Create and manage data pipelines to support machine learning models.
+- Develop APIs for accessing and visualizing data.
+- Ensure compliance with data security policies.
+- Collaborate with product teams to meet data needs.
+
+**Minimum Requirements:**
+- Bachelor’s degree in Computer Science or Engineering.
+- 3+ years of experience in data engineering.
+- Proficiency in SQL, Python, and Scala.
+- Knowledge of data governance practices.
+
+**Preferred Requirements:**
+- Experience with Spark and Kafka.
+- Familiarity with macOS development environments.
+- Certifications in data engineering.
+        

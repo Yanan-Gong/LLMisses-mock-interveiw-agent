@@ -238,13 +238,28 @@ agent = bq_mock_interview_agent
 messages = []
 
 print("Welcome to the mock interview process! Please input your resume and job description.")
-while True:
-    user = input("User (type 'quit' to exit): ").strip()
-    if user.lower() == 'quit':
-        print("Exiting the interview Process. Goodbye!")
-        break
-    messages.append({"role": "user", "content": user})
+#while True:
+#    user = input("User (type 'quit' to exit): ").strip()
+#    if user.lower() == 'quit':
+ #       print("Exiting the interview Process. Goodbye!")
+ #       break
+ #   messages.append({"role": "user", "content": user})
 
-    response = bq_question_answer(agent, messages)
-    agent = response.agent
-    messages.extend(response.messages)
+ #   response = bq_question_answer(agent, messages)
+ #   agent = response.agent
+ #   messages.extend(response.messages)
+
+
+# Reading resume and job description from files
+resume_file = "resume.txt"  # Path to the resume file
+job_description_file = "job_description.txt"  # Path to the job description file
+
+with open(resume_file, 'r') as file:
+    user_resume = file.read()
+
+with open(job_description_file, 'r') as file:
+    user_job_description = file.read()
+
+messages.append({"role": "user", "content": f"Resume: {user_resume}\nJob Description: {user_job_description}"})
+response = bq_question_answer(agent, messages)
+print("Agent's Response:", response.messages)
