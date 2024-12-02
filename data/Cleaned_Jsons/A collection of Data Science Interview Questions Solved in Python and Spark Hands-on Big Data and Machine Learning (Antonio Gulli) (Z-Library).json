@@ -1,0 +1,2018 @@
+[
+    {
+        "text": "a collection of data science interview questions solved in python and spark hands-on big data and machine learning (volume i) antonio gulli"
+    },
+    {
+        "text": "copyright \u00a9 2015 antonio gulli all rights reserved."
+    },
+    {
+        "text": "isbn: 1517216710 isbn-13: 978-1517216719"
+    },
+    {
+        "text": "\u201cdata science\u201d is the sixth of a series of 25 chapters devoted to algorithms, problem solving, machine learning, big data and c++/ python programming."
+    },
+    {
+        "text": "dedication to lorenzo, leonardo, aurora and francesca \u201ci heard there was a secret chord that david played and it pleased the lord but you don't really care for music, do ya?\u201d [leonard cohen, 1984] \u201cla tua bocca si apre al sorriso e la tua mano ad aiutare gli altri\u201d"
+    },
+    {
+        "text": "acknowledgments thanks to eric, francesco, michele, dario, domenico, carla, antonio, ettore, federica, laura, antonella, susana, and antonello for their friendship."
+    },
+    {
+        "text": "1. what are the most important machine learning techniques?"
+    },
+    {
+        "text": "solution 2. why is it important to have a robust set of metrics for machine learning?"
+    },
+    {
+        "text": "solution code 3. why are features extraction and engineering so important in machine learning?"
+    },
+    {
+        "text": "solution 4. can you provide an example of features extraction?"
+    },
+    {
+        "text": "solution code 5. what is a training set, a validation set, a test set and a gold set in supervised and unsupervised learning?"
+    },
+    {
+        "text": "solution 6. what is a bias - variance tradeoff?"
+    },
+    {
+        "text": "solution 7. what is a cross-validation and what is an overfitting?"
+    },
+    {
+        "text": "solution code 8. why are vectors and norms used in machine learning?"
+    },
+    {
+        "text": "solution code 9. what are numpy, scipy and spark essential datatypes?"
+    },
+    {
+        "text": "solution code 10. can you provide an example for map and reduce in spark?"
+    },
+    {
+        "text": "(let\u2019s compute the mean square error) solution code 11. can you provide examples for other computations in spark?"
+    },
+    {
+        "text": "solution code 12. how does python interact with spark"
+    },
+    {
+        "text": "solution 13. what is spark support for machine learning?"
+    },
+    {
+        "text": "solution 14. how does spark work in a parallel environment solution code 15. what is the mean, the variance, and the covariance?"
+    },
+    {
+        "text": "solution code 16. what are percentiles and quartiles?"
+    },
+    {
+        "text": "solution code 17. can you transform an xml file into python pandas?"
+    },
+    {
+        "text": "solution code 18. can you read html into python pandas?"
+    },
+    {
+        "text": "solution code 19. can you read json into python pandas?"
+    },
+    {
+        "text": "solution code 20. can you draw a function from python?"
+    },
+    {
+        "text": "solution code 21. can you represent a graph in python?"
+    },
+    {
+        "text": "solution code 22. what is an ipython notebook?"
+    },
+    {
+        "text": "solution code 23. what is a convenient tool for performing data statistics?"
+    },
+    {
+        "text": "solution code 24. how is it convenient to visualize data statistics solution code 25. how to compute covariance and correlation matrices with pandas solution code"
+    },
+    {
+        "text": "26. can you provide an example of connection to the twitter api?"
+    },
+    {
+        "text": "solution code 27. can you provide an example of connection to the linkedin api?"
+    },
+    {
+        "text": "solution code 28. can you provide an example of connection to the facebook api?"
+    },
+    {
+        "text": "solution code 29. what is a tfxidf?"
+    },
+    {
+        "text": "solution code 30. what is \u201cfeatures hashing\u201d?"
+    },
+    {
+        "text": "and why is it useful for bigdata?"
+    },
+    {
+        "text": "solution 31. what is \u201ccontinuous features binning\u201d?"
+    },
+    {
+        "text": "solution 32. what is an normalization?"
+    },
+    {
+        "text": "solution code 33. what is a chi square selection?"
+    },
+    {
+        "text": "solution 34. what is mutual information and how can it be used for features selection?"
+    },
+    {
+        "text": "solution 35. what is a loss function, what are linear models, and what do we mean by regularization parameters in machine learning?"
+    },
+    {
+        "text": "solution 36. what is an odd ratio?"
+    },
+    {
+        "text": "37. what is a sigmoid function and what is a logistic function?"
+    },
+    {
+        "text": "code 38. what is a gradient descent?"
+    },
+    {
+        "text": "solution 39. what is a stochastic gradient descent?"
+    },
+    {
+        "text": "solution code 40. what is a linear least square regression?"
+    },
+    {
+        "text": "solution code 41. what are lasso, ridge, and elasticnet regularizations?"
+    },
+    {
+        "text": "solution 42. what is a logistic regression?"
+    },
+    {
+        "text": "solution code 43. what is a stepwise regression?"
+    },
+    {
+        "text": "solution 44. how to include nonlinear information into linear models solution 45. what is a nai\u0308ve bayes classifier?"
+    },
+    {
+        "text": "solution 46. what is a bernoulli and a multivariate nai\u0308ve bayes?"
+    },
+    {
+        "text": "solution code 47. what is a gaussian?"
+    },
+    {
+        "text": "solution code 48. what is a standard scaling?"
+    },
+    {
+        "text": "solution code 49. why are statistical distributions important?"
+    },
+    {
+        "text": "solution code 50. can you compare your data with some distribution?"
+    },
+    {
+        "text": "what is a qq-plot?"
+    },
+    {
+        "text": "solution code 51. what is a gaussian nai\u0308ve bayes?"
+    },
+    {
+        "text": "solution 52. what is another way to use nai\u0308ve bayes with continuous data?"
+    },
+    {
+        "text": "solution 53. what is the nearest neighbor classification?"
+    },
+    {
+        "text": "solution code 54. what are support vector machines (svm)?"
+    },
+    {
+        "text": "solution"
+    },
+    {
+        "text": "code 55. what are svm kernel tricks?"
+    },
+    {
+        "text": "solution 56. what is k-means clustering?"
+    },
+    {
+        "text": "solution code 57. can you provide an example for text classification with spark?"
+    },
+    {
+        "text": "solution code 58. where to go from here appendix a 59. ultra-quick introduction to python 60. ultra-quick introduction to probabilities 61. ultra-quick introduction to matrices and vectors"
+    },
+    {
+        "text": "1. what are the most important machine learning techniques?"
+    },
+    {
+        "text": "solution in his famous essay \u201ccomputing machinery and intelligence\u201d alan turing asked a fundamental question \"can machines do what we (as thinking entities) can do?\""
+    },
+    {
+        "text": "machine learning is not about thinking but more about a related activity: learning or better, according to arthur samuel, the \"field of study that gives computers the ability to learn without being explicitly programmed\"."
+    },
+    {
+        "text": "machine learning techniques are typically classified into two categories: in supervised learning pairs of examples made up by (inputs, desired output) are available and the computer learns a model according to which given an input, a desired output with a minimal error is predicted."
+    },
+    {
+        "text": "classification, neural networks and regression are all examples of supervised learning."
+    },
+    {
+        "text": "for all techniques we assume that there is an oracle or a teacher that can teach to computers what to do in order for them to apply the learned lessons on new unseen data."
+    },
+    {
+        "text": "in unsupervised learning computers have no teachers and they are left alone in searching for structures, patterns and anomalies in data."
+    },
+    {
+        "text": "clustering and density estimations are typical examples of unsupervised machine learning."
+    },
+    {
+        "text": "let us now review the main machine learning techniques: in classification the teacher presents pairs of (inputs, target classes) and the computer learns to attribute classes to new unseen data."
+    },
+    {
+        "text": "nai\u0308ve bayesian, svm, decision trees and neural networks are all classification methodologies."
+    },
+    {
+        "text": "the first two are discussed in this volume, while the remaining ones will be part of the next volume."
+    },
+    {
+        "text": "in regression the teacher presents pairs of (inputs, continuous targets) and computers learn how to predict continuous values on new and unseen data."
+    },
+    {
+        "text": "linear and logistic regression are examples which will be discussed in the present volume."
+    },
+    {
+        "text": "decision trees, svm and neural networks can also be used for regression."
+    },
+    {
+        "text": "in associative rule learning computers are presented with a large set of observations, all being made up of multiple variables."
+    },
+    {
+        "text": "the task is then to learn relations between variables such us a & b\uf0e0c (if a and b happen, then c will also happen)."
+    },
+    {
+        "text": "in clustering computers learn how to partition observations in various subsets, so that each partition will be made up of similar observations according to some well-defined metric."
+    },
+    {
+        "text": "algorithms like"
+    },
+    {
+        "text": "k-means and dbscan belong also to this class."
+    },
+    {
+        "text": "in density estimation computers learn how to find statistical values that describe data."
+    },
+    {
+        "text": "algorithms like expectation maximization belong also to this class."
+    },
+    {
+        "text": "2. why is it important to have a robust set of metrics for machine learning?"
+    },
+    {
+        "text": "solution any machine learning technique should be evaluated by using metrics for analytically assessing the quality of results."
+    },
+    {
+        "text": "for instance: if we need to categorize objects such as people, movies or songs into different classes, precision and recall might be suitable metrics."
+    },
+    {
+        "text": "precision is the ratio where is the number of true positives and is the number of false positives."
+    },
+    {
+        "text": "recall is the ratio where is the number of true positives and is the number of false negatives."
+    },
+    {
+        "text": "true and false are attributes derived by using manually created data."
+    },
+    {
+        "text": "precision and recall are typically reported in a 2-d graph known as p/r curves, where different algorithmic graphs can be compared by reporting the achieved precision for fixed values of recall."
+    },
+    {
+        "text": "in addition, f1 is another frequently used metric, which combines precision and recall into a single value: scikit-learn provides a comprehensive set of metrics for classification, clustering, regression, ranking and pairwise judgment[1]."
+    },
+    {
+        "text": "as an example the code below computes precision and recall."
+    },
+    {
+        "text": "code import numpy as np from sklearn.metrics import precision_recall_curve y_true = np.array([0,1,1,0, 1]) y_scores = np.array([0.5, 0.6, 0.38, 0.9, 1]) precision, recall, thresholds = precision_recall_curve(y_true, y_scores) print precision print recall"
+    },
+    {
+        "text": "3. why are features extraction and engineering so important in machine learning?"
+    },
+    {
+        "text": "solution the features are the selected variables for making predictions."
+    },
+    {
+        "text": "for instance, suppose you\u2019d like to forecast whether tomorrow there will be a sunny day then you will probably pick features like humidity (a numerical value), speed of wind (another numeric value), some historical information (what happened during the last few years), whether or not it is sunny today (a categorical value yes/no) and a few other features."
+    },
+    {
+        "text": "your choice can dramatically impact on your model for the same algorithm and you need to run multiple experiments in order to find what the right amount of data and what the right features are in order to forecast with minimal error."
+    },
+    {
+        "text": "it is not unusual to have problems represented by thousands of features and combinations of them and a good feature engineer will use tools for stack ranking features according to their contribution in reducing the error for prediction."
+    },
+    {
+        "text": "different authors use different names for different features including attributes, variables and predictors."
+    },
+    {
+        "text": "in this book we consistently use features."
+    },
+    {
+        "text": "features can be categorical such as marital status, gender, state of residence, place of birth, or numerical such as age, income, height and weight."
+    },
+    {
+        "text": "this distinction is important because certain algorithms such as linear regression work only with numerical attributes and if categorical features are present, they need to be somehow encoded into numerical values."
+    },
+    {
+        "text": "in other words, feature engineering is the art of extracting, selecting and transforming essential characteristics representing data."
+    },
+    {
+        "text": "it is sometimes considered less glamourous than machine learning algorithms but in reality any experienced data scientist knows that a simple algorithm on a well-chosen set of features performs better than a sophisticated algorithm on a not so good set of features."
+    },
+    {
+        "text": "also simple algorithms are frequently easier to implement in a distributed way and therefore they scale well with large datasets."
+    },
+    {
+        "text": "so the rule of thumb is in what galileo already said many centuries ago: \u201csimplicity is the ultimate sophistication\u201d."
+    },
+    {
+        "text": "pick your algorithm carefully and spend a lot of time in investigating your data and in creating meaningful summaries with appropriate feature engineering."
+    },
+    {
+        "text": "real world objects are complex and features are used to analytically represent those objects."
+    },
+    {
+        "text": "from one hand this representation has an inherent error which can be reduced by carefully selecting a right set"
+    },
+    {
+        "text": "of representatives."
+    },
+    {
+        "text": "from the other hand we might not want to create a too complex representation because it might be computationally expensive for the machine to learn a sophisticate model, indeed such model could possibly not generalize well to the unseen data."
+    },
+    {
+        "text": "real world data is noisy."
+    },
+    {
+        "text": "we might have very few instances (outliers) which show a sensible difference from the majority of the remaining data, while the selected algorithm should be resilient enough to outliers."
+    },
+    {
+        "text": "real world data might have redundant information."
+    },
+    {
+        "text": "when we extract features, we might be interested in optimizing simplicity of learned models and discard new features which show a high correlation with the already observed ones."
+    },
+    {
+        "text": "etl is the process of extraction, transformation and loading of features from real data for creating various learning sets."
+    },
+    {
+        "text": "transformation in particular refers to operations such as features weighting, high correlated features discarding, the creation of synthetic features derivative of the one observed in the data and the reduction of high dimension features space into a lower one by using either hashing or rather sophisticate space projection techniques."
+    },
+    {
+        "text": "for example in this book we discuss: \u2022 tfxidf, an example of features weighting used in text classification \u2022 chisquare, an example of filtering of highly correlated features \u2022 kernel trick, an example of creation of derivative features \u2022 hashing, a simple technique to reduce feature space dimensions \u2022 binning, an example of transformation of continuous features into a discrete one."
+    },
+    {
+        "text": "new synthetic features might be created in order to represent the bins."
+    },
+    {
+        "text": "4. can you provide an example of features extraction?"
+    },
+    {
+        "text": "solution let\u2019s suppose that we want to perform machine learning on textual files."
+    },
+    {
+        "text": "the first step is to extract meaningful feature vectors from a text."
+    },
+    {
+        "text": "a typical representation is the so called bag of words where: a) each word in the text collection is associated with a unique integer assigned to it."
+    },
+    {
+        "text": "b) for each document , the number of occurrences of each word is computed and this value is stored in a matrix ."
+    },
+    {
+        "text": "please, note that is typically a sparse matrix because when a word is not present in a document, its count will be zero."
+    },
+    {
+        "text": "numpy, scikit-learn and spark all support sparse vectors[2]."
+    },
+    {
+        "text": "let\u2019s see an example where we start to load a dataset made up of usenet articles[3] where the alt.atheism category is considered and the collection of text documents is converted into a matrix of token counts."
+    },
+    {
+        "text": "we then print the ."
+    },
+    {
+        "text": "code from sklearn.datasets import fetch_20newsgroups from sklearn.feature_extraction.text import countvectorizer categories = ['alt.atheism'] newsgroups_train = fetch_20newsgroups(subset='train', categories=categories) count_vect = countvectorizer() train_counts = count_vect.fit_transform(newsgroups_train.data) print count_vect.vocabulary_.get(u'man')"
+    },
+    {
+        "text": "5. what is a training set, a validation set, a test set and a gold set in supervised and unsupervised learning?"
+    },
+    {
+        "text": "solution in machine learning a set of true labels is called the gold set."
+    },
+    {
+        "text": "this set of examples is typically built manually either by human experts or via crowdsourcing with tools like the amazon mechanical turk[4] or via explicit/implicit feedback collected by users online."
+    },
+    {
+        "text": "for instance: a gold set can contain news articles that are manually assigned to different categories by experts of the various subjects, or it might contain movies with associated rating provided by netflix users, or ratings of images collected via crowdsourcing."
+    },
+    {
+        "text": "supervised machine learning consists of four phases: 1. training phase: a sample extracted by the gold set is used to learn a family of data models."
+    },
+    {
+        "text": "each model can be generated from this family by choosing an appropriate set of hyper-parameters, i.e."
+    },
+    {
+        "text": "factors which can be used for algorithms fine-tuning s; 2. validation phase: the best learned model is selected from the family by picking hyper-parameters which minimize a computed error function on a gold set sample called \u201cvalidation set\u201d; this phase is used for identifying the best configuration for a given algorithm; 3. test phase: the error for the best learned model is evaluated on a gold set sample called \u201ctest set\u201d."
+    },
+    {
+        "text": "this phase is useful for comparing models built by adopting different algorithms; 4. application phase: the learned model is applied to the real- world data."
+    },
+    {
+        "text": "two additional observations can be here highlighted: first, the training set, the validation set and the test set are all sampled from the same gold set but those samples are independent."
+    },
+    {
+        "text": "second, it has been assumed that the learned model can be described by means of two different functions and combined by using a set of hyper- parameters ."
+    },
+    {
+        "text": "unsupervised machine learning consists in tests and application phases only because there is no model to be learned a-priori."
+    },
+    {
+        "text": "in fact unsupervised algorithms adapt dynamically to the observed data."
+    },
+    {
+        "text": "6. what is a bias - variance tradeoff?"
+    },
+    {
+        "text": "solution bias and variance are two independent sources of errors for machine learning which prevent algorithms to generalize the models learned beyond the training set."
+    },
+    {
+        "text": "\u2022 bias is the error representing missing relations between features and outputs."
+    },
+    {
+        "text": "in machine learning this phenomenon is called underfitting."
+    },
+    {
+        "text": "\u2022 variance is the error representing sensitiveness to small training data fluctuations."
+    },
+    {
+        "text": "in machine learning this phenomenon is called overfitting."
+    },
+    {
+        "text": "a good learning algorithm should capture patterns in the training data (low bias), but it should also generalize well with unseen application data (low variance)."
+    },
+    {
+        "text": "in general, a complex model can show low bias because it captures many relations in the training data and, at the same time, it can show high variance because it will not necessarily generalize well."
+    },
+    {
+        "text": "the opposite happens with models with high bias and low variance."
+    },
+    {
+        "text": "in many algorithms an error can be analytically decomposed in three components: bias, variance and the irreducible error representing a lower bound on the expected error for unseen sample data."
+    },
+    {
+        "text": "one way to reduce the variance is to try to get more data or to decrease the complexity of a model."
+    },
+    {
+        "text": "one way to reduce the bias is to add more features or to make the model more complex, as adding more data will not help in this case."
+    },
+    {
+        "text": "finding the right balance between bias and variance is an art that every data scientist must be able to manage."
+    },
+    {
+        "text": "7. what is a cross-validation and what is an overfitting?"
+    },
+    {
+        "text": "solution learning a model on a set of examples and testing it on the same set is a logical mistake because the model would have no errors on the test set but it will almost certainly have a poor performance on the real application data."
+    },
+    {
+        "text": "this problem is called overfitting and it is the reason why the gold set is typically split into independent sets for training, validation and test."
+    },
+    {
+        "text": "an example of random split is reported in the code section, where a toy dataset with diabetics\u2019 data has been randomly split into two parts: the training set and the test set."
+    },
+    {
+        "text": "given a family of learned models, the validation set is used for estimating the best hyper-parameters."
+    },
+    {
+        "text": "however, by adopting this strategy there is still the risk that the hyper-parameters overfit a particular validation set."
+    },
+    {
+        "text": "the solution to this problem is called cross-validation."
+    },
+    {
+        "text": "the idea is simple: the test set is split in smaller sets called folds and the model is then learned on folds, while the remaining data is used for validation."
+    },
+    {
+        "text": "this process is repeated in a loop and the metrics achieved for each iteration are averaged."
+    },
+    {
+        "text": "an example of cross validation is reported in the section below where our toy dataset is classified via svm and accuracy is computed via cross-validation."
+    },
+    {
+        "text": "svm is a classification technique and \u201caccuracy\u201d is a quality measurement (the number of correct predictions made, divided by the total number of predictions made and multiplied by 100 to turn it into a percentage)."
+    },
+    {
+        "text": "stratified kfold is a variation of k-fold where each set contains approximately the same balanced percentage of samples for each target class as the complete set."
+    },
+    {
+        "text": "code import numpy as np from sklearn import cross_validation from sklearn import datasets from sklearn import svm diabets = datasets.load_diabetes() x_train, x_test, y_train, y_test = \\ cross_validation.train_test_split( diabets.data, diabets.target, test_size=0.2, random_state=0) print x_train.shape, y_train.shape # test size 20%"
+    },
+    {
+        "text": "print x_test.shape, y_test.shape clf = svm.svc(kernel='linear', c=1) scores = cross_validation.cross_val_score( clf, diabets.data, diabets.target, cv=4) # 4-folds print scores print(\"accuracy: %0.2f (+/- %0.2f)\" % (scores.mean(), scores.std()))"
+    },
+    {
+        "text": "8. why are vectors and norms used in machine learning?"
+    },
+    {
+        "text": "solution objects such as movies, songs and documents are typically represented by means of vectors of features."
+    },
+    {
+        "text": "those features are a synthetic summary of the most salient and discriminative objects characteristics."
+    },
+    {
+        "text": "given a collection of vectors (the so-called vector space) , a norm on is a function satisfying the following properties: for all complex numbers and all , 1."
+    },
+    {
+        "text": "2."
+    },
+    {
+        "text": "3. then v is the zero vector the intuitive notion of length for a vector is captured by the norm 2 more generally we have the norm the special case of infinity norm is is defined as code from numpy import linalg as la import numpy as np a = np.arange(22) print la.norm(a) print la.norm(a, 1)"
+    },
+    {
+        "text": "9. what are numpy, scipy and spark essential datatypes?"
+    },
+    {
+        "text": "solution numpy provides efficient support for memorizing vectors and matrices and for linear algebra operations[5]."
+    },
+    {
+        "text": "for instance: is the dot product of two vectors, while and are respectively the inner and outer products."
+    },
+    {
+        "text": "scipy provides support for sparse matrices and vectors with multiple memorization strategies in order to save space when dealing with zero entries."
+    },
+    {
+        "text": "[6] in particular the coordinate format specifies the non-zero value for the coordinates , while the compressed sparse colum matrix (csc) satisfies the relationship spark has many native datatypes for local and distributed computations."
+    },
+    {
+        "text": "the primary data abstraction is a distributed collection of items called \u201cresilient distributed dataset (rdd)\u201d."
+    },
+    {
+        "text": "rdds can be created from hadoop inputformats[7] or by transforming other rdds."
+    },
+    {
+        "text": "numpy arrays, python list and scipy csc sparse matrices are all supported."
+    },
+    {
+        "text": "in addition: mlib, the spark library for machine learning, supports sparsevectors and labeledpoint, i.e."
+    },
+    {
+        "text": "local vectors, either dense or sparse, associated with a label/response code import numpy as np from scipy.sparse import csr_matrix m = csr_matrix([[4, 1, 0], [4, 0, 3], [0, 0, 1]]) from pyspark.mllib.linalg import sparsevector from pyspark.mllib.regression import labeledpoint label = 0.0 point = labeledpoint(label, sparsevector(3, [0, 2], [1.0, 3.0])) textrdd = sc.textfile(\"readme.md\") print textrdd.count() # count items in rdd"
+    },
+    {
+        "text": "10. can you provide an example for map and reduce in spark?"
+    },
+    {
+        "text": "(let\u2019s compute the mean square error) solution spark is a powerful paradigm for parallel computations which are mapped into multiple servers with no need of dealing with low level operations such as scheduling, data partitioning, communication and recovery."
+    },
+    {
+        "text": "those low level operations were typically exposed to the programmers by previous paradigms."
+    },
+    {
+        "text": "now spark solves these problems on our behalf."
+    },
+    {
+        "text": "a simple form of parallel computation supported by spark is the \u201cmap and reduce\u201d which has been made popular by google[8]."
+    },
+    {
+        "text": "in this framework a set of keywords is mapped into a number of workers (e.g."
+    },
+    {
+        "text": "parallel servers available for computation) and the results are then reduced (e.g."
+    },
+    {
+        "text": "collected) by applying a \u201creduce\u201d operator."
+    },
+    {
+        "text": "the reduce operator could be very simple (for instance a sum) or sophisticated (e.g."
+    },
+    {
+        "text": "a user defined function)."
+    },
+    {
+        "text": "as an example of distributed computation let\u2019s compute the mean square error (mse), the average of the squares of the difference between the estimator and what is estimated."
+    },
+    {
+        "text": "in the following example we suppose thatvaluesandpreds is an rdd of many ( tuples."
+    },
+    {
+        "text": "those are mapped into values ."
+    },
+    {
+        "text": "all intermediate results computed by parallel workers are then reduced by applying a sum operator."
+    },
+    {
+        "text": "the final result is then divided by the total number of tuples as defined by"
+    },
+    {
+        "text": "the mathematical definition ."
+    },
+    {
+        "text": "note that spark hides all the low level details to the programmer by allowing to write a distributed code which is very close to a mathematical formulation."
+    },
+    {
+        "text": "the code adopts python lambda computation for compact representations of anonymous functions."
+    },
+    {
+        "text": "code mse = valuesandpreds.map(lambda (v, p): (v - p)**2).reduce(lambda x, y: x + y) / valuesandpreds.count() spark can however support additional forms of parallel computation by taking inspiration from the 20 years of work on skeletons computations and, more recently, on microsoft\u2019s cosmos."
+    },
+    {
+        "text": "[9]"
+    },
+    {
+        "text": "11. can you provide examples for other computations in spark?"
+    },
+    {
+        "text": "solution the first code fragment is an example of map reduction, where we want to find the line with most words in a text."
+    },
+    {
+        "text": "first each line is mapped into the number of words it contains."
+    },
+    {
+        "text": "then those numbers are reduced and the maximum is taken."
+    },
+    {
+        "text": "pretty simple: one single line of code stays here for something which requires hundreds of lines in other parallel paradigms such as hadoop."
+    },
+    {
+        "text": "spark supports two types of operations: transformations, which create a new rdd dataset from an existing one, and actions, which return a value to the driver program after running a computation on the dataset."
+    },
+    {
+        "text": "all transformations in spark are lazy because the computation is postponed as much as possible until the results are really needed by the program."
+    },
+    {
+        "text": "this allows spark to run efficiently \u2013 for example the compiler can realize that an rdd created through map will be used in a reduce and return only the result of the reduce to the driver, rather than the larger mapped dataset."
+    },
+    {
+        "text": "intermediate results can be persisted and cached."
+    },
+    {
+        "text": "basic transformations include (the list below is not comprehensive."
+    },
+    {
+        "text": "check online for a full list[10]) transformation use map(func) returns a new distributed dataset formed by passing each element of the source through a function func."
+    },
+    {
+        "text": "filter(func) returns a new dataset formed by selecting those elements of the source on which func returns true."
+    },
+    {
+        "text": "flatmap(func) similar to map, but each input item can be mapped to 0 or more output items (so func should return a seq rather than a single item)."
+    },
+    {
+        "text": "sample(withreplacement, fraction, seed) samples a fraction of the data, with or without replacement, using a given random number generator seed."
+    },
+    {
+        "text": "union(otherdataset) returns a new dataset that contains the union of the elements in the source dataset and argument."
+    },
+    {
+        "text": "intersection(otherdataset) returnsa new rdd that contains the intersection of elements in the source dataset and argument."
+    },
+    {
+        "text": "distinct([numtasks]))returns a new dataset that contains the distinct elements of the source dataset."
+    },
+    {
+        "text": "groupbykey([numtasks]) when called on a dataset of (k, v) pairs, a dataset of (k, iterable<v>) pairs returns."
+    },
+    {
+        "text": "reducebykey(func, [numtasks]) when called on a dataset of (k, v) pairs, a dataset of (k, v) pairs returns, where the values for each key are aggregated using the given reduce function func, which must be of type (v,v) => v sortbykey([ascending], [numtasks]) when called on a dataset of (k, v) pairs, where k implements ordered, a dataset of (k, v) pairs sorted by keys in ascending or descending order returns, as specified in the boolean ascending argument."
+    },
+    {
+        "text": "join(otherdataset, [numtasks]) when called on datasets of type (k, v) and (k, w), a dataset of (k, (v, w)) pairs with all pairs of elements for each key returns."
+    },
+    {
+        "text": "outer joins are here supported throughleftouterjoin, rightouterjoin, andfullouterjoin."
+    },
+    {
+        "text": "basic actions include (the list below is not comprehensive."
+    },
+    {
+        "text": "check it online for a full list[11]) actions use reduce(func) aggregates the elements of the dataset using a function func (which takes two arguments and returns one)."
+    },
+    {
+        "text": "the function should be commutative and associative so that it can be computed correctly in parallel."
+    },
+    {
+        "text": "collect() returns all the elements of the dataset as an array at the driver program."
+    },
+    {
+        "text": "this is usually useful after a filter or other operations that return a sufficiently small subset of data."
+    },
+    {
+        "text": "count() returnsthe number of elements in the dataset."
+    },
+    {
+        "text": "take(n) returns an array with the first n elements of the dataset."
+    },
+    {
+        "text": "takesample(withreplacement,num, [seed]) returns an array with a random sample of numelements of the dataset, with or without replacement, optionally pre- specifying a random number generator seed."
+    },
+    {
+        "text": "countbykey() only available on rdds of type (k, v)."
+    },
+    {
+        "text": "a hashmap of (k, int) pairs with the count of each key returns."
+    },
+    {
+        "text": "foreach(func) runs a function func on each element of the dataset."
+    },
+    {
+        "text": "this is usually done for side effects such as updating an accumulator or interacting with external storage systems."
+    },
+    {
+        "text": "spark supports also two special types of variables."
+    },
+    {
+        "text": "broadcasts, that allow the programmer to keep a read-only variable cached on each machine, and accumulators for efficient implementation of counters."
+    },
+    {
+        "text": "the second code fragment is another map reduction, where the text is transformed into a flatmap of words."
+    },
+    {
+        "text": "words are then mapped into number 1 because we count each occurrence as pairs (words, 1)."
+    },
+    {
+        "text": "then a reducebykey() operation allows to aggregate each word and sum the occurrences."
+    },
+    {
+        "text": "again pretty simple: one single line in spark using a functional programming style."
+    },
+    {
+        "text": "the third code segment introduces accumulators and broadcast variables."
+    },
+    {
+        "text": "code # map reduce textfile.map(lambda line: len(line.split())).reduce(lambda a, b: a if (a > b) else b) # word count wordcounts = textfile.flatmap(lambda line: line.split()).map(lambda word: (word, 1)).reducebykey(lambda a, b: a+b) # broadcast broadcastvar = sc.broadcast([1, 2, 3]) # accumulators accum = sc.accumulator(0) sc.parallelize([1, 2, 3, 4]).foreach(lambda x: accum.add(x))"
+    },
+    {
+        "text": "12. how does python interact with spark solution spark has a dedicate api for python called pyspark exposing access to the spark programming framework."
+    },
+    {
+        "text": "internally spark has been developed using scala, a functional programming language which integrates well with jvm, the java virtual machine."
+    },
+    {
+        "text": "one important observation is that python is dynamically typed, so rdds can hold objects of multiple types."
+    },
+    {
+        "text": "another observation is that the pyspark apis reflect the scala apis but the former typically take a python function and return a python collection."
+    },
+    {
+        "text": "also lambda functions are supported and used quite frequently."
+    },
+    {
+        "text": "functions used for transformations are sent to the workers for code execution together with serialized data and instances of classes."
+    },
+    {
+        "text": "python also supports an interactive shell./bin/pysparkfor performing data science at the command line."
+    },
+    {
+        "text": "it is important to point out that spark compilers allocate the computation on the underlying network of servers with no explicit need of dealing with low level details for programmers, unless this is explicitly desired."
+    },
+    {
+        "text": "13. what is spark support for machine learning?"
+    },
+    {
+        "text": "solution spark has a powerful library called mlib for machine learning."
+    },
+    {
+        "text": "mlib supports computation of basic statistics and features extraction, selection and transformation."
+    },
+    {
+        "text": "it also supports classification and regression with linear models, nai\u0308ve bayes, decision trees and ensembles."
+    },
+    {
+        "text": "plus, mlib implements collaborative filtering, clustering with k-means, gaussian, lda, associative rule mining and dimensional reduction."
+    },
+    {
+        "text": "many optimization problems are solved by using the distributed stochastic gradient descent."
+    },
+    {
+        "text": "we will discuss all these techniques in this volume and in the next one."
+    },
+    {
+        "text": "14. how does spark work in a parallel environment solution spark adopts a simple model for parallel computation."
+    },
+    {
+        "text": "a driver program interacts with the worker nodes by using the sparkcontext environment variable."
+    },
+    {
+        "text": "this interaction is transparent to the user."
+    },
+    {
+        "text": "each worker node executes assigned tasks and can cache locally the results for computation for future reuse."
+    },
+    {
+        "text": "the results of computations are sent back to the driver program."
+    },
+    {
+        "text": "code conf = sparkconf().setappname(appname).setmaster(master) sc = sparkcontext(conf=conf)"
+    },
+    {
+        "text": "15. what is the mean, the variance, and the covariance?"
+    },
+    {
+        "text": "solution in arithmetic terms the mean, or mathematical expectation, is the central value of a discrete set of numbers , which is the so-called random variable, the value of which is subjected to variations due to chance."
+    },
+    {
+        "text": "the mean is defined as the sum of values divided by the number of values: the variance measures how far a set of numbers is spread out."
+    },
+    {
+        "text": "a variance of zero shows that all the values are equal; a small variance indicates that the data points tend to be very close to the mean and therefore to each other, while a high variance indicates that the data points are more spread out."
+    },
+    {
+        "text": "variance is always positive."
+    },
+    {
+        "text": "given a random variable the variance is defined as the covariance is a measure of how much two random variables change together."
+    },
+    {
+        "text": "mathematically: code import numpy as np x = np.array([[0, 2], [1, 1], [2, 0]]).t print np.mean(x[1,]) print np.var(x[1,]) print np.cov(x) 1.0 0.666666666667 [[ 1."
+    },
+    {
+        "text": "-1.]"
+    },
+    {
+        "text": "[-1."
+    },
+    {
+        "text": "1.]]"
+    },
+    {
+        "text": "16. what are percentiles and quartiles?"
+    },
+    {
+        "text": "solution a percentile is a metric indicating a value, below which a given percentage of observations falls."
+    },
+    {
+        "text": "for instance: the 50th percentile is the median of a vector of observations; the 25th percentile is the first quartile, the 50th percentile is the second and the 75th percentile is the third one."
+    },
+    {
+        "text": "when the time to provide a service is considered, the 90th, the 95th and the 99th percentiles are generally reported."
+    },
+    {
+        "text": "percentiles are more resilient than mathematical averages to the contribution of the so-called outliers, e.g."
+    },
+    {
+        "text": "data points that are significantly spread out by the majority of the observations."
+    },
+    {
+        "text": "code import numpy as np x = np.array([0, 1, 4, 5, 6, 8, 8, 9, 11, 10, 19, 19.2, 19.7, 3]) for i in [75, 90, 95, 99]: print i, np.percentile(x, i)"
+    },
+    {
+        "text": "17. can you transform an xml file into python pandas?"
+    },
+    {
+        "text": "solution this is a question about data transformation."
+    },
+    {
+        "text": "xml is commonly used for representing structured information."
+    },
+    {
+        "text": "for instance this could be an xml fragment for representing books data: <?xml version=\"1.0\"?> <catalog> <book id=\"bk101\"> <author>gambardella, matthew</author> <title>xml developer's guide</title> <genre>computer</genre> <price>44.95</price> <publish_date>2000-10-01</publish_date> <description>an in-depth look at creating applications with xml.</description> </book> ... </catalog> pandas are a powerful set of python libraries for data analysis."
+    },
+    {
+        "text": "one key data structure in pandas is the dataframe, which is a two- dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns)."
+    },
+    {
+        "text": "each row is called a series."
+    },
+    {
+        "text": "pandas offer a rich set of apis for manipulating dataframes."
+    },
+    {
+        "text": "in this code example an xml file is read using the convenient objectify module and a pandas data structure is then created accordingly."
+    },
+    {
+        "text": "code from lxml import objectify import pandas as pd # open and parse xml xml = objectify.parse(open('book.xml')) root = xml.getroot() # pandas and dataframes df = pd.dataframe(columns=('author', 'title', 'genre'))"
+    },
+    {
+        "text": "for i in range(0, 10): row = dict(zip(['author', 'title', 'genre'], [root.book[i].author, root.book[i].title, root.book[i].genre ])) rowseries = pd.series(row) rowseries.name = i df = df.append(rowseries) print df author title \\ 0 [[[gambardella, matthew]]] [[[xml developer's guide]]] 1 [[[ralls, kim]]] [[[midnight rain]]] 2 [[[corets, eva]]] [[[maeve ascendant]]] 3 [[[corets, eva]]] [[[oberon's legacy]]] 4 [[[corets, eva]]] [[[the sundered grail]]] 5 [[[randall, cynthia]]] [[[lover birds]]] 6 [[[thurman, paula]]] [[[splish splash]]] 7 [[[knorr, stefan]]] [[[creepy crawlies]]] 8 [[[kress, peter]]] [[[paradox lost]]] 9 [[[o'brien, tim]]] [[[microsoft .net: the programming bible]]] genre 0 [[[computer]]] 1 [[[fantasy]]] 2 [[[fantasy]]] 3 [[[fantasy]]] 4 [[[fantasy]]] 5 [[[romance]]] 6 [[[romance]]] 7 [[[horror]]] 8 [[[science fiction]]] 9 [[[computer]]]"
+    },
+    {
+        "text": "18. can you read html into python pandas?"
+    },
+    {
+        "text": "solution another question about accessing data."
+    },
+    {
+        "text": "python pandas are also convenient for working with hmtl files downloaded from the network."
+    },
+    {
+        "text": "this small code fragment is all we need to download some html data, parse it and load it into a suitable dataframe."
+    },
+    {
+        "text": "code import pandas as pd url = 'http://www.fdic.gov/bank/individual/failed/banklist.html' dfs = pd.read_html(url) print dfs [ bank name city st \\ 0 premier bank denver co 1 edgebrook bank chicago il 2 doral banken espanol san juan pr 3 capitol city bank & trust company atlanta ga 4 highland community bank chicago il 5 first national bank of crestview crestview fl"
+    },
+    {
+        "text": "19. can you read json into python pandas?"
+    },
+    {
+        "text": "solution json is a compact representation of structured data."
+    },
+    {
+        "text": "this simple code snippet loads data from the network and transforms it into pandas data structure."
+    },
+    {
+        "text": "code from urllib2 import request, urlopen import json import pandas as pd from pandas.io.json import json_normalize path1 = '42.974049,-81.205203|42.974298,-81.195755' request=request('http://maps.googleapis.com/maps/api/elevation/ json?locations='+path1+'&sensor=false') response = urlopen(request) elevations = response.read() data = pd.read_json(elevations) print json_normalize(data['results']) elevation location.lat location.lng resolution 0 243.346268 42.974049 -81.205203 19.087904"
+    },
+    {
+        "text": "20. can you draw a function from python?"
+    },
+    {
+        "text": "solution visualizing data is key for any machine learning activity and a good data scientist knows how to use data visualization tools."
+    },
+    {
+        "text": "for instance matplotlib is a convenient plotting tool in python."
+    },
+    {
+        "text": "the following code snippet shows how to plot a function."
+    },
+    {
+        "text": "code import matplotlib.pyplot as plt import numpy as np from scipy.special import expit x = np.arange(-10., 10., 0.2) sig = expit(x) plt.plot(x,sig) plt.show()"
+    },
+    {
+        "text": "21. can you represent a graph in python?"
+    },
+    {
+        "text": "solution python provides a convenient library for graph representation named networkx[12] , which provides support for direct / indirect graphs and multigraphs."
+    },
+    {
+        "text": "also many graph algorithms are already implemented in the framework."
+    },
+    {
+        "text": "this simple code snippet computes the connected components algorithm."
+    },
+    {
+        "text": "code import networkx as nx g=nx.graph() #add nodes (1,2,3) and edges(1,2), (1,3) g.add_edges_from([(1,2),(1,3)]) c = nx.connected_components(g)"
+    },
+    {
+        "text": "22. what is an ipython notebook?"
+    },
+    {
+        "text": "solution ipython notebook is a convenient interface for executing python codes directly from a web browser."
+    },
+    {
+        "text": "the following command starts the environment and the browser: ipython notebook [i 21:17:06.706 notebookapp] using mathjax from cdn: https://cdn.mathjax.org/mathjax/ latest/mathjax.js [i 21:17:07.252 notebookapp] serving notebooks from local directory: c:\\users \\agull_000\\dropbox\\python [i 21:17:07.252 notebookapp] 0 active kernels [i 21:17:07.252 notebookapp] the ipython notebook is running at: http://localhost:8888/ [i 21:17:07.252 notebookapp] use control-c to stop this server and shut down all kernels (twice to skip confirmation)."
+    },
+    {
+        "text": "[i 21:17:21.631 notebookapp] creating new notebook in [i 21:17:30.592 notebookapp] kernel started: 50260c3a-e7cc-426f-84fa-9ea630886103 code this code fragment prints few circles and it is executed directly from the browser."
+    },
+    {
+        "text": "23. what is a convenient tool for performing data statistics?"
+    },
+    {
+        "text": "solution pandas provide a nice framework for data-analysis."
+    },
+    {
+        "text": "in this code example an iris toy dataset is loaded and then the mean, the standard deviation and different percentiles are computed."
+    },
+    {
+        "text": "code import pandas as pd import numpy as np from sklearn.datasets import load_iris iris = load_iris() irisnp = iris.data irisdf = pd.dataframe(iris.data, columns=iris.feature_names) # group by target category irisdf['group'] = pd.series([iris.target_names[k] for k in iris.target], dtype='category') #mean, std, quantile print irisdf.mean(numeric_only=true) print irisdf.std() print irisdf.quantile(np.array([0, .25, 0.50, .75, .90, .99])) sepal length (cm) 5.843333 sepal width (cm) 3.054000 petal length (cm) 3.758667 petal width (cm) 1.198667 sepal length (cm) 0.828066 sepal width (cm) 0.433594 petal length (cm) 1.764420 petal width (cm) 0.763161 sepal length (cm) sepal width (cm) petal length (cm) petal width (cm) 0.00 4.3 2.000 1.00 0.1 0.25 5.1 2.800 1.60 0.3 0.50 5.8 3.000 4.35 1.3 0.75 6.4 3.300 5.10 1.8 0.90 6.9 3.610 5.80 2.2 0.99 7.7 4.151 6.70 2.5"
+    },
+    {
+        "text": "24. how is it convenient to visualize data statistics solution pandas provide support for a boxplot visualization, a convenient way of graphically representing groups of numerical values through their quartiles."
+    },
+    {
+        "text": "boxplots may also have vertically extending lines from the boxes indicating variability outside the upper and lower quartiles."
+    },
+    {
+        "text": "outliers may be plotted as individual points."
+    },
+    {
+        "text": "in this example of code we have represented a set of trials of 10 observations of a uniform random variable on code import pandas as pd import numpy as np import matplotlib import matplotlib.pyplot as plt df = pd.dataframe(np.random.rand(10, 5), columns=['a', 'b', 'c', 'd', 'e']) df.plot(kind='box') plt.show()"
+    },
+    {
+        "text": "25. how to compute covariance and correlation matrices with pandas solution pandas provides support for covariance computation."
+    },
+    {
+        "text": "this simple code snippet computes covariance and correlation for an iris toy dataset."
+    },
+    {
+        "text": "remember that correlation is equivalent to computing covariance on standardized random variables."
+    },
+    {
+        "text": "for instance it can be observed that sepal length is positively correlated with petal length."
+    },
+    {
+        "text": "code import pandas as pd import numpy as np from sklearn.datasets import load_iris iris = load_iris() irisnp = iris.data irisdf = pd.dataframe(iris.data, columns=iris.feature_names) # group by target category irisdf['group'] = pd.series([iris.target_names[k] for k in iris.target], dtype='category') print irisdf.cov() print irisdf.corr() sepal length (cm) sepal width (cm) petal length (cm) \\ sepal length (cm) 0.685694 -0.039268 1.273682 sepal width (cm) -0.039268 0.188004 -0.321713 petal length (cm) 1.273682 -0.321713 3.113179 petal width (cm) 0.516904 -0.117981 1.296387 petal width (cm) sepal length (cm) 0.516904 sepal width (cm) -0.117981 petal length (cm) 1.296387 petal width (cm) 0.582414 sepal length (cm) sepal width (cm) petal length (cm) \\ sepal length (cm) 1.000000 -0.109369 0.871754 sepal width (cm) -0.109369 1.000000 -0.420516 petal length (cm) 0.871754 -0.420516 1.000000 petal width (cm) 0.817954 -0.356544 0.962757"
+    },
+    {
+        "text": "petal width (cm) sepal length (cm) 0.817954 sepal width (cm) -0.356544 petal length (cm) 0.962757 petal width (cm) 1.000000"
+    },
+    {
+        "text": "26. can you provide an example of connection to the twitter api?"
+    },
+    {
+        "text": "solution twitter provides a convenient api for accessing data."
+    },
+    {
+        "text": "the first step is to register within the site at https://apps.twitter.com/app/new and require a consumer key, a consumer secret, an access key and an access secret."
+    },
+    {
+        "text": "then this code fragment can be used for accessing the live stream of twitter trends."
+    },
+    {
+        "text": "code import tweepy, json consumer_key = 'mx------------------------------------' consumer_secret = '------------------------------------------------------------------------' access_key = '-----------------------------------------------------------------------' access_secret = '---------------------------------------------------------' auth = tweepy.oauthhandler(consumer_key, consumer_secret) auth.set_access_token(access_key, access_secret) api = tweepy.api(auth) trends1 = api.trends_place(1) print trends1 [{u'created_at': u'2015-09-08t09:33:39z', u'trends': [{u'url': u'http://twitter.com/search?q= %23vatan%c4%b1mu%c4%9fruna', u'query': u'%23vatan%c4%b1mu%c4%9fruna', u'name': u'#vatan\\u0131mu\\u011fruna', u'promoted_content': none}, {u'url': u'http://twitter.com/searc h?q=%23i%c4%9fd%c4%b1r', u'query': u'%23i%c4%9fd%c4%b1r', u'name': u'#i\\u011fd \\u0131r', u'promoted_content': none}, {u'url': u'http: //twitter.com/search?q=%23%d9%85%d8%a7%d8%b0%d8%a7_ %d8%a7%d8%b3%d8%aa%d9%81%d8%af%d9%86%d8%a7_%d9%85%d9%86_ %d8%b3%d9%86%d8%a7%d8%a8_ %d8%b4%d8%a7%d8%aa', u'query': u'%23%d9%85%d8%a7%d8%b0%d8%a7_ %d8%a7%d8%b3%d8%aa%d9%81%d8%af%d9%86%d8%a7_%d9%85%d9%86_ %d8%b3%d9%86%d8 %a7%d8%a8_%d8%b4%d8%a7%d8%aa', u'name': u'#\\u0645\\u0627\\u0630\\u0627_ \\u0627\\u0633\\u062a\\u0641\\u062f\\u0646\\u0627_\\u0645\\u0646_\\u0633\\u 0646\\u0627\\u0628_\\u0634\\u0627\\u062a', u'promoted_content': none}, {u'url': u'http:// twitter.com/search?q=%eb%92%b7%eb%8b%b4%ed%99%94 ', u'query': u'%eb%92%b7%eb%8b%b4%ed%99%94', u'name': u'\\ub4b7\\ub2f4\\ud654', u'promoted_content': none}, {u'url': u'http://twitter.c om/search?q=%23felizmartes', u'query': u'%23felizmartes', u'name': u'#felizmartes', u'promoted_content': none}, {u'url': u'http://tw itter.com/search?q=%23%d8%aa%d8%a7%d9%88%d8%b1_%d8%ac%d8%af%d9%8a %d8%af_%d8%a8%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a %d9%87', u'q"
+    },
+    {
+        "text": "uery': u'%23%d8%aa%d8%a7%d9%88%d8%b1_%d8%ac%d8%af%d9%8a%d8%af_ %d8%a8%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a%d9%87', u'name': u'#\\ u062a\\u0627\\u0648\\u0631_\\u062c\\u062f\\u064a\\u062f_ \\u0628\\u0627\\u0644\\u0633\\u0639\\u0648\\u062f\\u064a\\u0647', u'promoted_content': none} , {u'url': u'http://twitter.com/search?q=%22sam+smith%22', u'query': u'%22sam+smith %22', u'name': u'sam smith', u'promoted_content': none}, {u'url': u'http://twitter.com/search?q=%22felices+140%22', u'query': u'%22felices +140%22', u'name': u'felices 140', u'promot ed_content': none}, {u'url': u'http://twitter.com/search?q=%22%ec%b2%9c%ec%82%ac %ec%99%80+%ec%95%85%eb%a7%88%22', u'query': u'%22%ec %b2%9c%ec%82%ac%ec%99%80+%ec%95%85%eb%a7%88%22', u'name': u'\\ucc9c \\uc0ac\\uc640 \\uc545\\ub9c8', u'promoted_content': none}, {u'url': u 'http://twitter.com/search?q=%22alexander+pacteau%22', u'query': u'%22alexander +pacteau%22', u'name': u'alexander pacteau', u'promot ed_content': none}], u'as_of': u'2015-09-08t09:37:06z', u'locations': [{u'woeid': 1, u'name': u'worldwide'}]}]"
+    },
+    {
+        "text": "27. can you provide an example of connection to the linkedin api?"
+    },
+    {
+        "text": "solution linkedin has an api for accessing the content."
+    },
+    {
+        "text": "first, the application should be registered within the site on https://www.linkedin.com/ developer/apps/ for getting the api_key and the api_secret."
+    },
+    {
+        "text": "it is also important to register the correct return_url."
+    },
+    {
+        "text": "the authentication.authorization_url should be then opened in a browser for letting the user logging in via oauth standard protocol[13]."
+    },
+    {
+        "text": "the returned code can be used as authentication.authorization_code for getting access."
+    },
+    {
+        "text": "code from linkedin import linkedin api_key = '-------' api_secret = '---' return_url = 'http://localhost:8000' authentication = linkedin.linkedinauthentication(api_key, api_secret, return_url, linkedin.permissions.enums.values()) print authentication.authorization_url # open this url on your browser application = linkedin.linkedinapplication(authentication) authentication.authorization_code = \u2018-----------------------------------' authentication.get_access_token() connections = application.get_connections() print connections"
+    },
+    {
+        "text": "28. can you provide an example of connection to the facebook api?"
+    },
+    {
+        "text": "solution facebook has a nice api accessible on https:// developers.facebook.com/docs/graph-api/overview and the following code fragment provides basic usage for getting friends\u2019 connections with the user\u2019s profile and for posting them on the facebook wall."
+    },
+    {
+        "text": "code import facebook # how to get the access token https://developers.facebook.com/docs/ graph-api/overview graph = facebook.graphapi(oauth_access_token) profile = graph.get_object(\"me\") friends = graph.get_connections(\"me\", \"friends\") graph.put_object(\"me\", \"feed\", message=\"posting in my wall\")"
+    },
+    {
+        "text": "29. what is a tfxidf?"
+    },
+    {
+        "text": "solution tfxidf is a weighting technique frequently used for text classifications."
+    },
+    {
+        "text": "the key intuition is to boost a term which is frequent for a document d in a collection of documents (term frequency=tf) but is not so frequent in all the remaining documents in (inverse document frequency, idf)."
+    },
+    {
+        "text": "mathematically \u2022 is the number of times for term t to appear in document \u2022 is the number of documents containing term \u2022 note that is zero, if a term appears in all the documents."
+    },
+    {
+        "text": "also note that a smoothing factor of one has been used if a term does not appear in a document for avoiding a division by zero."
+    },
+    {
+        "text": "spark implements tfxidf by hashing the words into a more compact representation which avoids global and expensive terms-to-index mapping, involving all the words in the collection regardless of the server where the data has been partitioned."
+    },
+    {
+        "text": "code from pyspark import sparkcontext from pyspark.mllib.feature import hashingtf from pyspark.mllib.feature import idf sc = sparkcontext() # load documents (one per line)."
+    },
+    {
+        "text": "documents = sc.textfile(\"...\").map(lambda line: line.split(\" \")) #hash the terms and compute the tf on documents hashingtf = hashingtf() tf = hashingtf.transform(documents) # force the real computation tf.cache() # compute the global idf: ignore too rare terms < 2 documents idf = idf(mindocfreq=2).fit(tf)"
+    },
+    {
+        "text": "# do the tfxidf in a distributed fashion tfidf = idf.transform(tf)"
+    },
+    {
+        "text": "30. what is \u201cfeatures hashing\u201d?"
+    },
+    {
+        "text": "and why is it useful for bigdata?"
+    },
+    {
+        "text": "solution if the space of features is high dimensional, one way to reduce dimensionality is via hashing."
+    },
+    {
+        "text": "for instance: we might combine two discrete but sparse features into one and only denser discrete synthetically created feature by transforming the original observations."
+    },
+    {
+        "text": "this transformation introduces an error because it suffers from potential hash collisions, since different raw features may become the same term after hashing."
+    },
+    {
+        "text": "however this model might be more compact and, in some situations, we might decide to trade off this risk either for simplicity or because this is the only viable option to handle very large datasets (big data)."
+    },
+    {
+        "text": "more sophisticate forms of hashing such as bloom filters[14], count min-sketches[15], minhash[16] and local sensitive hashing[17] are more advanced techniques which will be discussed in the next volume."
+    },
+    {
+        "text": "31. what is \u201ccontinuous features binning\u201d?"
+    },
+    {
+        "text": "solution if a feature assumes continuous values then it could be convenient to discretize it via hashing or binning."
+    },
+    {
+        "text": "this intuition is very simple: the space of continuous values is divided into buckets, in which the first ones are hashed."
+    },
+    {
+        "text": "32. what is an normalization?"
+    },
+    {
+        "text": "solution features might be transformed in such a way that they have unit norm , where can be either norm-1, or norm-2, or norm- code from pyspark.mllib.util import mlutils from pyspark.mllib.linalg import vectors from pyspark.mllib.feature import normalizer data = mlutils.loadlibsvmfile(sc, \"data/mllib/ sample_libsvm_data.txt\") labels = data.map(lambda x: x.label) features = data.map(lambda x: x.features) normalizer1 = normalizer() # scale every feature normalizing with norm-2 data1 = labels.zip(normalizer1.transform(features))"
+    },
+    {
+        "text": "33. what is a chi square selection?"
+    },
+    {
+        "text": "solution chi-square is a statistical test used to understand if two categorical features are correlated."
+    },
+    {
+        "text": "in this case it might be useful to discard one of them in order to keep the model simpler."
+    },
+    {
+        "text": "this method works by ordering features based on a chi-squared test of independence from the class, and then by filtering all top features, which are most closely related to the label.suppose that an event has expected frequencies of observations and observed frequencies , then the chi square test is spark supports chi-square tests for feature selection since version 1.4.0"
+    },
+    {
+        "text": "34. what is mutual information and how can it be used for features selection?"
+    },
+    {
+        "text": "solution recalling that information entropy is , where is a random variable, mutual information computes how much two features have in common."
+    },
+    {
+        "text": "this is defined as the normalized mutual information is in interval defined as computing mutual information in spark is left as an exercise."
+    },
+    {
+        "text": "35. what is a loss function, what are linear models, and what do we mean by regularization parameters in machine learning?"
+    },
+    {
+        "text": "solution a loss function maps a set of observed events represented by one or more variables onto a real number, which represents the associated \u201ccost\u201d."
+    },
+    {
+        "text": "machine learning frequently deals with modelling the observed data by minimizing the costs of a suitable loss function."
+    },
+    {
+        "text": "in particular given an algorithmic prediction and a true label from a gold set, a loss function measures the difference between and ."
+    },
+    {
+        "text": "an important class of machine learning methods is the one of linear methods, where the task is to minimize a convex function on a variable vector with real entries ( ."
+    },
+    {
+        "text": "it should be noticed that if function is convex and has a derivative, then will have a unique minimum and this minimum can be analytically derived[18]."
+    },
+    {
+        "text": "this minimization task error can be formally expressed as where the objective function has the following form: where are the training examples, is the vector of true labels and is a set of weights which are algorithmically computed in such a way that the error of the model learned from the training data is minimized."
+    },
+    {
+        "text": "this error is expressed by a well-chosen loss function (see next question for few examples)."
+    },
+    {
+        "text": "this method is called \u201clinear\u201d because prediction is a linear combination of w and x, computed with a simple vector multiplication , and is a function of and ."
+    },
+    {
+        "text": "the factor is introduced also to control the complexity of this model."
+    },
+    {
+        "text": "in turn the regularization hyper-parameter balances the trade-off between the goal of minimizing the loss function and the goal of minimizing the model complexity."
+    },
+    {
+        "text": "for instance, it could be sometimes better to have a slightly more expensive model in terms of loss function costs, if the model is simpler from the point of view of sparsity of weights (number of zero entries in )."
+    },
+    {
+        "text": "the two tables below contain a summary of the most common used loss functions and regularization factors for linear methods: name loss function derivative labels meaning / usage exam squared real, it expresses the squared distance between the prediction and the true label linear regres for exa expect return stock investm logistic positive / negative, it is used to predict a binary response logist regres for exa expect click o search hinge max positive / negative, it is used for classification svm, for exa image recogn this is a typical plot for squared, logistic and hinge loss functions"
+    },
+    {
+        "text": "this is a summary of the most commonly used regularization factors."
+    },
+    {
+        "text": "name r(w) derivative meaning l1 norm-1 for vectors l2 squared norm-2 for vectors"
+    },
+    {
+        "text": "36. what is an odd ratio?"
+    },
+    {
+        "text": "solution given a probability the odd ratio simply identifies the chances for the event to happen over the chances for the event not to happen."
+    },
+    {
+        "text": "the event is a function ."
+    },
+    {
+        "text": "if we take the logarithm, we have and we can thus map the range of probabilities [0, 1] into the full range ."
+    },
+    {
+        "text": "the concept of \u201codd ratio\u201d is also useful to introduce \u201clogistic regression\u201d (the topic of the next question)."
+    },
+    {
+        "text": "let us assume that we have a linear equation , we can imagine that is represented in terms of log odds so that which can be solved for as and the problem becomes the one of finding the lowest error for all training examples"
+    },
+    {
+        "text": "37. what is a sigmoid function and what is a logistic function?"
+    },
+    {
+        "text": "a sigmoid function has the following mathematical formulation sigmoid functions are used frequently in machine learning in particular in neural networks."
+    },
+    {
+        "text": "their name is related to the typical \"s\" shape when plotted."
+    },
+    {
+        "text": "note that for input in , the output is in [0, 1], so the sigmoid is useful to map real values into probabilities."
+    },
+    {
+        "text": "one important property is that the first order derivative of a sigmoid has a very simple formula a logistic function is a particular type of sigmoid function used in linear regression , where is the maximum value, is the steepness of the curve and is the x-value of the sigmoid midpoint."
+    },
+    {
+        "text": "code from scipy.special import expit expit(0.467) note that in a previous question we already plotted a sigmoid."
+    },
+    {
+        "text": "38. what is a gradient descent?"
+    },
+    {
+        "text": "solution mathematically the gradient of a function is a vector, the components of which are the partial derivatives of ."
+    },
+    {
+        "text": "similarly to the derivative, the gradient represents the slope of the function graph tangent and therefore the gradient points in the direction of the greatest rate of the function increase rate, while its magnitude is the slope of the graph in that direction."
+    },
+    {
+        "text": "as a consequence points to the direction of a function maximum decrease rate."
+    },
+    {
+        "text": "in many supervised machine learning problems, we need to learn a model by using a training dataset."
+    },
+    {
+        "text": "a popular and easy-to-use technique to estimate the model parameters is to minimize the error associated to the model by using the appropriate gradient descent technique."
+    },
+    {
+        "text": "the gradient descent iteratively estimates the weights by moving in the direction which minimizes a chosen cost function at every step."
+    },
+    {
+        "text": "the pseudo-code is here very simple."
+    },
+    {
+        "text": "until either some convergence or termination criteria is met, the weights of the model are updated according the following rule"
+    },
+    {
+        "text": "where is the gradient in and is a learning rate parameter."
+    },
+    {
+        "text": "if the function is convex, then the gradient descend will find a unique minimum, otherwise the technique can be trapped into a local minimum or it might incur into the risk of not converging."
+    },
+    {
+        "text": "therefore, it is mandatory to stop iterations if a chosen maximum number of iteration is reached."
+    },
+    {
+        "text": "in addition to that, it could be useful to repeat the process for different initial values in order to detect if the process is trapped in a local minimum."
+    },
+    {
+        "text": "the learning rate parameter determines how fast or slow we will move towards the optimal solution."
+    },
+    {
+        "text": "if \u03bb is very large, the optimal solution will be skipped."
+    },
+    {
+        "text": "if it is too small, we will need many iterations to converge to the best values."
+    },
+    {
+        "text": "one possible solution is to scale according to how close the solution is."
+    },
+    {
+        "text": "in other words: \u03bb could be scaled according to the error rate measured in each iteration."
+    },
+    {
+        "text": "39. what is a stochastic gradient descent?"
+    },
+    {
+        "text": "solution many machine learning problems can be formulated as minimization problems of an objective function, which is the sum of many functions , each one associated to the -th observation in the training set: where the gradient can be computationally very expensive because at each iteration all dataset observations should be taken into account and the standard update rule would be one solution is to sample a subset of summand functions at every step."
+    },
+    {
+        "text": "this approach is called \u201cstochastic gradient descent\u201d and it is very effective in the case of large-scale machine learning problems."
+    },
+    {
+        "text": "one simple variant of stochastic gradient descent is to consider one training example at time and update only that gradient component."
+    },
+    {
+        "text": "another more sophisticated approach is called \u201cmini-batches\u201d which computes the gradient against more than one training example at each step."
+    },
+    {
+        "text": "this can be a vectorial operation which is very efficient for modern computers."
+    },
+    {
+        "text": "code in spark the sampling of training examples is performed using rdd distributed datasets, while the computation of the partial results sum is performed by using local working machines which then update a master server."
+    },
+    {
+        "text": "[19] the following is an abstract from spark api"
+    },
+    {
+        "text": "40. what is a linear least square regression?"
+    },
+    {
+        "text": "solution linear models are simple and provide data partition based on straight lines."
+    },
+    {
+        "text": "in general, they require a reasonably small amount of training data."
+    },
+    {
+        "text": "more complex models, such as svm with kernels and ensembles (which will be introduced in the next volume), allow data separation with more sophisticate curves - not only with straight lines - but they are in general more expensive to train, require more data, and are also more expensive when they predict results on unseen data."
+    },
+    {
+        "text": "in many real applications linear models with regularizations are instead providing good performances and are extremely fast for training or when deployed."
+    },
+    {
+        "text": "also linear models show a very nice characteristic for they allow to easily understand the importance of each feature."
+    },
+    {
+        "text": "this is called \u201cvariable importance information\u201d and it consists in ranking each selected feature: a highly ranked feature contributes more to reduce the error for a model than a low ranked feature."
+    },
+    {
+        "text": "so this ranking operation can guide data scientists to pick the right set of features by discarding some of them and by adding others."
+    },
+    {
+        "text": "note that a linear model with regularization provides sparse solutions for learning."
+    },
+    {
+        "text": "when new unseen data is applied the forecast can therefore be computed with very simple operations consisting in few sums and few multiplications."
+    },
+    {
+        "text": "as discussed, regression is the task of forecasting a numeric value."
+    },
+    {
+        "text": "linear regression is a method of finding where the objective function is a loss function and is the regularizer factor."
+    },
+    {
+        "text": "the minimum can be here identified by using the stochastic gradient descend or with other more advanced methodologies which are outside the scope of this introductory book."
+    },
+    {
+        "text": "the code below is an example of spark for linear regression."
+    },
+    {
+        "text": "this image represents an example of linear regression and related regression line."
+    },
+    {
+        "text": "code from pyspark.mllib.regression import labeledpoint, linearregressionwithsgd from numpy import array # parse the point into a labeledpoint # made up of (label, set of features) def parsepoint(line): values = [float(x) for x in line.replace(',', ' ').split(' ')] return labeledpoint(values[0], values[1:]) # load the data into a resilient distributed data (rdd) data = sc.textfile(\"data/mllib/ridge-data/lpsa.data\") #trasform the rdd into an rdd of labeledpoint parseddata = data.map(parsepoint) # build the model by training a linear regression on the parseddata model = linearregressionwithsgd.train(parseddata) # evaluate the model on training data # we are creating an rdd of pairs (label, prediction) via a lambda call valuesandpreds = parseddata.map(lambda p: (p.label, model.predict(p.features))) # compute the mse by mapping the label and prediction into the squared diff"
+    },
+    {
+        "text": "# then reduce the distributed differences by summing them # spark collects all the intermediate results via reduction # this value is then divided by the total number of (label, prediction) tuples mse = valuesandpreds.map(lambda (v, p): (v - p)**2).reduce(lambda x, y: x + y) / valuesandpreds.count() print(\"mean squared error = \" + str(mse))"
+    },
+    {
+        "text": "41. what are lasso, ridge, and elasticnet regularizations?"
+    },
+    {
+        "text": "solution linear least squares method uses no regularization."
+    },
+    {
+        "text": "ridge regression uses l2 regularizations and lasso uses l1 regularization."
+    },
+    {
+        "text": "both lasso and ridge produce coefficients for the learned model that are smaller than the version of regression with no regularization."
+    },
+    {
+        "text": "however, lasso tends to produce more zero coefficients, thus increasing the model sparsity and its compactness."
+    },
+    {
+        "text": "sometimes ridge and lasso are used together and those are the so-called elasticnet models."
+    },
+    {
+        "text": "42. what is a logistic regression?"
+    },
+    {
+        "text": "solution a \u201clogistic regression\u201d is the problem of finding , where the objective function is a loss function each prediction is made by using a logistic function , where for each new unseen observation ."
+    },
+    {
+        "text": "logistic regressions are widely used to predict binary responses."
+    },
+    {
+        "text": "if , then the outcome is positive, otherwise the outcome is negative."
+    },
+    {
+        "text": "a variant of logistic regression is the multinomial one which can predict different outcomes, where one class is used as pivot and all the other ones are chosen in turn against the pivot."
+    },
+    {
+        "text": "in other words, models are run and the one with higher probability is picked as prediction."
+    },
+    {
+        "text": "stochastic or mini-batch gradient descents can be used for solving logistic regression problems."
+    },
+    {
+        "text": "the following spark code is very similar to the one presented for linear regression and indeed the only difference here is the class used to learn models."
+    },
+    {
+        "text": "code from pyspark.mllib.regression import labeledpoint, logisticregressionwithlbfgs from numpy import array # parse the point into a labeledpoint # made up of (label, set of features) def parsepoint(line): values = [float(x) for x in line.replace(',', ' ').split(' ')] return labeledpoint(values[0], values[1:]) # load the data into a resilient distributed data (rdd) data = sc.textfile(\"data/mllib/ridge-data/lpsa.data\") #trasform the rdd into an rdd of labeledpoint"
+    },
+    {
+        "text": "parseddata = data.map(parsepoint) # build the model by training a linear regression on the parseddata model = logisticregressionwithlbfgs.train(parseddata) # evaluate the model on training data # we are creating an rdd of pairs (label, prediction) via a lambda call valuesandpreds = parseddata.map(lambda p: (p.label, model.predict(p.features))) # compute the mse by reducing the squared difference between label and prediction # then we reduce the distributed differences by summing them # spark collects all the intermediate results via reduction # this value is then divided by the total number of (label, prediction) tuples mse = valuesandpreds.map(lambda (v, p): (v - p)**2).reduce(lambda x, y: x + y) / valuesandpreds.count() print(\"mean squared error = \" + str(mse))"
+    },
+    {
+        "text": "43. what is a stepwise regression?"
+    },
+    {
+        "text": "solution in a stepwise selection the choice of predictive variables is automatically carried out by exploring the space of features."
+    },
+    {
+        "text": "stepwise regression can reduce the risk of overfitting and can help to find a simple model with good performances but it can be very expensive."
+    },
+    {
+        "text": "this is particularly true if the feature space is explored brute-force with no additional hints on how to pick the right set of features."
+    },
+    {
+        "text": "there are three variants of stepwise regression: \u2022 forward selection, which starts with no features in the model, tests the addition of each feature using some error estimation and adds the variable only if it improves the model."
+    },
+    {
+        "text": "the selection is repeated until no feature improves the model \u2022 backward elimination, which starts with all candidate features, tests the deletion of each feature using some error estimation and then deletes the variable that improves the model the most after being deleted."
+    },
+    {
+        "text": "this elimination is repeated until no feature deletion improves the model \u2022 bidirectional elimination, which combines the previous two steps together."
+    },
+    {
+        "text": "44. how to include nonlinear information into linear models solution linear methods are created to make forecasts as a linear combination of features."
+    },
+    {
+        "text": "however, if the data is inherently not linearly separable, then it is still possible to use linear models in a few situations."
+    },
+    {
+        "text": "the key idea is to approximate nonlinearities in the problem as features polynomials."
+    },
+    {
+        "text": "this is the so called basis expansion."
+    },
+    {
+        "text": "as an example, if you believe that one feature can have quadratic impact on the forecast, then you can add the square of the feature to the feature space."
+    },
+    {
+        "text": "picking the right basis expansion for the right set of features is an art which requires a lot of fine-tuning and experience."
+    },
+    {
+        "text": "we will see another example of this technique when we will discuss about the svm trick."
+    },
+    {
+        "text": "45. what is a nai\u0308ve bayes classifier?"
+    },
+    {
+        "text": "solution a nai\u0308ve bayes classifier is a machine learning methodology which assigns class labels to each instance of real application data."
+    },
+    {
+        "text": "the nai\u0308ve attribute is related to the assumption that each feature provides a probabilistic contribution to the learned model, which is independent from the other features."
+    },
+    {
+        "text": "for instance a text article can be assigned to the category \u201csports\u201d because it contains the word \u00b0first\u00b0, independently from the fact that it also contains the word \u00b0base\u00b0."
+    },
+    {
+        "text": "these two words are considered separately but not in correlation."
+    },
+    {
+        "text": "despite their naive scheme and apparently simplified assumptions, nai\u0308ve bayes classifiers have worked quite well in many difficult and practical situations."
+    },
+    {
+        "text": "mathematically the problem can be formulated by considering an instance observation characterized by means of a suitable vector of features where the goal is to assign the best class probability , conditioned to the observation of x. this is statistically described as and the bayes theorem[20] allows to estimate this probability as follows: according to this theorem the posterior probability of assigning class given the observation of is equal to the prior probability of observing class in the training set, multiplied by the likelihood of observing conditioned to the observation of class in the training set, divided by the probability of observing in it."
+    },
+    {
+        "text": "in other words this posterior prediction can be formulated in terms of observations in the training set."
+    },
+    {
+        "text": "in plain english: now let\u2019s focus on each single equation component: is a constant scaling factor which will not influence the respective rank of each predicted category, so it can be safely ignored."
+    },
+    {
+        "text": "can be estimated for instance by considering the frequency of each category"
+    },
+    {
+        "text": "in the training set."
+    },
+    {
+        "text": "the estimation of can be done by using the chaining rule[21] which permits the calculation of any member of the joint distribution of a set of random variables using only conditional probabilities."
+    },
+    {
+        "text": "the nai\u0308ve assumption is that each feature is independent from all the remaining ones."
+    },
+    {
+        "text": "so under this assumption: and the naive bayes classifier becomes very simple where the symbol denotes proportionality."
+    },
+    {
+        "text": "in short all categories are evaluated against the above formula and we pick just the one maximizing it: note that multiplying small probabilities in can be problematic, so usually it is more convenient to operate in a log-space by using a well-known algebraic property of logarithms ."
+    },
+    {
+        "text": "in order to estimate , we should distinguish between discrete training data (for instance the features used for textual classification) and continuous training data (for instance: the features"
+    },
+    {
+        "text": "used for image classification that might be continuous)."
+    },
+    {
+        "text": "the former one can be modelled using bernoulli or multinomial distributions, while the latter one is typically modelled using gaussians."
+    },
+    {
+        "text": "46. what is a bernoulli and a multivariate nai\u0308ve bayes?"
+    },
+    {
+        "text": "solution in bernoulli all features are simple binary variables describing the presence or absence of one particular attribute in the observed training set."
+    },
+    {
+        "text": "therefore, bernoulli can be modelled as where is the probability of observing feature in class bernoulli is frequently used for text classification by explicitly modelling the presence or the absence of a word term in the text."
+    },
+    {
+        "text": "a multivariate is a variant of bernoulli, where counts the number of times an event was observed in a particular instance."
+    },
+    {
+        "text": "multivariates are very popular for text classifications where the text is represented by an independent collection of words: the so called bag of words."
+    },
+    {
+        "text": "the likelihood of observing a word is mathematically expressed by again, when computing small probabilities in , it is better to move into the log-space, so that ignoring the constant scaling factors we have note that the latter one is a simple linear form of with"
+    },
+    {
+        "text": "and ."
+    },
+    {
+        "text": "also note that with this formulation if a probability is zero, this will wipe all other contributions."
+    },
+    {
+        "text": "this problem is solved with the so called smoothing strategy, where some small constant factors are used to replace zero."
+    },
+    {
+        "text": "the code here below uses spark to train a multinomial bayes classifier on text data."
+    },
+    {
+        "text": "the metric adopted for evaluating quality is accuracy, which is the number of correct predictions made, divided by the total number of predictions made and multiplied by 100 to turn it into a percentage."
+    },
+    {
+        "text": "accuracy is calculated by using a map-reduce computation on spark."
+    },
+    {
+        "text": "note that the dataset has been split in training (70% of the data) and test (30% of the data)."
+    },
+    {
+        "text": "the smoothing factor is set to ."
+    },
+    {
+        "text": "code from pyspark.mllib.classification import naivebayes from pyspark.mllib.linalg import vectors from pyspark.mllib.regression import labeledpoint # create an appopriate labeledpoint of tuples (label, features) def parseline(line): parts = line.split(',') label = float(parts[0]) features = vectors.dense([float(x) for x in parts[1].split(' ')]) return labeledpoint(label, features) #create an rdd from the text file made up of labeledpoint data = sc.textfile('data/mllib/ sample_naive_bayes_data.txt').map(parseline) # split data into training (70%) and test (30%) # fix the seed for reproducipility of the experiment training, test = data.randomsplit([0.7, 0.3], seed = 0) # train a multinomial naive bayes with smoothing factor 1.0 model = naivebayes.train(training, 1.0) # make prediction and test accuracy predictionandlabel = test.map(lambda p : (model.predict(p.features), p.label)) accuracy = 1.0 * predictionandlabel.filter(lambda (x, v): x == v).count() / test.count()"
+    },
+    {
+        "text": "47. what is a gaussian?"
+    },
+    {
+        "text": "solution a gaussian is a family of mathematical functions which shows a characteristic symmetric \u201cbell curve\u201d shape."
+    },
+    {
+        "text": "mathematically: given the mean and the variance , a gaussian is defined as the gaussian distribution is a very common continuous probability distribution frequently used in statistics because of the central limit theorem."
+    },
+    {
+        "text": "this theorem states that average random variables independently drawn from independent distributions (also known as i.i.d.)"
+    },
+    {
+        "text": "are normally distributed."
+    },
+    {
+        "text": "the simplest case of normal distribution is ."
+    },
+    {
+        "text": "in the following examples 500 random numbers are sampled with and associated to buckets."
+    },
+    {
+        "text": "the drawn values have the classical bell shape."
+    },
+    {
+        "text": "the function has its peak at the mean and the \u201cspread\u201d increases by increasing the standard deviation code import matplotlib.pyplot as plt import numpy as np mu, sigma = 0, 1 # mean and standard deviation s = np.random.normal(mu, sigma, 500) count, bins, ignored = plt.hist(s, 50, normed=true) plt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) * np.exp( - (bins - mu)**2 / (2 * sigma**2) ), linewidth=2, color='r') plt.show()"
+    },
+    {
+        "text": "as an exercise try to plot the image for different values of and remark the differences."
+    },
+    {
+        "text": "48. what is a standard scaling?"
+    },
+    {
+        "text": "solution if a data is described by a gaussian then it might be convenient to transform it by scaling its features to unit variance and/or removing the mean using column summary statistics on the samples in the training set."
+    },
+    {
+        "text": "the code here below implements the scaling to unit variance and the removing of the mean in spark."
+    },
+    {
+        "text": "code from pyspark.mllib.util import mlutils from pyspark.mllib.linalg import vectors from pyspark.mllib.feature import standardscaler data = mlutils.loadlibsvmfile(sc, \"data/mllib/ sample_libsvm_data.txt\") label = data.map(lambda x: x.label) features = data.map(lambda x: x.features) scaler1 = standardscaler().fit(features) scaler2 = standardscaler(withmean=true, withstd=true).fit(features) scaler3 = standardscalermodel(scaler2.std, scaler2.mean) # data1 is scaled to the unit variance data1 = label.zip(scaler1.transform(features)) # data2 is scaled to the unit variance and has zero mean."
+    },
+    {
+        "text": "data2 = label.zip(scaler1.transform(features.map(lambda x: vectors.dense(x.toarray())))) # features are mapped into dense vectors, for avoiding exceptions # for transformation with zero mean on sparse vector."
+    },
+    {
+        "text": "49. why are statistical distributions important?"
+    },
+    {
+        "text": "solution statistical distributions are important for modelling events and data."
+    },
+    {
+        "text": "distributions are characterized by functions such as the probability mass function (pmf), which provides the probability that a discrete random variable is exactly equal to some value, and the cumulative distribution function (cdf), which describes the probability of a real-valued random variable to have a value less than or equal to ."
+    },
+    {
+        "text": "in addition to the normal ones the following distributions are frequently used in data science: what pmf cmf e(x) bernoulli a discrete distribution."
+    },
+    {
+        "text": "it takes value 1 with probability and value 0 with probability a classic example is a single toss of a coin."
+    },
+    {
+        "text": "binomial a discrete distribution."
+    },
+    {
+        "text": "it describes the number of successes in a series of independent yes/no experiments all with the same probability of success."
+    },
+    {
+        "text": "n, number of trials k, number of successes p, probability of success in each trial where poisson binomial it describes the number of successes in a series of independent yes/no experiments with different probabilities of success where is the set of all subsets of k integers that can be selected from {1,2,3,...,n}."
+    },
+    {
+        "text": "is the complement of set a. where"
+    },
+    {
+        "text": "poisson a discrete distribution."
+    },
+    {
+        "text": "it describes the probability of events in a fixed interval of time / space with a known average rate arriving independently from time since the last event."
+    },
+    {
+        "text": "the positive real number \u03bb is the expected value of the random variable x and also of its variance."
+    },
+    {
+        "text": "is an integer gaussian a distribution on real."
+    },
+    {
+        "text": "the central limit theorem: every variable modelled as a sum of many i.i.d, variables with finite mean, variance is normal."
+    },
+    {
+        "text": "code numpy provides full support for all the distributions described above and many others more."
+    },
+    {
+        "text": "the interested reader is encouraged to check them on wikipedia."
+    },
+    {
+        "text": "[22] import numpy as np n, p = 10, .5 # number of trials, probability of each trial s = np.random.binomial(n, p, 100) print s"
+    },
+    {
+        "text": "50. can you compare your data with some distribution?"
+    },
+    {
+        "text": "what is a qq-plot?"
+    },
+    {
+        "text": "solution if you want to investigate whether your data follow some distribution (normal, uniform), one useful way is to use a qq-plot, which can compare two probability distributions by plotting their quantiles against each other."
+    },
+    {
+        "text": "if the distributions are similar, then the graph will show a straight line."
+    },
+    {
+        "text": "code import numpy as np import pylab import scipy.stats as stats measurements = np.random.normal(loc = 40, scale = 10, size=80) stats.probplot(measurements, dist=\"norm\", plot=pylab) pylab.show()"
+    },
+    {
+        "text": "51. what is a gaussian nai\u0308ve bayes?"
+    },
+    {
+        "text": "solution if the data is continuous, it might be convenient to estimate the probability by using a gaussian distribution."
+    },
+    {
+        "text": "so if feature is continuous, we compute the mean and the variance of in , then we model the probabilities as gaussians in this way: as discussed, it could be useful to check whether our data is indeed showing a gaussian distribution by using tools such as qq-plot."
+    },
+    {
+        "text": "52. what is another way to use nai\u0308ve bayes with continuous data?"
+    },
+    {
+        "text": "solution another approach for dealing with continuous features is to discretize them in buckets and use multinomial nai\u0308ve bayes for the discrete model."
+    },
+    {
+        "text": "however some attention should be put in place for determining the right number of buckets."
+    },
+    {
+        "text": "53. what is the nearest neighbor classification?"
+    },
+    {
+        "text": "solution a \u201cnearest neighbor\u201d is a very simple form of classification where each instance is assigned to the objects which are closer to the instance."
+    },
+    {
+        "text": "during the training phase the space of features is partitioned in regions according to the position of the training instances."
+    },
+    {
+        "text": "then during the application phase the distance with respect to the training instances is used to classify real data."
+    },
+    {
+        "text": "there are many choices that can be made."
+    },
+    {
+        "text": "for instance we can consider the closest object or we consider up to objects and let them vote to pick the winning class."
+    },
+    {
+        "text": "this is the so called k-nn classifier."
+    },
+    {
+        "text": "also we might define different types of vectorial distances."
+    },
+    {
+        "text": "given two vectors and formula description visually euclidean the euclidean formula represents the intuitive notion of distance of two points in space."
+    },
+    {
+        "text": "manhattan \u201cmanhattan\u201d intuitively maps all the points into a squared grid (similar to the manhattan map) and the connections can only happen either vertically or horizontally hamming #( ) number of positions where the single vector components are different."
+    },
+    {
+        "text": "2473996 2233796 have distance 3 jaccard jaccard distance represents the similarity between two sets implementing the exact nearest neighbor can be very expensive."
+    },
+    {
+        "text": "therefore many approximate variants have been proposed, which are generally based on the idea of sampling the feature of space."
+    },
+    {
+        "text": "the interested reader can find here an experimental alpha implementation for spark."
+    },
+    {
+        "text": "[23] the code snippet implements here a simple version of knn where k=1."
+    },
+    {
+        "text": "more sophisticate implementations are based on advanced data structures such as kd-trees."
+    },
+    {
+        "text": "[24] code import numpy as np"
+    },
+    {
+        "text": "def dist(p0, p1): return np.sum((p0-p1)**2) def knn(training, traininglabels, newpoint): dists = np.array([distance(t, newpoint)] for t in training) nearest = dists.argmin() return traininglabels[nearest]"
+    },
+    {
+        "text": "54. what are support vector machines (svm)?"
+    },
+    {
+        "text": "solution support vector machines aim to identify a hyperplane in a high dimensional space of features."
+    },
+    {
+        "text": "intuitively the best hyperplane is the one having the largest distance to the nearest data point observed in any training data."
+    },
+    {
+        "text": "in fact this hyperplane provides the best separation among the training data."
+    },
+    {
+        "text": "the image below provides a toy example where in line does not provide any separation between the training data, while e line provides a non optimal separation."
+    },
+    {
+        "text": "instead provides the maximum separation margin."
+    },
+    {
+        "text": "mathematically let us assume to have a training set made of pairs of features and true binary labels: and let us assume that the data here can be linearly separated by a hyperplane, which is described by the linear relation for a suitable weight vector ."
+    },
+    {
+        "text": "let us consider two additional hyperplanes: one for the positive examples and one for the negative examples ."
+    },
+    {
+        "text": "recalling the distance from a point to a line: is and as consequence the distance between and is then"
+    },
+    {
+        "text": "."
+    },
+    {
+        "text": "therefore the total distance between and is and for minimizing the distance we need to maximize the ."
+    },
+    {
+        "text": "however we also want that no data point touches the margins which can be expressed as ."
+    },
+    {
+        "text": "more synthetically we want to solve the optimization problem under the constrains since the square root is a monotonic function, we can more conveniently solve the problem in this way: under the constrains fortunately there are packages which can solve this optimization problem with advanced mathematical tools."
+    },
+    {
+        "text": "for instance: spark implements svm with hinge loss function , regularization of type l1 or l2."
+    },
+    {
+        "text": "the optimization problem is solved by using the stochastic gradient descent."
+    },
+    {
+        "text": "once the model is learned, the prediction is simply a vector multiplication."
+    },
+    {
+        "text": "for each application instance if the outcome is positive, otherwise it is negative."
+    },
+    {
+        "text": "note that the data points in each class lying closest to the classification line are called \u201csupport vectors\u201d and they are the reason for the name of this methodology."
+    },
+    {
+        "text": "code from pyspark.mllib.classification import svmwithsgd, svmmodel from pyspark.mllib.regression import labeledpoint # load and parse the data into labeledpoint def parsepoint(line): values = [float(x) for x in line.split(' ')] return labeledpoint(values[0], values[1:])"
+    },
+    {
+        "text": "data = sc.textfile(\"data/mllib/sample_svm_data.txt\") parseddata = data.map(parsepoint) # build the model for svm with stocastic gradient descent model = svmwithsgd.train(parseddata, iterations=100) # evaluating the model on training data labelsandpreds = parseddata.map(lambda p: (p.label, model.predict(p.features))) # compute the accuracy trainerr = labelsandpreds.filter(lambda (v, p): v != p).count() / float(parseddata.count()) print(\"training error = \" + str(trainerr))"
+    },
+    {
+        "text": "55. what are svm kernel tricks?"
+    },
+    {
+        "text": "solution if a linear separation is not enough, then it is still possible to use svm with simple tricks."
+    },
+    {
+        "text": "for example, if the original data consists of 3- dimensional vectors [x, y, z] , then we could compute a new 9- dimensional feature vector ."
+    },
+    {
+        "text": "this basic idea can be extended as explained in \u201crandom features for large-scale kernel machines\u201d[25]."
+    },
+    {
+        "text": "the intuition here is that kernel methods remember the -th training example and combine it with a another training example."
+    },
+    {
+        "text": "in certain situations an additional structure is added and the kernel is a special function which maps the input space into another space so that and the kernel is an inner product between and , where two features are provided from the original input space."
+    },
+    {
+        "text": "in other words a kernel function maps a non-linear boundary in the problem space to a linear boundary in a higher dimensional space."
+    },
+    {
+        "text": "these are examples of kernels frequently used in machine learning examples of kernels meaning"
+    },
+    {
+        "text": "polynomial for some degrees sigmoid for some parameters radial basis for some parameters"
+    },
+    {
+        "text": "56. what is k-means clustering?"
+    },
+    {
+        "text": "solution k-means is a form of flat clustering where the goal is to partition space into a set of groups without creating relations among them."
+    },
+    {
+        "text": "in the next volume we will present a form of hierarchical clustering where the groups are organized in a hierarchical tree."
+    },
+    {
+        "text": "k-means is a form of unsupervised learning, where the actual data is grouped in different clusters."
+    },
+    {
+        "text": "mathematically: given observations , where each observation is a vector of features , -means method partitions the observations in sets in such a way that the within-cluster error expressed as sum of squares is minimized an approximate solution to the problem is computed iteratively."
+    },
+    {
+        "text": "the algorithm starts by randomly picking points in the so- called centroids."
+    },
+    {
+        "text": "then alternatively two steps are repeated until either a convergence or a stopping criteria is met."
+    },
+    {
+        "text": "first, each observation is assigned to the group, the centroid of which has the least within- cluster sum of squares from the observation."
+    },
+    {
+        "text": "then the mean for each group is updated by considering the observations layingwithin the group."
+    },
+    {
+        "text": "the algorithm has converged when the assignments no longer change."
+    },
+    {
+        "text": "since both steps optimize the infra-cluster distance and only a finite number of such partitions exists, the algorithm must converge to a (local) optimum."
+    },
+    {
+        "text": "k-means++ is a variant of k-means where the initial k clusters are spread out: the first cluster center is chosen uniformly at random from the application data points, after which each successive cluster center is chosen from the remaining data points with a probability that is proportional to its squared distance from the closest existing cluster center point."
+    },
+    {
+        "text": "spark implements a variant of k-means++ called k-means||[26] , suitable for parallel computation."
+    },
+    {
+        "text": "code from pyspark.mllib.clustering import kmeans, kmeansmodel from numpy import array"
+    },
+    {
+        "text": "from math import sqrt # load and parse the data into an appropriate rdd data = sc.textfile(\"data/mllib/kmeans_data.txt\") parseddata = data.map(lambda line: array([float(x) for x in line.split(' ')])) # build the model for a maxiterations=10 # and with 10 runs, with random centroid clusters = kmeans.train(parseddata, 2, maxiterations=10, runs=10, initializationmode=\"random\") # evaluate clustering by computing within set sum of squared errors def error(point): center = clusters.centers[clusters.predict(point)] return sqrt(sum([x**2 for x in (point - center)])) # each point is mapped into the error and all the errors are summed wssse = parseddata.map(lambda point: error(point)).reduce(lambda x, y: x + y) print(\"within set sum of squared error = \" + str(wssse))"
+    },
+    {
+        "text": "57. can you provide an example for text classification with spark?"
+    },
+    {
+        "text": "solution let\u2019s discuss about text classification in spark and leverage multiple techniques introduced in previous questions."
+    },
+    {
+        "text": "in this example textual words are loaded and transformed into a vector space."
+    },
+    {
+        "text": "then the examples are split (70%, 30%) into training and test datasets where a nai\u0308ve bayes model is learned."
+    },
+    {
+        "text": "the error metric adopted is accuracy."
+    },
+    {
+        "text": "code from pyspark import sparkcontext, sparkconf from pyspark.mllib.feature import hashingtf from pyspark.mllib.regression import labeledpoint from pyspark.mllib.classification import naivebayes conf = sparkconf().setmaster(\"local[*]\").setappname(\"naive_bayes\") sc = sparkcontext(conf=conf) # hash words a discrete vector space # with the limit of 10000 words htf = hashingtf(10000) #tokenize sentences and transform them into vector space model # examples datardd = sc.textfile(\"./positivedata.txt\") data = datardd.map(lambda text : labeledpoint(1, htf.transform(text.split(\" \")))) data.persist() # build training and test data sets for examples # training set is 70% of data, while test set is 30% of data traindata, testdata = data.randomsplit([0.7, 0.3]) # train a naive bayes model on the training data model = naivebayes.train(traindata) # compare predicted labels to actual labels prediction_and_labels = testdata.map(lambda point: (model.predict(point.features), point.label)) # filter to only correct predictions correct = prediction_and_labels.filter(lambda (predicted, actual):"
+    },
+    {
+        "text": "predicted == actual) # calculate and print accuracy rate accuracy = correct.count() / float(testh.count()) print \"classifier correctly predicted category \" + str(accuracy * 100) + \" percent of the time\""
+    },
+    {
+        "text": "58. where to go from here the best next step is to start playing with real data and applying the algorithms presented in this volume."
+    },
+    {
+        "text": "kaggle[27] is a platform for data prediction in competitions."
+    },
+    {
+        "text": "companies, organizations and researchers post their data and have it scrutinized by the best experts worldwide."
+    },
+    {
+        "text": "so you can go there and run few competitions for showcasing your value!"
+    },
+    {
+        "text": "remember: great machine learning results can be achieved by finding the right mix among the steps described in the below image."
+    },
+    {
+        "text": "every problem is represented by means of observed data."
+    },
+    {
+        "text": "data is noisy."
+    },
+    {
+        "text": "so you need to select the right summaries via feature engineering along with the appropriate algorithm for learning."
+    },
+    {
+        "text": "at the same time it is certainly useful to provide a good mathematical formulation to the machine learning problem."
+    },
+    {
+        "text": "then it is a matter of training (for supervised learning) and evaluation."
+    },
+    {
+        "text": "for supervised learning a good gold set can help."
+    },
+    {
+        "text": "the process is iterative: when you reach satisfying results or when you are stuck and don\u2019t make any progress, that is exactly the right moment for iterating and improving, trying to refine and frequently re-assess all the choices made so far."
+    },
+    {
+        "text": "after a few iterations you might be satisfied of your results and deploy the model online for making forecasts on real unseen data."
+    },
+    {
+        "text": "users will provide you with feedback (either explicit or implicit) and those are new signals that you might want to collect for further refining your models."
+    },
+    {
+        "text": "a great data scientist always works in incremental and lean way!!"
+    },
+    {
+        "text": "!"
+    },
+    {
+        "text": "i hope that this first volume provided you with some basic tools for machine learning and also reduced the halo of mystery surrounding the role of data science (after all it is all about data, math, coding and lots of creativity!)."
+    },
+    {
+        "text": "the second volume will discuss in more details more advanced topics such as decision trees, random forests, mars, gradient boosted trees, ensembles, hyper-parameters search, density"
+    },
+    {
+        "text": "estimation, expectation-maximization, dimensional reduction, bagging, recommendations, neural networks, deep learning and associative rules."
+    },
+    {
+        "text": "appendix a 59. ultra-quick introduction to python i assume that you are already familiar with programming languages and hopefully you already have some experience with python."
+    },
+    {
+        "text": "however it is useful to recall some peculiarities of the languages which are used in this book."
+    },
+    {
+        "text": "python does not use { } for delimiting code blocks but instead it uses indentation, which can be confusing at the beginning if you are used to c/c++ programming."
+    },
+    {
+        "text": "importing a module and defining a function have a simple syntax import numpy as np def dist(p0, p1): return np.sum((p0-p1)**2) lists are defined with square brackets and slicing operations are easily supported."
+    },
+    {
+        "text": "l=[1,2,3,4,5] x[:3] #first three x[3:] #three to end x[2:4] #2nd, 3rd, 4th y = x[:] #copy list comprehension is useful for transforming a list into another list by selecting some elements or by transforming other elements with a suitable function."
+    },
+    {
+        "text": "this example creates a list of 100 tuples pairs = [(x, y) for x in range(10) for y in range(10)] python supports anonymous functions also known as lambda computation."
+    },
+    {
+        "text": "this is frequently used in spark as reported in this example: # map reduce textfile.map(lambda line: len(line.split())).reduce(lambda a, b: a if (a > b) else b) numpy is a library for efficient linear algebra and numerical computation."
+    },
+    {
+        "text": "in this book we used numpy vectors intensively."
+    },
+    {
+        "text": "import numpy as np"
+    },
+    {
+        "text": "def dist(p0, p1): return np.sum((p0-p1)**2) def knn(training, traininglabels, newpoint): dists = np.array([distance(t, newpoint)] for t in training) nearest = dists.argmin() return traininglabels[nearest] anaconda is a very convenient python distribution for data science."
+    },
+    {
+        "text": "[28]"
+    },
+    {
+        "text": "60. ultra-quick introduction to probabilities probabilities can be seen as a way to quantify the uncertainty for an event from a universe of events."
+    },
+    {
+        "text": "mathematically this is denoted with ."
+    },
+    {
+        "text": "two events are independent if the probability of having both of them happening is ."
+    },
+    {
+        "text": "if the events are not independent, then , which means that the joint probability is equal to the conditional probability of seeing given the times the probability of ."
+    },
+    {
+        "text": "the bayes theorem is a powerful tool for learning because it allows to reverse conditional probabilities."
+    },
+    {
+        "text": "mathematically the theorem states that:"
+    },
+    {
+        "text": "61. ultra-quick introduction to matrices and vectors vectors of length represent points in an -dimensional space."
+    },
+    {
+        "text": "vectors are typically represented with the notation with and sometimes with bold letters when there is no ambiguity."
+    },
+    {
+        "text": "matrices are tables with rows and columns."
+    },
+    {
+        "text": "they are typically represented as and when there is no ambiguity as a. the transpose of a matrix is and it is denoted as ."
+    },
+    {
+        "text": "the transpose of a vector of dimension n \u00d7 1 is the same vector 1 \u00d7 n. given a vector x, we define the norm and , given two vectors y, the inner product ."
+    },
+    {
+        "text": "given the inner product, we define the cosine similarity as , where is the angle between the vectors represented by and ."
+    },
+    {
+        "text": "given two vectors x, y, the outer product is equivalent to a matrix multiplication , provided that is represented as a column vector and as an n \u00d7 1 column vector."
+    },
+    {
+        "text": "about the author an experienced data mining engineer, passionate about technology and innovation in consumers\u2019 space."
+    },
+    {
+        "text": "interested in search and machine learning on massive dataset with a particular focus on query analysis, suggestions, entities, personalization, freshness and universal ranking."
+    },
+    {
+        "text": "antonio gulli\u0300 has worked in small startups, medium (ask.com, tiscali) and large corporations (microsoft, relx)."
+    },
+    {
+        "text": "his carrier path is about mixing industry with academic experience."
+    },
+    {
+        "text": "antonio holds a master degree in computer science and a master degree in engineering, and a ph.d. in computer science."
+    },
+    {
+        "text": "he founded two startups, one of them was one of the earliest search engine in europe back in 1998. he filed more than 20 patents in search, machine learning and distributed system."
+    },
+    {
+        "text": "antonio wrote several books on algorithms and currently he serves as (senior) program committee member in many international conferences."
+    },
+    {
+        "text": "\u201cnowadays, you must have a great combination of research skills and a just-get-it-done attitude.\u201d [1] http://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics [2] http://docs.scipy.org/doc/scipy/reference/sparse.html [3] http://scikit-learn.org/stable/datasets/ [4] https://www.mturk.com/mturk/welcome [5] http://docs.scipy.org/doc/numpy/reference/routines.linalg.html [6] http://docs.scipy.org/doc/scipy/reference/sparse.html [7]http://hadoop.apache.org/docs/r2.6.0/api/org/apache/ hadoop/mapred/inputformat.html [8] http://research.google.com/archive/mapreduce.html [9] http://codingplayground.blogspot.co.at/2010/09/cosmos-massive-computation-in- microsoft.html [10]http://spark.apache.org/docs/latest/programming-guide.html#transformations [11]http://spark.apache.org/docs/latest/programming-guide.html#transformations"
+    },
+    {
+        "text": "[12] https://networkx.github.io/documentation/latest/tutorial/tutorial.html [13] http://oauth.net/2/ [14] https://en.wikipedia.org/wiki/bloom_filter [15] https://en.wikipedia.org/wiki/count%e2%80%93min_sketch [16] https://en.wikipedia.org/wiki/minhash [17] https://en.wikipedia.org/wiki/locality-sensitive_hashing [18] https://en.wikipedia.org/wiki/convex_function [19]https://spark.apache.org/docs/latest/api/scala/ index.html#org.apache.spark.mllib.optimization.gradientdescent [20] https://en.wikipedia.org/wiki/bayes%27_theorem [21] https://en.wikipedia.org/wiki/chain_rule_(probability) [22] https://en.wikipedia.org/wiki/list_of_probability_distributions [23] https://issues.apache.org/jira/browse/spark-2336 [24] https://en.wikipedia.org/wiki/k-d_tree [25]http://www.eecs.berkeley.edu/~brecht/ papers/07.rah.rec.nips.pdf [26] http://spark.apache.org/docs/latest/mllib- clustering.html#k-means [27] https://www.kaggle.com/ [28] https://store.continuum.io/cshop/anaconda/"
+    }
+]
