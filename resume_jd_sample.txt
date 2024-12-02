@@ -1,0 +1,9 @@
+Resume:
+- Data Scientist with 5 years of experience in machine learning, data analysis, and statistical modeling.
+- Proficient in Python, SQL, and cloud platforms like AWS.
+- Notable projects include creating predictive models for customer churn and optimizing business KPIs.
+
+Job Description:
+- Seeking a Data Scientist to develop machine learning models to improve customer retention.
+- Required skills: Python, SQL, AWS, and experience with predictive modeling.
+- Preferred skills: Knowledge of NLP and time-series forecasting.

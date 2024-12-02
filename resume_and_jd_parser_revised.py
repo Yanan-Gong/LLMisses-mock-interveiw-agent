@@ -8,9 +8,6 @@ def ocr_extract_clean_text_from_pdf(pdf_path, output_text_file):
     """
     Extract text from a PDF file using OCR, clean it by removing unnecessary spaces
     and punctuation marks, and save the output to a text file.
-    
-    :param pdf_path: Path to the PDF file
-    :param output_text_file: Path to save the cleaned text output
     """
     # Define paths for Tesseract and Poppler
     pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"  # Update if needed
@@ -65,18 +62,17 @@ def process_pdfs_in_directory(directory):
         # Process each PDF file
         ocr_extract_clean_text_from_pdf(pdf_path, txt_file_path)
 
-# Function to generate job descriptions corresponding to resumes
-def generate_detailed_job_descriptions(resume_dir, output_dir):
+# Function to generate job descriptions corresponding to resumes and combine them
+def generate_combined_files(resume_dir, output_dir):
     """
-    Generate detailed job descriptions with responsibilities, minimum requirements,
-    and preferred requirements, and save them with the same name ending in '_jd.txt'.
+    Generate combined files with resume and job description content in a single file.
 
     :param resume_dir: Directory containing resume text files.
-    :param output_dir: Directory to save the generated job description files.
+    :param output_dir: Directory to save the combined files.
     """
     # 10 detailed job descriptions
     job_descriptions = [
-         """**Job Title:** Data Scientist at Google
+       """**Job Title:** Data Scientist at Google
 
 **Responsibilities:**
 - Develop machine learning models to improve search and ad recommendations.
@@ -266,33 +262,40 @@ def generate_detailed_job_descriptions(resume_dir, output_dir):
 - Familiarity with streaming data pipelines.
 - Certifications in data engineering.
         """
-           ]
+    ]
 
     # Ensure the output directory exists
     os.makedirs(output_dir, exist_ok=True)
-    
+
     # List all resume files in the directory
     resume_files = [f for f in os.listdir(resume_dir) if f.endswith('.txt')]
-    
+
     for idx, resume_file in enumerate(resume_files):
-        # Determine output file name
-        jd_file_name = os.path.splitext(resume_file)[0] + "_jd.txt"
-        jd_file_path = os.path.join(output_dir, jd_file_name)
-        
+        # Read the resume content
+        resume_path = os.path.join(resume_dir, resume_file)
+        with open(resume_path, "r") as resume_file_obj:
+            resume_content = resume_file_obj.read()
+
         # Get a corresponding job description
         job_description = job_descriptions[idx % len(job_descriptions)]
-        
-        # Save the job description to a new file
-        with open(jd_file_path, "w") as jd_file:
-            jd_file.write(job_description)
-        
-        print(f"Saved job description to: {jd_file_path}")
+
+        # Combine resume and job description into a single file
+        combined_file_name = os.path.splitext(resume_file)[0] + "_combined.txt"
+        combined_file_path = os.path.join(output_dir, combined_file_name)
+
+        with open(combined_file_path, "w") as combined_file:
+            combined_file.write("Resume:\n")
+            combined_file.write(resume_content + "\n\n")
+            combined_file.write("Job Description:\n")
+            combined_file.write(job_description)
+
+        print(f"Combined file saved to: {combined_file_path}")
 
 # Example usage
 if __name__ == "__main__":
     pdf_directory = "/Users/yajuanli/Desktop/LLMiss/llm_yj/resumes"  # Update with the correct directory path
     process_pdfs_in_directory(pdf_directory)
 
-    resume_directory = "/Users/yajuanli/Desktop/LLMiss/llm_yj/resumes"  # Update with the actual path to your resume files
-    output_directory = "/Users/yajuanli/Desktop/LLMiss/llm_yj/resumes"  # Update with the desired output directory for JD files
-    generate_detailed_job_descriptions(resume_directory, output_directory)
+    resume_directory = "/Users/yajuanli/Desktop/LLMiss/llm_yj/resumes"  # Path to your resume text files
+    output_directory = "/Users/yajuanli/Desktop/LLMiss/llm_yj/combined"  # Desired output directory for combined files
+    generate_combined_files(resume_directory, output_directory)

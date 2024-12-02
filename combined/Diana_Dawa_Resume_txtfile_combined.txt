@@ -1,0 +1,23 @@
+Resume:
+Diana Dawa Data Scientist 8 diananovoresumecom Q Palo Alto CA in linkedincomindianadawa WORK EXPERIENCE Data Scientist Future Energy Ltd 062018  Present Palo Alto CA  Develop action plans to mitigate risks in decision making while increasing profitability by leveraging data science  Drive the interaction and partnership between the managers to ensure active cooperation in identifying as well as defining analytical needs and generating the pullthrough of insights with the business  Build predictive models using various machine learning tools to predict the possibility of equipment failure  Develop algorithms using Natural Language Processing and Deep Learning models for predictive maintenance  Design algorithms to track and detect anomalies in multiple sensors data for the Energy Industry  Demonstrate knowledge and execution of application programming interface development and test automation Data Analyst THETA Financial Group 012016  052018  Utilized analytical and technical expertise to provide insights and proposals to support business improvements San Francisco CA  Evaluated analytical model findings in the Global Monitoring Report the company’s flagship product  Conducted business analysis to understand business needs and requirements to translate into conceptual designs  Actively engaged in the quantitative analysis of sophisticated modeling to address business issues Business Analyst  Statistician Maxicare Healthcare 022013  122015  Conducted business process analysis and identified critical issues gaps and needs for an established process center  Developed Key Performance Indicators KPI and presented it to the management and led to the execution plan  Analyzed and produced KPI reports allowing to monitor field service engineer and customer care center closely  Led training sessions on the software developed and presented it to the management for approval of deployment novoresumecom Data Scientist with 4 years of broadbased experience in building dataintensive applications overcoming complex architectural and scalability issues in diverse industries Proficient in predictive modeling data processing and data mining algorithms as well as scripting languages including Python and Java Capable of creating developing testing and deploying highly adaptive diverse services to translate business and functional qualifications into substantial deliverables  044 412 2020 ® dianadawacom 2 dianadawa GENERAL SKILLS TECHNICAL SKILLS Operating System Windows MacOS Linux DatabaseServer My SQL Postgres SQL Server Programming Language Python scikitlearn Python OpenCV D3js H20ai Spark Hadoop R Programming Django Angularjs HTML SQL JavaScript PHP Other SoftwareTools Tableau Deep Learning Machine Learning IP Cameras AWS Services Microsoft Azure CERTIFICATES Certification for Applied Data Analytics 2019 Cloudera Data Science Essentials Certificate 2018 Essentials of High Performance and Parallel Statistical Computing with R 2018 EDUCATION Master of Science in Computer Science and Informatics San Francisco University 20142016 INTERESTS  Video Games Ja Music AS Renewable Energy OO Artificial Intelligence
+
+Job Description:
+**Job Title:** Data Scientist at Google
+
+**Responsibilities:**
+- Develop machine learning models to improve search and ad recommendations.
+- Perform data analysis on large datasets to derive actionable insights.
+- Collaborate with cross-functional teams to design and implement data-driven solutions.
+- Create dashboards to track key performance metrics.
+
+**Minimum Requirements:**
+- Bachelor’s degree in Computer Science, Statistics, or related field.
+- 3+ years of experience in data analysis and predictive modeling.
+- Proficiency in Python, SQL, and machine learning frameworks (e.g., TensorFlow).
+- Strong communication skills.
+
+**Preferred Requirements:**
+- Experience with cloud platforms like GCP or AWS.
+- Familiarity with big data tools (e.g., Spark, Hadoop).
+- Knowledge of A/B testing frameworks.
+        

@@ -24,7 +24,6 @@ client = OpenAI(
     project=project
 )
 
-# class to define the agent and response, you can change desired models in each agent
 class Agent(BaseModel):
     name: str = "Agent"
     model: str = "gpt-4o-mini"
@@ -35,10 +34,7 @@ class Response(BaseModel):
     agent: Optional[Agent]
     messages: list
 
-
-
 # Helper functions
-# This function converts a Python function to a schema that can be used by OpenAI's Chat API.
 def function_to_schema(func) -> dict:
     type_map = {
         str: "string",
@@ -95,16 +91,13 @@ def execute_tool_call(tool_call, tools, agent_name):
 
     return tools[name](**args)  # call corresponding function with provided arguments
 
-
 ###Main function to handle the conversation
 def bq_question_answer(agent, messages):
-
     current_agent = agent
     num_init_messages = len(messages)
     messages = messages.copy()
 
     while True:
-
         # turn python functions into tools and save a reverse map
         tool_schemas = [function_to_schema(tool) for tool in current_agent.tools]
         tools = {tool.__name__: tool for tool in current_agent.tools}
@@ -125,7 +118,7 @@ def bq_question_answer(agent, messages):
         if not message.tool_calls:  # if finished handling tool calls, break
             break
 
-        # === 2. handle tool calls ===
+         # === 2. handle tool calls ===
 
         for tool_call in message.tool_calls:
             result = execute_tool_call(tool_call, tools, current_agent.name)
@@ -133,7 +126,7 @@ def bq_question_answer(agent, messages):
             if type(result) is Agent:  # if agent transfer, update current agent
                 current_agent = result
                 result = (
-                    f"Transfered to {current_agent.name}. Adopt persona immediately."
+                    f"Transferred to {current_agent.name}. Adopt persona immediately."
                 )
 
             result_message = {
@@ -146,8 +139,15 @@ def bq_question_answer(agent, messages):
     # ==== 3. return last agent used and new messages =====
     return Response(agent=current_agent, messages=messages[num_init_messages:])
 
+# Load resume and job description from a file
+def load_resume_jd(file_path):
+    """
+    Loads the resume and JD from a .txt file.
+    """
+    with open(file_path, 'r') as file:
+        return file.read()
 
-### Transfer functions ###
+# Define transfer functions
 def transfer_to_user_info_extract_agent():
     return user_info_extract_agent
 
@@ -165,43 +165,43 @@ def trnasfer_to_bq_mock_interview_agent():
 ### Here I use job_title as the input parameter, you can change to other parameters like experience_years, skills, etc.
 def extract_resume_jd(job_title):
     """
-    Extracts the experience and job requirments from given resume and job description
+    Extracts the experience and job requirements from given resume and job description
     """
     return "success"
 
-# Agent1
 user_info_extract_agent = Agent(
     name="User Info Extractor",
-    instructions=("You are a helpful assistant who can extract user information from text.\n" 
-                  "Introduce yourself. Always be very brief. "
-                  "1. please summarize the job description." 
-                  "2. please summerize resume focusing on relevant past experience."),
-    tools=[extract_resume_jd,transfer_to_bq_question_generator,trnasfer_to_bq_mock_interview_agent],)
+    instructions=("You are a helpful assistant who can extract user information from text.\n"
+                  "1. Summarize the job description.\n"
+                  "2. Summarize the resume focusing on relevant past experience."),
+    tools=[extract_resume_jd, transfer_to_bq_question_generator, trnasfer_to_bq_mock_interview_agent],
+)
 
 # --------------------------------------------------------#
 
+
 def bq_question_generator(job_title):
     """
-    based on user's info, generates 6 differnect behavior questions for the interview
+    Based on user's info, generates behavioral interview questions.
     """
     return "success"
 
-# Agent2
+# agent 2
 bq_question_generator_agent = Agent(
     name="Behavior Question Generator",
     instructions=("You are a helpful assistant who can generate 5-10 behavior questions based on the Job Description Summary and Resume Summary from user_info_extract_agent .\n" 
                   "Introduce yourself. Always be very brief. "
                   "Dont not provide answers to the questions."),
-    tools=[bq_question_generator,transfer_to_feedback_agent,trnasfer_to_bq_mock_interview_agent],)
+    tools=[bq_question_generator, transfer_to_feedback_agent, trnasfer_to_bq_mock_interview_agent],
+)
 
-# --------------------------------------------------------#
 def evaluate_answers(job_title):
     """
-    Evaluate the answers provided by the user. 
+    Evaluate the answers provided by the user.
     """
     return "success"
 
-# Agent3
+# agent 3
 feedback_agent = Agent(
     name="Feedback Agent",
     instructions=("You are a interview agent, introduce yourself,you collect bq questions from bq_question_generator_agent. "
@@ -213,12 +213,14 @@ feedback_agent = Agent(
                   "4. Provide feedback to the user. Using structure like:"
                   " Question, User Answer, Modified Answer"
                   "5. Transfer to bq_mock_interview_agent"),
-    tools=[evaluate_answers,trnasfer_to_bq_mock_interview_agent],
+    tools=[evaluate_answers, trnasfer_to_bq_mock_interview_agent],
 )
+
 # --------------------------------------------------------#
 
 
 # Agent4: Manager Agent to control the whole process
+
 bq_mock_interview_agent = Agent(
     name="BQ Mock Interview Agent",
     instructions=("You are a helpful assistant who can guide the user through a mock interview process."
@@ -228,23 +230,30 @@ bq_mock_interview_agent = Agent(
                   "2. Generate behavior questions based on the job description and resume."
                   "3. Provide feedback on the user's answers."
                   "4. Wrap up the mock interview based on the feedback from feedback_agent. providing suggestions."),
-    tools=[transfer_to_user_info_extract_agent,transfer_to_bq_question_generator,transfer_to_feedback_agent],
+    tools=[transfer_to_user_info_extract_agent, transfer_to_bq_question_generator, transfer_to_feedback_agent],
 )
 
-
-
-# ----------------- Main -----------------#
+# Main script
 agent = bq_mock_interview_agent
 messages = []
 
-print("Welcome to the mock interview process! Please input your resume and job description.")
-while True:
-    user = input("User (type 'quit' to exit): ").strip()
-    if user.lower() == 'quit':
-        print("Exiting the interview Process. Goodbye!")
-        break
-    messages.append({"role": "user", "content": user})
+file_path = input("Enter the path to your .txt file with the resume and job description: ").strip()
+try:
+    resume_jd = load_resume_jd(file_path)
+    messages.append({"role": "user", "content": resume_jd})
+    print("Resume and Job Description loaded successfully.")
 
-    response = bq_question_answer(agent, messages)
-    agent = response.agent
-    messages.extend(response.messages)
+    while True:
+        response = bq_question_answer(agent, messages)
+        agent = response.agent
+        messages.extend(response.messages)
+
+        # Prompt for user response
+        user_input = input("Your response (type 'quit' to exit): ").strip()
+        if user_input.lower() == 'quit':
+            print("Exiting the interview process. Goodbye!")
+            break
+
+        messages.append({"role": "user", "content": user_input})
+except Exception as e:
+    print(f"Error loading file: {e}")

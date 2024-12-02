@@ -1,0 +1,23 @@
+Resume:
+Emily Saavedra  Data Scientist Address 88 Hendford Hill B22 OGX London United Kingdom Email emilysaavedra gmailcom  Phone 078 3515 0056 Profile Resultsdriven Data Scientist with a proven track record in collecting analyzing and interpreting large datasets creating innovative forecasting models and executing data management tasks Possessing exceptional analytical skills meticulous attention to detail and a collaborative mindset Emily is actively seeking a Data Scientist role with a dynamic organization Work Experience SpyBiotech Inc Data Scientist London United Kingdom 092017  022019  Assisted in scientific research pertaining to DNA cloning meticulously analyzing results  Collected studied and interpreted large datasets generating insightful reports and ensuring precise data management  Developed and implemented innovative forecasting models leading to enhanced company productivity and efficiency  Engaged in monthly executive meetings to provide comprehensive updates on project progress CGL Inc Data Scientist London United Kingdom 072016  092017  Analyzed and interpreted raw data from multiple websites  Collaborated with the Operations and Technology Department to develop automated data managementanalysis software resulting in increased productivity and cost savings  Managed and maintained the companys MS SQL server  Improved forecasting software accuracy from 80 to 95 Education  Mathematics and Statistics University of Chichester 092012  052016  Achieved First Class Honours  Participated in clubs and societies such as the Business Club Golf Club and Riding Club  IB Diploma Programme The International School Estepona 092010  052012  Achieved Distinction by earning Grade 1 Aexcellent equivalent in all 6 subjects Skills  Languages Spanish English French  ComputerData Analytics Skills Microsoft Office MS SQL Server Sisense Zoho Analytics GoodData Qlik Sense  Interpersonal Skills Accuracy Analytical Skills Detail Orientation Good Team Player Multitasking Volunteering English Tutor Go Overseas Suva Fiji 062014  082014 Certificates  Professional Certificate in Data Analysis The Chartered Institute for IT 102016  Driving Licence Driving School 032012 Hobbies Exploring distant lands getting lost in a good book and every kind of sport
+
+Job Description:
+**Job Title:** Machine Learning Engineer at Tesla
+
+**Responsibilities:**
+- Develop ML models for autonomous driving systems.
+- Perform data preprocessing and feature engineering.
+- Collaborate with hardware engineers to optimize model performance.
+- Document and test ML workflows.
+
+**Minimum Requirements:**
+- Bachelor’s degree in Computer Science or Engineering.
+- 3+ years of experience in ML engineering.
+- Proficiency in Python and TensorFlow.
+- Strong understanding of deep learning algorithms.
+
+**Preferred Requirements:**
+- Experience with autonomous systems.
+- Familiarity with edge computing.
+- Publications in AI conferences.
+        

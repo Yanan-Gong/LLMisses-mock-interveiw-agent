@@ -1,0 +1,23 @@
+Resume:
+O7XXXXXXX mediumcomegorhowell London UK Ego r  owe  githubcomegorhowell emailemailcom linkedincomegorhowell youtubecomegorhowell Data Scientist kagglecomegorphysics TECHNICAL SKILLS Languages Proficient Python and SQL Experience FORTRAN and LabVIEW Tech Stack Git DataBricks BashZsh Snowflake AWS Jupyter Notebook Anaconda PyCharm LaTeX EXPERIENCE Data Scientist Sept 2022 — Present Company Y London UK « Worked in a crossfunctional team with Software Engineers Analysts and Product Managers within the Forecasting and Optimisation domains  Developed an ARIMAX model to forecast X which led to ££ in annual savings  Improved our Y algorithm by 10 MAPE error contributing to ££ savings due to better stock management  Delivered a Simulated Annealing optimisation algorithm that betterallocated stock in the supply chain showcasing a ££ gain « Led the Data Science journal club where we regularly present and discuss the latest research in the field Graduate Data Scientist Sept 2021 — Sept 2022 Company X London UK « Produced a suite of CatBoost models to predict YY  built an automated modelling pipeline in Databricks using MLflow with optimised training using Bayesian Hyperparameter Tuning Hyperopt « Created a YY model through CatBoost with demonstrated enhanced accuracy Mean Absolute Error compared to the existing model with an improvement of 15 « Carried research and development utilising NLP Topic Modeling techniques specifically Bertopic and LDAvis to identify key themes within positive and negative reviews « Used XGBoost to forecast XX The model was optimised through Bayesian Hyperparameter Tuning resulting in an enhanced accuracy RMSE of 80 compared to the previous iteration Research Scientist Intern Feb 2020 — Dec 2020 Company Z London UK « Conducted novel research on accurate temperature measurement by developing the Acoustic Gradiometer This device utilised acoustics to measure air temperature gradients « Used NI LabVIEW coding software to collect data autonomously designed experiments and manually constructed and soldered acoustic circuitlike boards EDUCATION Master of Physics MPhys in Physics with Nuclear Astrophysics 1st Class 75 University of Surrey July 2021 ACTIVITIES « Active Data Science Statistics and Machine Learning blog writer on Medium My blog has 12500 followers over 900k total views and 135 stories published in the last 25 years « Runa YouTube channel with 5700 subscribers and 180k views giving advice on how to break into data science  Keen hockey player since 7 years old and have played for my University 1st team over my 4 years there
+
+Job Description:
+**Job Title:** Machine Learning Engineer at LinkedIn
+
+**Responsibilities:**
+- Develop and optimize machine learning models for personalized recommendations.
+- Analyze large-scale datasets to identify trends.
+- Work closely with data scientists to deploy scalable ML solutions.
+- Experiment and improve model accuracy.
+
+**Minimum Requirements:**
+- Bachelor’s degree in Computer Science or Mathematics.
+- 3+ years of experience in machine learning.
+- Proficiency in Python and PyTorch.
+- Solid understanding of algorithms and data structures.
+
+**Preferred Requirements:**
+- Experience in natural language processing (NLP).
+- Familiarity with big data tools (e.g., Hadoop, Hive).
+- Research publications in ML conferences.
+        
