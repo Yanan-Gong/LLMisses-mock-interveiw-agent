@@ -57,18 +57,6 @@
             background-color: #0056b3;
         }
 
-        
-/* 
-        .chat-container {
-            width: 60%;
-            max-width: 800px;
-            margin: 50px auto;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background: #fff;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        } */
         .chat-header {
             padding: 15px;
             background: #0078d4;
@@ -158,12 +146,12 @@
             const userMessage = document.createElement('div');
             userMessage.className = 'message user-message';
             userMessage.textContent = userInput.value;
-            chatBody.appendChild(userMessage);
+            chatBody.appendChild(userMessage); /// post to API
 
             // Simulate system response
             const systemMessage = document.createElement('div');
             systemMessage.className = 'message system-message';
-            systemMessage.textContent = "Thank you for your message: " + userInput.value;
+            systemMessage.textContent = "Thank you for your message: " + userInput.value; /// get response from API
             chatBody.appendChild(systemMessage);
 
             // Clear input
@@ -176,123 +164,3 @@
 </body>
 </html>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-        }
-        .chat-container {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            padding: 10px;
-            overflow-y: auto;
-        }
-        .message {
-            display: flex;
-            margin: 10px 0;
-            align-items: center;
-        }
-        .message.system {
-            justify-content: flex-start;
-        }
-        .message.user {
-            justify-content: flex-end;
-        }
-        .bubble {
-            max-width: 60%;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: #d9d9d9;
-            color: #000;
-        }
-        .message.system .bubble {
-            background-color: #007bff;
-            color: #fff;
-        }
-        .controls {
-            padding: 10px;
-            background-color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid #ccc;
-        }
-        .controls button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-        }
-        .controls button:disabled {
-            background-color: #ccc;
-        }
-    </style>
-</head>
-<body>
-    <div class="chat-container" id="chatContainer">
-        <!-- Messages will appear here -->
-    </div>
-    <div class="controls">
-        <button id="recordButton" onclick="recordMessage()">Record Audio</button>
-        <button id="sendButton" onclick="sendMessage()" disabled>Send</button>
-    </div>
-
-    <script>
-        const chatContainer = document.getElementById('chatContainer');
-        const recordButton = document.getElementById('recordButton');
-        const sendButton = document.getElementById('sendButton');
-        let isRecording = false;
-
-        function addMessage(content, sender) {
-            const message = document.createElement('div');
-            message.className = `message ${sender}`;
-            const bubble = document.createElement('div');
-            bubble.className = 'bubble';
-            bubble.textContent = content;
-            message.appendChild(bubble);
-            chatContainer.appendChild(message);
-            chatContainer.scrollTop = chatContainer.scrollHeight;
-        }
-
-        function simulateSystemMessage() {
-            const audioMessage = "This is a system-generated audio message.";
-            addMessage(audioMessage, 'system');
-        }
-
-        function recordMessage() {
-            if (!isRecording) {
-                isRecording = true;
-                recordButton.textContent = "Recording...";
-                setTimeout(() => {
-                    isRecording = false;
-                    recordButton.textContent = "Record Audio";
-                    sendButton.disabled = false;
-                }, 3000); // Simulate 3 seconds of recording
-            }
-        }
-
-        function sendMessage() {
-            const userMessage = "User recorded audio message.";
-            addMessage(userMessage, 'user');
-            sendButton.disabled = true;
-        }
-
-        // Simulate the system sending the first audio message
-        simulateSystemMessage();
-    </script>
-</body>
-</html> -->
