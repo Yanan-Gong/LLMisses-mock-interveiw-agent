@@ -234,7 +234,7 @@ bq_mock_interview_agent = Agent(
 
 
 # ----------------- Main -----------------#
-agent = bq_mock_interview_agent
+'''agent = bq_mock_interview_agent
 messages = []
 
 print("Welcome to the mock interview process! Please input your resume and job description.")
@@ -247,4 +247,4 @@ while True:
 
     response = bq_question_answer(agent, messages)
     agent = response.agent
-    messages.extend(response.messages)
+    messages.extend(response.messages)'''
