@@ -1,20 +1,24 @@
-from flask import request, jsonify,Blueprint 
+from flask import request, jsonify,Blueprint, render_template
 from app.models.bq_mock_interview_v0 import bq_mock_interview_agent, bq_question_answer
 from app.utils.helpers import process_pdf, process_text
 
 bp = Blueprint('main', __name__)
 
 @bp.route('/')
-def index():
-    """Root route to verify the API is running."""
-    return jsonify({
-        "message": "Welcome to the Mock Interview API!",
-        "endpoints": [
-            "/api/upload-pdf",
-            "/api/upload-text",
-            "/api/chat"
-        ]
-    })
+def home():
+   return render_template('home.html')
+
+@bp.route('/upload')
+def upload():
+    return render_template('upload.html')
+
+@bp.route('/chat')
+def chat_():
+    return render_template('chat.html')
+
+@bp.route('/feedback')
+def feedback():
+    return render_template('feedback.html')
 
 agent = bq_mock_interview_agent  # Initialize the agent globally
 messages = []  # Initialize the conversation messages globally
