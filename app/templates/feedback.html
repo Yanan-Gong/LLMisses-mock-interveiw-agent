@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mock Interview</title>
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #081631, #0a2d55);
+        color: #fff;
+        }
+
+        header {
+            padding: 10px 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #fff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .title{
+            text-align: left;
+            /* margin: 20px auto; */
+            font-size: 1.5em;
+            padding-left: 120px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            
+        }
+
+        .highlight {
+            background-color: #1d3557;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .questions-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .questions-container button {
+            background-color: #457b9d;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .questions-container button.active {
+            background-color: #a8dadc;
+            color: #1d3557;
+        }
+
+        .question-content {
+            background-color: #1d3557;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <h1>AI Mock Interview</h1>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#" class="btn">Hi, Ashley!</a>
+          </nav>
+        </div>
+      </header>
+    
+    <div class="title">Interview Highlight</div>
+    <div class="container">
+        <div class="highlight">
+            <ul>
+                <li>Today you aced <b>5</b> interview questions, including <b>3 behavioral</b> and <b>2 technical</b> questions.</li>
+                <li>During the interview, you spoke for <b>25 minutes</b> with <b>11 pause fillers</b> (um, er, ah, etc).</li>
+                <li>You did a good job following STAR rules when answering behavioral questions!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="title">Look back...</div>
+    <div class="container">
+        <div class="questions-container">
+            <button class="question-btn active" data-question="1">Question 1</button>
+            <button class="question-btn" data-question="2">Question 2</button>
+            <button class="question-btn" data-question="3">Question 3</button>
+            <button class="question-btn" data-question="4">Question 4</button>
+            <button class="question-btn" data-question="5">Question 5</button>
+        </div>
+        <div class="question-content">
+            <h3>Question Content</h3>
+            <p id="question-text">Click on a question to display its content here.</p>
+        </div>
+    </div>
+    
+    <script>
+        let questionsContent = {};
+        // Function to fetch questions from the API
+        async function fetchQuestions() {
+            try {
+                const response = await fetch('https://api.example.com/get-questions', { // Replace with your API endpoint
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        userId: '12345', // Example payload, adjust based on your API requirements
+                        interviewSessionId: '67890'
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to fetch questions');
+                }
+
+                const data = await response.json();
+                questionsContent = data.questions; // Assuming the API returns { questions: { 1: "Question content", 2: "..." } }
+                document.getElementById('question-text').textContent = 'Click on a question to display its content here.';
+            } catch (error) {
+                document.getElementById('question-text').textContent = 'Error fetching questions. Please try again later.';
+                console.error(error);
+            }
+        }
+
+        // Event listeners for question buttons
+        document.querySelectorAll('.question-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                // Update active button
+                document.querySelectorAll('.question-btn').forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+
+                // Display question content
+                const questionId = e.target.getAttribute('data-question');
+                document.getElementById('question-text').innerHTML =
+                    questionsContent[questionId] || "Content not available.";
+            });
+        });
+
+        // Fetch questions on page load
+        fetchQuestions();
+
+    </script>
+</body>
+</html>
