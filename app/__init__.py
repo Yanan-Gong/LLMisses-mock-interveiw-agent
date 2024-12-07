@@ -1,6 +1,7 @@
 from flask import Flask
 from dotenv import load_dotenv
 import os
+from app.routes import bp
 
 def create_app():
     load_dotenv()  # Load environment variables
@@ -16,7 +17,6 @@ def create_app():
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
     
     # Register routes
-    from .routes import bp as main_bp
-    app.register_blueprint(main_bp)
+    app.register_blueprint(bp)
 
     return app
