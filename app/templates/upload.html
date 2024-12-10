@@ -125,7 +125,7 @@
         <div class="chat-box hidden" id="question2">
             <p>Awesome! Then could you upload your resume as an attachment? PDF format work for me:</p>
             <div class="file-upload">
-                <input type="file" id="resume-upload" accept=".pdf">
+                <input type="file" id="resume-upload" accept="application/pdf">
             </div>
             <button onclick="submitResume()">Upload</button>
             </div>
@@ -137,21 +137,15 @@
                 alert("Please type the job description!");
                 return;
             }
-
-            const formData = new FormData();
-            formData.append('text', jobDescription);
-            const json = {}; // Convert FormData to JSON 
-            formData.forEach((value, key) => { // Handle multiple values for the same key 
-                if (json[key]) { 
-                    if (Array.isArray(json[key])) { json[key].push(value); } 
-                    else { json[key] = [json[key], value]; } } 
-                    else { json[key] = value; } });
+            const jsonData = JSON.stringify({ text: jobDescription });
 
             try {
                  // Call API (update URL with your API endpoint)
                  const response = await fetch('http://127.0.0.1:5000/api/upload-text', {
                      method: 'POST',
-                     body: JSON.stringify(json, null, 2),
+                     headers: {
+                    'Content-Type': 'application/json'},
+                     body: jsonData,
                  });
 
                  if (response.ok) {
@@ -170,28 +164,38 @@
         }
 
         async function submitResume() {
+
+            // Helper function to convert file to Base64
+            function toBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result.split(',')[1]); // Only get Base64 string without prefix
+                reader.onerror = (error) => reject(error);
+                reader.readAsDataURL(file);
+                console.log("conversion done");
+            });
+            }
+
             const resume = document.querySelector('#resume-upload').files[0];
+            console.log(resume.name);
             if (!resume) {
                 alert("Please upload your resume!");
                 return;
             }
 
-            // Validate file type (must be PDF or DOCX)
-            const validExtensions = ['pdf', 'docx'];
-            const fileExtension = resume.name.split('.').pop().toLowerCase();
-            if (!validExtensions.includes(fileExtension)) {
-                alert("Please upload a valid PDF or DOCX file!");
-                return;
-            }
+            // Convert file to Base64
+            const base64File = await toBase64(resume);
 
-            const formData = new FormData();
-            formData.append('resume', resume);
+            // Create JSON object
+            const jsonData = JSON.stringify({ fileName: resume.name, fileContent: base64File });
 
              try {
                  // Call API (update URL with your API endpoint)
                  const response = await fetch('http://127.0.0.1:5000/api/upload-pdf', {
                      method: 'POST',
-                     body: formData,
+                     headers: {
+                        'Content-Type': 'application/json'},
+                    body: jsonData
                  });
 
                  if (response.ok) {
@@ -205,8 +209,6 @@
                  console.error('Error uploading:', error);
                  alert("An error occurred while submitting the data. Please try again.");
              }
-
-
         }
 
 

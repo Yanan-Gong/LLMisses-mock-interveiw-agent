@@ -1,6 +1,7 @@
 from flask import request, jsonify,Blueprint, render_template
 from app.models.bq_mock_interview_v0 import bq_mock_interview_agent, bq_question_answer
 from app.utils.helpers import process_pdf, process_text
+import base64
 
 bp = Blueprint('main', __name__)
 
@@ -31,10 +32,12 @@ combined_message_sent = False  # Flag to ensure combined message is sent only on
 def upload_pdf():
     """Handles PDF upload from frontend"""
     global uploaded_pdf_text
-    file = request.files.get('file')
-    if not file:
+    # file = request.files.get('file')
+    fileBase64 = request.json['fileContent']
+    if not fileBase64:
         return jsonify({"error": "No file provided"}), 400
     # Process the PDF file and store the result
+    file = base64.b64decode(fileBase64)
     uploaded_pdf_text = process_pdf(file)
     return jsonify({"message": "PDF uploaded and processed successfully"})
 
