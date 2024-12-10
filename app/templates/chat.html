@@ -136,7 +136,7 @@
 
 
     <script>
-        function sendMessage() {
+        async function sendMessage() {
             const userInput = document.getElementById('user-input');
             const chatBody = document.getElementById('chat-body');
 
@@ -147,18 +147,39 @@
             userMessage.className = 'message user-message';
             userMessage.textContent = userInput.value;
             chatBody.appendChild(userMessage); /// post to API
+            const jsonUserInput = JSON.stringify({ input: userInput.value });
+            
+            try {
+                 // Call API to send message
+                 const response = await fetch('http://127.0.0.1:5000/api/chat', {
+                     method: 'POST',
+                     headers: {
+                    'Content-Type': 'application/json'},
+                     body: jsonUserInput,
+                 });
 
-            // Simulate system response
-            const systemMessage = document.createElement('div');
-            systemMessage.className = 'message system-message';
-            systemMessage.textContent = "Thank you for your message: " + userInput.value; /// get response from API
-            chatBody.appendChild(systemMessage);
+                const systemMessage = document.createElement('div');
+                systemMessage.className = 'message system-message';
 
-            // Clear input
-            userInput.value = '';
+                // Retrieve response message from the API
+                 if (!response.ok) {
+                    systemMessage.textContent = "An error occurred while sending the message. Please try again.";
+                 } else {
+                    const responseJson = await response.json();
+                    systemMessage.textContent = responseJson.response; /// get response from API
+                }
+                chatBody.appendChild(systemMessage);
 
-            // Scroll to the bottom
-            chatBody.scrollTop = chatBody.scrollHeight;
+                // Clear input
+                userInput.value = '';
+
+                // Scroll to the bottom
+                chatBody.scrollTop = chatBody.scrollHeight;
+             } catch (error) {
+                 console.error('Error sending:', error);
+                 alert("An error occurred while sending the message. Please try again.");
+             }
+            
         }
     </script>
 </body>
