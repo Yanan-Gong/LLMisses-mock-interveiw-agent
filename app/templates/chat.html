@@ -170,7 +170,7 @@
                         audioPlayback.src = URL.createObjectURL(audioBlob);
 
                         // Calculate audio duration
-                        const duration = (Date.now() - startTime) / 1000; // in seconds
+                        duration = (Date.now() - startTime) / 1000; // in seconds
                         console.log(`Audio Duration: ${duration} seconds`);
                         audioData = audioBlob
                     };
@@ -214,17 +214,23 @@
             let base64Audio;
 
             if (audioData){
-                userMessage.textContent = `Your ${duration} seconds answer is  sent!`;
+                if (duration){
+                    userMessage.textContent = `Your ${duration.toFixed(2)} seconds answer is  sent!`;
+                } else{
+                    userMessage.textContent = `Your ${duration} seconds answer is  sent!`;
+                }
                 base64Audio = await toBase64(audioData); // Convert file to Base64
                 jsonUserInput = JSON.stringify({ input: base64Audio,
                     type: 'audio'
                 });
                 console.log('jsonUserInput log', jsonUserInput);
+                chatBody.appendChild(userMessage);
             } else {
                 userMessage.textContent = userInput.value;
                 jsonUserInput = JSON.stringify({ input: userInput.value,
                     type: 'message'
                 });
+                chatBody.appendChild(userMessage);
             }
 
             try {
