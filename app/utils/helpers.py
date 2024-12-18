@@ -39,33 +39,3 @@ def process_audio(file):
         return transcript.text
     except Exception as e:
         raise ValueError(f"Error processing audio: {str(e)}")
-
-'''
-def validate_audio_format(audio_file):
-    """Checks if the audio file is a valid format supported by Whisper."""
-    try:
-        audio_info = mediainfo(audio_file)
-        return audio_info['codec_name'] in ['mp3', 'aac', 'wav', 'vorbis', 'opus','webm','m4a']  # Map to supported formats
-    except Exception as e:
-        raise ValueError("Invalid audio file format.")'''
-
-import mimetypes
-
-def validate_audio_format(audio_file):
-    """
-    Validates audio file format by checking MIME type.
-    Supported formats: 'webm', 'm4a', 'wav', 'mp3'.
-    """
-    audio_file.seek(0)  # Reset file pointer for MIME type detection
-
-    # Map common extensions to MIME types
-    SUPPORTED_FORMATS = {'audio/webm', 'audio/mp4', 'audio/x-m4a', 'audio/mpeg', 'audio/wav'}
-
-    # Guess MIME type (e.g., 'audio/webm', 'audio/mp4')
-    mime_type = mimetypes.guess_type("dummy.webm")[0]  # Dummy file name for testing extension-based MIME type
-
-    # For real audio files, try detecting MIME type dynamically
-    if mime_type in SUPPORTED_FORMATS:
-        return True
-
-    return False

@@ -1,8 +1,10 @@
 from flask import request, jsonify,Blueprint, render_template
 from app.models.bq_mock_interview_v1_audio import bq_mock_interview_agent, bq_question_answer, summarize_interview_agent, end_interview
-from app.utils.helpers import process_pdf, process_text, process_audio,validate_audio_format
+from app.utils.helpers import process_pdf, process_text, process_audio
 import base64
 from io import BytesIO
+import os
+import tempfile
 
 bp = Blueprint('main', __name__)
 
@@ -113,25 +115,31 @@ def chat():
         combined_message_sent = True
 
     try:
-        # Handle audio input
         if input_type == 'audio':
-            # Decode the base64-encoded audio data
-            audio_data = base64.b64decode(user_input)
-            audio_file = BytesIO(audio_data)
-            if not validate_audio_format(audio_file):
-                return jsonify({"error": "Invalid audio format"}), 400
+            # Decode Base64 audio data and save it as a temporary file
+            # This is important! We must save into a temporary file (cannot handle simply use helper
+            #  function)
+            decoded_audio = base64.b64decode(user_input)
+            with tempfile.NamedTemporaryFile(suffix=".webm", delete=False) as tmp_audio_file:
+                tmp_audio_file.write(decoded_audio)
+                tmp_audio_file_path = tmp_audio_file.name
+                print(f"Audio file saved to: {tmp_audio_file_path}")
 
-            audio_file.seek(0)
-            transcription = process_audio(audio_file)  # Convert audio to text
-            print("Audio transcription:", transcription)
+            # Process audio using the helper function
+            with open(tmp_audio_file_path, "rb") as audio_file:
+                transcription_text = process_audio(audio_file)
+                print("Audio transcription:", transcription_text)
 
-            # Append transcription as user input
-            messages.append({"role": "user", "content": transcription})
+            # Clean up temporary file
+            os.remove(tmp_audio_file_path)
+
+            # Append transcription to chat as user input
+            messages.append({"role": "user", "content": transcription_text})
         else:
             # Handle text input
             messages.append({"role": "user", "content": user_input})
 
-        # End condition
+        # Handle 'end' input
         if user_input.lower() == 'end':
             print("\nGenerating behavioral interview summary...\n")
             response = bq_question_answer(summarize_interview_agent, messages)
@@ -139,50 +147,13 @@ def chat():
             final_feedback = end_interview(messages)
             return jsonify({"response": final_feedback})
 
-        # Chatbot logic
+        # Process chatbot logic
         response = bq_question_answer(agent, messages)
-        agent = response.agent  # Update the agent if changed
-        messages.extend(response.messages)  # Append new messages to the conversation
+        agent = response.agent  # Update agent state if necessary
+        messages.extend(response.messages)  # Append new messages
 
-        # Return chatbot's response
+        # Return the latest chatbot response
         return jsonify({"response": response.messages[-1].content})
 
     except Exception as e:
         return jsonify({"error": f"Failed to process input: {str(e)}"}), 500
-
-
-
-'''
-@bp.route('/api/chat', methods=['POST'])
-def chat():
-    """Handles chatbot interactions"""
-    global agent, uploaded_pdf_text, uploaded_text, messages,combined_message_sent
-    
-    data = request.json
-    user_input = data.get('input')
-    
-    #if not data or 'message' not in data:
-     #   return jsonify({"error": "No message provided"}), 400
-    if not combined_message_sent:
-        combined_message = f"{uploaded_pdf_text}\n\n{uploaded_text}"
-        messages.append({"role": "user", "content": combined_message})
-        combined_message_sent = True
-
-    if user_input.lower() == 'end':
-        print("\nGenerating behavioral interview summary...\n")
-        messages.append({"role": "user", "content": user_input})
-        response = bq_question_answer(summarize_interview_agent, messages)
-        messages.extend(response.messages)
-        final_feedback = end_interview(messages)
-        print("\nExiting the interview process. Goodbye!")
-
-    # Handle the current user input
-    messages.append({"role": "user", "content": user_input})
-    
-    # Call the chatbot logic
-    response = bq_question_answer(agent, messages)
-    agent = response.agent  # Update the agent if changed
-    messages.extend(response.messages)  # Append new messages to the conversation
-    
-    # Return the latest chatbot response to the frontend
-    return jsonify({"response": response.messages[-1].content})'''
