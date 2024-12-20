@@ -1,0 +1,77 @@
+[
+    {
+        "question_id": 1,
+        "question_keywords": "Disagreeing Colleagues",
+        "question_text": "Tell me a time when your colleagues did not agree with your approach. What did you do to bring them into the conversation and address their concerns?"
+    },
+    {
+        "question_id": 2,
+        "question_keywords": "Handling Conflicts",
+        "question_text": "What is your approach to resolving conflict with co-workers or external stakeholders, partially when you don\u2019t really like them?\nGive an example of when you resolved a conflict with someone on the job."
+    },
+    {
+        "question_id": 3,
+        "question_keywords": "Prioritizing Deadlines",
+        "question_text": "How do you prioritize multiple deadlines? Additionally, how do you stay organized when you have multiple deadlines?"
+    },
+    {
+        "question_id": 4,
+        "question_keywords": "Why Do You Want to Work With Us",
+        "question_text": "When an interviewer asks you a question along the lines of:\n\nWhy did you apply to our company?\nWhat are you looking for in your next job?\nWhat makes you a good fit for our company?\n\nHow should you respond?"
+    },
+    {
+        "question_id": 5,
+        "question_keywords": "Simple Explanations",
+        "question_text": "How would you convey insights and the methods you use to a non-technical audience?"
+    },
+    {
+        "question_id": 6,
+        "question_keywords": "Hurdles In Data Projects",
+        "question_text": "Describe a data project you worked on. What were some of the challenges you faced?"
+    },
+    {
+        "question_id": 7,
+        "question_keywords": "Boosting Instagram Stories",
+        "question_text": "You\u2019re a product manager at Meta. In a few weeks, there is an upcoming stakeholder meeting, and they want you to suggest a new feature for Instagram Stories. What would this feature be, and what would be the rationale behind choosing such a feature?"
+    },
+    {
+        "question_id": 8,
+        "question_keywords": "Data Cleaning Experiences",
+        "question_text": "Tell me about a project in which you had to clean and organize a large dataset."
+    },
+    {
+        "question_id": 9,
+        "question_keywords": "Accessible Data",
+        "question_text": "What are some effective ways to make data more accessible to non-technical people?"
+    },
+    {
+        "question_id": 10,
+        "question_keywords": "Presentations and Insights",
+        "question_text": "How comfortable are you presenting your insights?"
+    },
+    {
+        "question_id": 11,
+        "question_keywords": "Stakeholder Communication",
+        "question_text": "Talk about a time when you had trouble communicating with stakeholders. How were you able to overcome it?"
+    },
+    {
+        "question_id": 12,
+        "question_keywords": "Exceeding Expectations",
+        "question_text": "Tell me about a time when you exceeded expectations during a project. What did you do, and how did you accomplish it?"
+    },
+    {
+        "question_id": 13,
+        "question_keywords": "Your Strengths and Weaknesses",
+        "question_text": "When an interviewer asks a question along the lines of:\n\nWhat would your current manager say about you? What constructive criticisms might he give?\nWhat are your three biggest strengths and weaknesses you have identified in yourself?\n\nHow would you respond?"
+    },
+    {
+        "question_id": 14,
+        "question_keywords": "Success Measurement",
+        "question_text": "Describe an analytics experiment that you designed. How were you able to measure success?"
+    },
+    {
+        "question_id": 15,
+        "question_keywords": "Romantic Reduction",
+        "question_text": "Let\u2019s say you work at Meta and currently Facebook allows users to specify whether or not a person is single or is in a relationship.\nHowever, running through the reports shows that users with partners tend to make fewer posts. How would you approach tackling this issue? What might we want to do to increase engagement for this demographic?"
+    }
+]
