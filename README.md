@@ -2,9 +2,11 @@
 
 Welcome to the **Multi-Agent LLM Enabled Mock Interviewer**! Our team **LLMisses** designed and built this web application to help job seekers enhance their interview skills through realistic and tailored mock interview experiences. Powered by advanced large language models (LLMs), in multi-agent framework, this app simulates interview scenarios across various industries and roles, providing real-time, indepth, actionable feedback and analysis.
 
-[Our Medium Blog:](https://medium.com/@wendyXdata/ai-enabled-mock-interviewer-7f336cb8124a)
-[Our Video Presentation:](https://youtu.be/dRxGk8MP5Fc)
-[User Guide:](https://docs.google.com/presentation/d/1bjm0Sk-CkGZmKPyN5jOXONspp56Mfup3zcvKQHhWV8M/edit?pli=1#slide=id.gc6f80d1ff_0_66)
+[Our Medium Blog](https://medium.com/@wendyXdata/ai-enabled-mock-interviewer-7f336cb8124a)
+
+[Our Video Presentation](https://youtu.be/dRxGk8MP5Fc)
+
+[User Guide](https://docs.google.com/presentation/d/1bjm0Sk-CkGZmKPyN5jOXONspp56Mfup3zcvKQHhWV8M/edit?pli=1#slide=id.gc6f80d1ff_0_66)
 
 
 ---
