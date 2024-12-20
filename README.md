@@ -59,7 +59,7 @@ flask run
 - **Backend**: Python (Flask/FastAPI)
 - **Frontend**: HTML, Javascript, CSS
 - **LLM Integration**: OpenAI API 
-- **Deployment**: Docker, AWS/GCP/Azure
+- **Deployment**: Docker, AWS/GCP/Azure (Ongoing)
 
 ---
 
